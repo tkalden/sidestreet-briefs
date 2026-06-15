@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SideStreet Briefs</title>
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --surface: #111827;
+      --border: #1f2937;
+      --accent: #3b82f6;
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #eab308;
+      --text: #e2e8f0;
+      --muted: #6b7280;
+      --heading: #f8fafc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .topbar .logo {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--heading);
+      letter-spacing: 0.05em;
+    }
+    .topbar .logo span { color: var(--accent); }
+    .topbar .meta { color: var(--muted); font-size: 11px; }
+    .container { max-width: 860px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    .brief-date {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+    .brief-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 24px;
+    }
+
+    /* Macro strip */
+    .macro-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .macro-cell {
+      background: var(--surface);
+      padding: 12px 14px;
+    }
+    .macro-cell .label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .macro-cell .value { font-size: 14px; font-weight: 600; color: var(--heading); margin-top: 2px; }
+    .macro-cell .chg { font-size: 11px; margin-top: 1px; }
+    .up { color: var(--green); }
+    .dn { color: var(--red); }
+    .flat { color: var(--muted); }
+
+    /* Section */
+    .section { margin-bottom: 32px; }
+    .section-header {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    /* Ticker cards */
+    .ticker-grid { display: flex; flex-direction: column; gap: 1px; }
+    .ticker-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 16px;
+      display: grid;
+      grid-template-columns: 80px 80px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .ticker-card:hover { border-color: #374151; }
+    .ticker-sym { font-weight: 700; font-size: 14px; color: var(--heading); }
+    .ticker-price { font-size: 13px; color: var(--text); }
+    .ticker-stance { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+    .ticker-stance.bull { color: var(--green); }
+    .ticker-stance.bear { color: var(--red); }
+    .ticker-stance.neut { color: var(--yellow); }
+    .ticker-note { font-size: 12px; color: #9ca3af; grid-column: 1 / -1; margin-top: 4px; }
+
+    /* Voices */
+    .voice-item { margin-bottom: 14px; }
+    .voice-name { font-weight: 700; color: var(--heading); font-size: 12px; }
+    .voice-quote { color: #9ca3af; font-size: 12px; font-style: italic; margin-top: 3px; padding-left: 10px; border-left: 2px solid var(--accent); }
+
+    /* Risk box */
+    .risk-box {
+      background: #1a0f0f;
+      border: 1px solid #7f1d1d;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 12px;
+      color: #fca5a5;
+    }
+    .risk-box .risk-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+
+    /* Archive */
+    .archive-list { list-style: none; }
+    .archive-list li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+    .archive-list a { color: var(--accent); text-decoration: none; font-size: 12px; }
+    .archive-list a:hover { text-decoration: underline; }
+
+    footer { text-align: center; color: var(--muted); font-size: 10px; padding: 24px; border-top: 1px solid var(--border); margin-top: 48px; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
+  <div class="meta">Auto-published · Sun Jun 14, 2026</div>
+</div>
+
+<div class="container">
+
+  <div class="brief-date">Pre-Market Morning Brief</div>
+  <div class="brief-title">📊 Sunday, June 14, 2026 — Next session: Mon Jun 15</div>
+
+  <!-- Macro strip -->
+  <div class="macro-strip">
+    <div class="macro-cell">
+      <div class="label">S&amp;P Futs</div>
+      <div class="value">7,435</div>
+      <div class="chg up">+0.53%</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">NQ Futs</div>
+      <div class="value">29,662</div>
+      <div class="chg up">+0.67%</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">DOW Futs</div>
+      <div class="value">51,237</div>
+      <div class="chg flat">+0.02%</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">10Y Yield</div>
+      <div class="value">4.48%</div>
+      <div class="chg flat">—</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">2Y Yield</div>
+      <div class="value">4.09%</div>
+      <div class="chg flat">—</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">WTI</div>
+      <div class="value">$84.88</div>
+      <div class="chg flat">~closing</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">Gold</div>
+      <div class="value">$4,215</div>
+      <div class="chg flat">—</div>
+    </div>
+    <div class="macro-cell">
+      <div class="label">BTC</div>
+      <div class="value">$63,360</div>
+      <div class="chg dn">−30% YTD</div>
+    </div>
+  </div>
+
+  <!-- Stocks -->
+  <div class="section">
+    <div class="section-header">Positions</div>
+    <div class="ticker-grid">
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">SNDK</div>
+          <div class="ticker-stance bull">Bullish</div>
+        </div>
+        <div class="ticker-price">~$1,860 est.</div>
+        <div></div>
+        <div class="ticker-note">Unanimous PT upgrades from 6 banks — Mizuho $2,200, Cantor $2,900, BofA $2,100, Morgan Stanley $1,750, Susquehanna $3,250, Barclays $2,300. MS: DRAM is "main bottleneck in AI computing demand" — memory upcycle extending into 2027. +14.5% Thursday.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">NVDA</div>
+          <div class="ticker-stance bull">Bullish</div>
+        </div>
+        <div class="ticker-price">—</div>
+        <div></div>
+        <div class="ticker-note">Vera CPU now pitching to Chinese AI data centers (Aug delivery). KKR Helix strategic partnership. Sharon AI 40K GB300 deal (Australia). Healthcare AI expansion via Abridge.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">AMD</div>
+          <div class="ticker-stance bull">Bullish</div>
+        </div>
+        <div class="ticker-price">$515.69</div>
+        <div></div>
+        <div class="ticker-note">Citi upgraded to Buy, PT $575 (Jun 12). BofA PT $560. Agentic AI CPU TAM pegged at $170B by 2030. CEO Su sold $57.6M shares (routine 10b5-1).</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">GOOGL</div>
+          <div class="ticker-stance neut">Neutral</div>
+        </div>
+        <div class="ticker-price">~$358</div>
+        <div></div>
+        <div class="ticker-note">Google/Samsung Icefish TPU development talks. Waymo $30/mo membership launch. Anthropic data center partnership. Headwinds: youth addiction lawsuit denied new trial, −2.4% on week.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">MSFT</div>
+          <div class="ticker-stance neut">Neutral</div>
+        </div>
+        <div class="ticker-price">~$390</div>
+        <div></div>
+        <div class="ticker-note">OpenAI IPO filing bullish for AI narrative. Singapore MoU signed. Xbox restructuring uncertainty — spinoff options being explored. Dividend $0.91 maintained.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">SPCX</div>
+          <div class="ticker-stance bull">Bullish</div>
+        </div>
+        <div class="ticker-price">~$161</div>
+        <div></div>
+        <div class="ticker-note">Historic IPO debut Jun 12 — +19%, $2T+ market cap, $350B in orders. Musk now first trillionaire. Options trading starts Tue, leveraged ETFs Mon. Day 2 Monday.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">TSLA</div>
+          <div class="ticker-stance neut">Neutral</div>
+        </div>
+        <div class="ticker-price">—</div>
+        <div></div>
+        <div class="ticker-note">SPCX/TSLA merger probability at 80% (Wedbush). FSD approved in Belgium. Energy storage upside from SpaceX capex cycle.</div>
+      </div>
+
+      <div class="ticker-card">
+        <div>
+          <div class="ticker-sym">BTC</div>
+          <div class="ticker-stance bear">Bearish</div>
+        </div>
+        <div class="ticker-price">$63,360</div>
+        <div></div>
+        <div class="ticker-note">Down 30% YTD. $4.6B ETF outflows. FOMC headwind (Warsh debut this week). SpaceX IPO capital rotation pressure on risk assets.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Voices -->
+  <div class="section">
+    <div class="section-header">Voices</div>
+
+    <div class="voice-item">
+      <div class="voice-name">Jensen Huang</div>
+      <div class="voice-quote">"AI revolution only in its infancy — analogous to early days of electricity" — Sequoia Capital event, Jun 10</div>
+    </div>
+    <div class="voice-item">
+      <div class="voice-name">Elon Musk</div>
+      <div class="voice-quote">"We own the largest coherent gigawatt-class compute on the planet" — SpaceX IPO, Nasdaq, Jun 12</div>
+    </div>
+    <div class="voice-item">
+      <div class="voice-name">Donald Trump</div>
+      <div class="voice-quote">"We're talking about giving back something to the public [from AI cos]" — Oval Office, Jun 10</div>
+    </div>
+    <div class="voice-item">
+      <div class="voice-name">Kevin Warsh</div>
+      <div class="voice-quote">First FOMC meeting as Chair this week (Jun 15–16). Deliberate pre-meeting silence. Markets blind on his rate stance — hawkish pivot vs. hold is the debate.</div>
+    </div>
+  </div>
+
+  <!-- Key Risk -->
+  <div class="section">
+    <div class="section-header">Key Risk</div>
+    <div class="risk-box">
+      <div class="risk-label">⚠ This Week</div>
+      <strong>FOMC Jun 15–16</strong> — Warsh's inaugural meeting as Fed Chair. Markets pricing rate hold but easing bias removal. Biggest Fed communication event in years.<br/><br/>
+      <strong>Iran Deal Binary</strong> — Potential signing Sunday Jun 14. Sign = oil to $75–80 + risk-on surge. Collapse = WTI back to $90+.<br/><br/>
+      <em>US markets closed Fri Jun 20 (Juneteenth).</em>
+    </div>
+  </div>
+
+  <!-- Archive -->
+  <div class="section">
+    <div class="section-header">Archive</div>
+    <ul class="archive-list">
+      <li><a href="briefs/2026-06-14.html">📄 Jun 14, 2026 — FOMC week / SpaceX IPO Day 2 / Iran deal</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>SideStreet Briefs · Auto-generated · Not financial advice</footer>
+
+</body>
+</html>
