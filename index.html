@@ -58,7 +58,22 @@
       font-size: 20px;
       font-weight: 700;
       color: var(--heading);
-      margin-bottom: 24px;
+      margin-bottom: 8px;
+    }
+    .brief-generated {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .data-warning {
+      background: #1c1a0a;
+      border: 1px solid #6b5a08;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 11px;
+      color: #fde68a;
+      margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     /* Macro strip */
@@ -96,31 +111,56 @@
       margin-bottom: 16px;
     }
 
+    /* Market summary */
+    .market-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 12px;
+      color: #9ca3af;
+      line-height: 1.8;
+    }
+    .market-block strong { color: var(--text); }
+
     /* Ticker cards */
-    .ticker-grid { display: flex; flex-direction: column; gap: 1px; }
+    .ticker-grid { display: flex; flex-direction: column; gap: 8px; }
     .ticker-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 6px;
       padding: 12px 16px;
-      display: grid;
-      grid-template-columns: 80px 80px 1fr;
-      gap: 12px;
-      align-items: start;
     }
     .ticker-card:hover { border-color: #374151; }
+    .ticker-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
     .ticker-sym { font-weight: 700; font-size: 14px; color: var(--heading); }
-    .ticker-price { font-size: 13px; color: var(--text); }
-    .ticker-stance { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+    .ticker-price { font-size: 12px; color: var(--text); }
+    .ticker-stance { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-left: auto; }
     .ticker-stance.bull { color: var(--green); }
     .ticker-stance.bear { color: var(--red); }
     .ticker-stance.neut { color: var(--yellow); }
-    .ticker-note { font-size: 12px; color: #9ca3af; grid-column: 1 / -1; margin-top: 4px; }
+    .ticker-news { font-size: 12px; color: #9ca3af; }
+    .ticker-news ul { padding-left: 14px; margin-top: 4px; }
+    .ticker-news li { margin-bottom: 2px; }
+    .ticker-thesis { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; font-size: 11px; }
+    .bull-case, .bear-case { padding: 6px 10px; border-radius: 4px; }
+    .bull-case { background: #0d1f13; border-left: 2px solid var(--green); color: #86efac; }
+    .bear-case { background: #1a0d0d; border-left: 2px solid var(--red); color: #fca5a5; }
+    .case-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.7; margin-bottom: 2px; }
+    .impact-note { margin-top: 6px; font-size: 11px; color: #6b7280; border-top: 1px solid var(--border); padding-top: 6px; }
 
     /* Voices */
     .voice-item { margin-bottom: 14px; }
     .voice-name { font-weight: 700; color: var(--heading); font-size: 12px; }
-    .voice-quote { color: #9ca3af; font-size: 12px; font-style: italic; margin-top: 3px; padding-left: 10px; border-left: 2px solid var(--accent); }
+    .voice-quote {
+      color: #9ca3af;
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 3px;
+      padding-left: 10px;
+      border-left: 2px solid var(--accent);
+    }
+    .voice-relevance { font-size: 11px; color: var(--muted); margin-top: 3px; padding-left: 12px; }
 
     /* Risk box */
     .risk-box {
@@ -140,12 +180,6 @@
       margin-bottom: 6px;
     }
 
-    /* Archive */
-    .archive-list { list-style: none; }
-    .archive-list li { padding: 6px 0; border-bottom: 1px solid var(--border); }
-    .archive-list a { color: var(--accent); text-decoration: none; font-size: 12px; }
-    .archive-list a:hover { text-decoration: underline; }
-
     footer { text-align: center; color: var(--muted); font-size: 10px; padding: 24px; border-top: 1px solid var(--border); margin-top: 48px; }
   </style>
 </head>
@@ -153,55 +187,78 @@
 
 <div class="topbar">
   <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
-  <div class="meta">Auto-published · Sun Jun 14, 2026</div>
+  <div class="meta">Auto-published · Mon Jun 15, 2026 · 13:19 ET</div>
 </div>
 
 <div class="container">
 
   <div class="brief-date">Pre-Market Morning Brief</div>
-  <div class="brief-title">📊 Sunday, June 14, 2026 — Next session: Mon Jun 15</div>
+  <div class="brief-title">📊 Monday, June 15, 2026 — Next session: Tue Jun 16</div>
+  <div class="brief-generated">Generated: 2026-06-15 13:19 ET &nbsp;|&nbsp; ⚠️ Prices are a snapshot as of generation time and may be stale if read later.</div>
+
+  <div class="data-warning">
+    ⚠️ <strong>Data note:</strong> FMP quote/crypto/index endpoints returned access-denied for this plan tier — pre-market prices not available from FMP aftermarket-quote. Index levels and stock moves sourced from MT Newswires wire stories (intraday mid-session ~12:30–13:00 ET). Tavily required OAuth auth unavailable in headless run — VOICES sourced from MT Newswires only.
+  </div>
 
   <!-- Macro strip -->
   <div class="macro-strip">
     <div class="macro-cell">
-      <div class="label">S&amp;P Futs</div>
-      <div class="value">7,435</div>
-      <div class="chg up">+0.53%</div>
+      <div class="label">S&amp;P 500</div>
+      <div class="value">7,574</div>
+      <div class="chg up">+1.9% intraday</div>
     </div>
     <div class="macro-cell">
-      <div class="label">NQ Futs</div>
-      <div class="value">29,662</div>
-      <div class="chg up">+0.67%</div>
+      <div class="label">Nasdaq</div>
+      <div class="value">26,660</div>
+      <div class="chg up">+3.0% intraday</div>
     </div>
     <div class="macro-cell">
-      <div class="label">DOW Futs</div>
-      <div class="value">51,237</div>
-      <div class="chg flat">+0.02%</div>
+      <div class="label">Dow Jones</div>
+      <div class="value">51,922</div>
+      <div class="chg up">+1.4% intraday</div>
     </div>
     <div class="macro-cell">
       <div class="label">10Y Yield</div>
-      <div class="value">4.48%</div>
-      <div class="chg flat">—</div>
+      <div class="value">4.45%</div>
+      <div class="chg dn">−4 bps pre-mkt</div>
     </div>
     <div class="macro-cell">
       <div class="label">2Y Yield</div>
-      <div class="value">4.09%</div>
-      <div class="chg flat">—</div>
+      <div class="value">4.05%</div>
+      <div class="chg dn">−4 bps pre-mkt</div>
     </div>
     <div class="macro-cell">
-      <div class="label">WTI</div>
-      <div class="value">$84.88</div>
-      <div class="chg flat">~closing</div>
+      <div class="label">WTI Crude</div>
+      <div class="value">$82.88</div>
+      <div class="chg dn">−5.1% Iran deal</div>
     </div>
     <div class="macro-cell">
       <div class="label">Gold</div>
-      <div class="value">$4,215</div>
-      <div class="chg flat">—</div>
+      <div class="value">$4,347</div>
+      <div class="chg up">+2.7%</div>
     </div>
     <div class="macro-cell">
       <div class="label">BTC</div>
-      <div class="value">$63,360</div>
-      <div class="chg dn">−30% YTD</div>
+      <div class="value">~$65,660</div>
+      <div class="chg up">+3.0% pre-mkt</div>
+    </div>
+  </div>
+
+  <!-- Market -->
+  <div class="section">
+    <div class="section-header">Market</div>
+    <div class="market-block">
+      <strong>Dominant story: US–Iran peace deal.</strong> Trump announced Sunday that the deal is "complete," authorizing immediate removal of the naval blockade. Iran's Supreme National Security Council confirmed military operations on all fronts cease immediately. Formal signing in Switzerland scheduled Friday June 19 (Juneteenth — US markets closed). Strait of Hormuz reopening triggers WTI −5.1%, Brent −5.5%, unleashing a broad risk-on rally.
+      <br/><br/>
+      <strong>Indices:</strong> Nasdaq +3.0% to 26,660 | S&amp;P 500 +1.9% to 7,574 | Dow +1.4% to 51,922 (mid-session MT Newswires, FMP index access denied). Tech, comm services, and consumer discretionary lead; energy and consumer staples lag.
+      <br/><br/>
+      <strong>Rates:</strong> 10Y 4.45% (−4 bps pre-mkt); 2Y 4.05% (−4 bps). Latest FMP treasury data (06/12): 10Y 4.48%, 2Y 4.09%. ⭐ <strong>FOMC decision Wednesday June 18</strong> — widely expected 4th consecutive hold; Warsh tone on inflation (May CPI 4.2% YoY, highest since Apr 2023) is the key market event. Oil collapse may add dovish ammo.
+      <br/><br/>
+      <strong>Today's macro calendar:</strong> Empire State Mfg Index (Jun): 5.7 actual vs 13.5 expected (miss) | Industrial Production May: due 9:15am | Housing Market Index Jun: due 10am. FMP economics-calendar access denied.
+      <br/><br/>
+      <strong>Semis &amp; AI infra:</strong> SOXX +4.2% pre-mkt; XSD +4.3%; SOX +5.0% midday — strongest sector. Memory cycle: SNDK +5.5% and MU +7.5% pre-mkt. NVDA $20B bond deal + AMD MEXT acquisition + Google $1.5B Alabama datacenter + SpaceX Colossus-1 rented to Anthropic — AI capex accelerating on all fronts. US blocked non-American access to Anthropic Fable 5/Mythos 5, triggering EU sovereignty pushback — watch for cloud revenue headwind.
+      <br/><br/>
+      <strong>Earnings (next 14 days, covered names):</strong> None. CCL and FDX report June 23 — not in portfolio.
     </div>
   </div>
 
@@ -210,84 +267,189 @@
     <div class="section-header">Positions</div>
     <div class="ticker-grid">
 
+      <!-- SNDK -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">SNDK</div>
-          <div class="ticker-stance bull">Bullish</div>
+          <div class="ticker-price">No pre-mkt price (FMP denied) · Wire: +5.5% pre-bell</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">~$1,860 est.</div>
-        <div></div>
-        <div class="ticker-note">Unanimous PT upgrades from 6 banks — Mizuho $2,200, Cantor $2,900, BofA $2,100, Morgan Stanley $1,750, Susquehanna $3,250, Barclays $2,300. MS: DRAM is "main bottleneck in AI computing demand" — memory upcycle extending into 2027. +14.5% Thursday.</div>
+        <div class="ticker-news">
+          <ul>
+            <li>WallStreetBets buzz: SNDK +5.5% pre-bell, extending +5.2% Friday gain (MT Newswires, 06:53am)</li>
+            <li>Mizuho raises PT to $2,200 from $1,825, Outperform (MT Newswires, 06/09) ★</li>
+            <li>Cantor Fitzgerald raises PT to $2,900 from $1,800, Overweight (MT Newswires, 06/08) ★</li>
+            <li>BofA raises PT to $2,100 from $1,550, Buy (MT Newswires, 06/08) ★</li>
+            <li>Morgan Stanley: DRAM is "main AI bottleneck," NAND also tight; PT $1,750, Outperform (MT Newswires, 06/03) ★</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>AI-driven memory demand extending upcycle into 2027; analyst wall of upgrades (PTs $1,750–$2,900); DRAM supply tight with long lead times.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Memory cycles historically volatile; supply can ramp faster than expected; high CPI (4.2% YoY) sustains rate pressure on growth multiples.</div>
+        </div>
+        <div class="impact-note">Today: WallStreetBets momentum + risk-on session reinforces bull case. Analyst upgrade wall intact. ✅ No material change to thesis.</div>
       </div>
 
+      <!-- NVDA -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">NVDA</div>
-          <div class="ticker-stance bull">Bullish</div>
+          <div class="ticker-price">No pre-mkt price (FMP denied) · Wire: +2.1% pre-bell / +2.8% intraday</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">—</div>
-        <div></div>
-        <div class="ticker-note">Vera CPU now pitching to Chinese AI data centers (Aug delivery). KKR Helix strategic partnership. Sharon AI 40K GB300 deal (Australia). Healthcare AI expansion via Abridge.</div>
+        <div class="ticker-news">
+          <ul>
+            <li><strong>Nvidia seeks $20B+ from bond offering</strong> — first corporate bond since 2021; 7 tranches, 2–30yr maturities; ~0.9pp spread over Treasuries (MT Newswires, 08:36am) ★</li>
+            <li>Nvidia-backed Firebird signs $10B Kazakhstan datacenter deal — 100K GB300/Vera Rubin GPUs, 125 MW, ops 2027 (MT Newswires, 05:51am) ★</li>
+            <li>Hydra Host (NVDA AI server broker) raises $100M at ~$800M valuation (MT Newswires, 08:08am) ★</li>
+            <li>Sharon AI: 6-yr compute pact with NVDA, 40K GB300 GPUs, 132 MW total AI capacity in Australia (MT Newswires, 06/12)</li>
+            <li>Vera CPUs available in China as early as August; ordering begins (MT Newswires, 06/12)</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>$20B bond confidence signal + Firebird Kazakhstan deal = sustained global AI capex cycle; Vera CPU diversifying revenue beyond GPUs.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Debt issuance at scale may signal peak demand cycle or equity overvaluation; spread pricing sensitive to rate volatility.</div>
+        </div>
+        <div class="impact-note">Today: $20B bond deal + Firebird Kazakhstan materially reinforce bull case. 🟢 Positive thesis event.</div>
       </div>
 
+      <!-- AMD -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">AMD</div>
-          <div class="ticker-stance bull">Bullish</div>
+          <div class="ticker-price">$546.55 (+6.84% intraday ~12:00pm ET)</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">$515.69</div>
-        <div></div>
-        <div class="ticker-note">Citi upgraded to Buy, PT $575 (Jun 12). BofA PT $560. Agentic AI CPU TAM pegged at $170B by 2030. CEO Su sold $57.6M shares (routine 10b5-1).</div>
+        <div class="ticker-news">
+          <ul>
+            <li><strong>AMD acquires MEXT</strong> (AI predictive memory tech) to deliver full-stack compute; lowers TCO and accelerates AI deployment (MT Newswires, 11:58am) ★</li>
+            <li>Citi upgrades AMD to Buy from Neutral, PT $575 from $460 (MT Newswires, 06/12) ★</li>
+            <li>BofA raises PT to $560, Buy; agentic AI server CPU TAM $170B by 2030 (MT Newswires, 06/11) ★</li>
+            <li>AMD plans £2B ($2.7B) UK AI investment over 5 years; Imperial College / Cambridge / Oriole partnerships (MT Newswires, 06/08) ★</li>
+            <li>Insider: CEO Lisa Su sold 125K shares for $57.6M on June 10 (Form 4 filing, MT Newswires, 06/12) ★</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>MEXT acquisition builds full-stack AI compute portfolio; Citi Buy + BofA PT raise; agentic AI driving CPU TAM to $170B by 2030.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>CEO sold $57.6M at elevated prices — significant insider signal; AMD remains distant #2 to NVDA in AI GPU mindshare.</div>
+        </div>
+        <div class="impact-note">Today: MEXT acquisition is a new positive thesis event. Insider selling flagged — watch for further Form 4 filings. 🟢 Net bullish.</div>
       </div>
 
+      <!-- GOOGL -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">GOOGL</div>
-          <div class="ticker-stance neut">Neutral</div>
+          <div class="ticker-price">$369.28 (+3.10% intraday ~11:49am ET)</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">~$358</div>
-        <div></div>
-        <div class="ticker-note">Google/Samsung Icefish TPU development talks. Waymo $30/mo membership launch. Anthropic data center partnership. Headwinds: youth addiction lawsuit denied new trial, −2.4% on week.</div>
+        <div class="ticker-news">
+          <ul>
+            <li>Google to invest $1.5B in Alabama datacenter campus (2026–27), self-funding power and infra (MT Newswires, 11:49am) ★</li>
+            <li>EU calls for AI autonomy after US blocks non-Americans from Anthropic Fable 5/Mythos 5 — Google cited as exemplar of tech sovereignty risk (MT Newswires, 05:05am)</li>
+            <li>UK proposes under-16 social media ban targeting YouTube, Instagram, Snapchat, TikTok, X; rules expected spring 2027 (MT Newswires, 05:33am)</li>
+            <li>Google sues Chinese cybercrime group using Gemini AI for phishing spam (MT Newswires, 06/12) ★</li>
+            <li>Google in talks with Samsung for next-gen TPU "Icefish" (10th-gen) co-production (MT Newswires, 06/11)</li>
+            <li>Waymo launches $30/mo "Waymo Premier" subscription in SF, LA, Phoenix (MT Newswires, 06/11)</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>$1.5B datacenter capex commitment; Waymo subscription monetization; TPU Icefish/Samsung silicon partnership advancing; risk-on bid.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>UK under-16 social ban threatens YouTube's core engagement demographic; EU AI sovereignty movement could restrict Cloud/AI European revenue; addictive design jury liability opens class-action risk.</div>
+        </div>
+        <div class="impact-note">Today: Datacenter announcement and risk-on bid are bullish. UK social ban and EU AI sovereignty are medium-term headwinds, not today events. ✅ No material thesis change.</div>
       </div>
 
+      <!-- MSFT -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">MSFT</div>
-          <div class="ticker-stance neut">Neutral</div>
+          <div class="ticker-price">No pre-mkt price (FMP denied) · Wire: +1.8% pre-bell</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">~$390</div>
-        <div></div>
-        <div class="ticker-note">OpenAI IPO filing bullish for AI narrative. Singapore MoU signed. Xbox restructuring uncertainty — spinoff options being explored. Dividend $0.91 maintained.</div>
+        <div class="ticker-news">
+          <ul>
+            <li>Wix integrates website creation into Microsoft 365 Copilot — voice/text site building, analytics and payments in-chat (MT Newswires, 10:31am)</li>
+            <li>CMO Takeshi Numoto sold 4,500 shares ($1.8M) on June 10, SEC Form 4 (MT Newswires, 03:41am) ★</li>
+            <li>Microsoft explores Xbox overhaul — spinoff, subsidiary, or JV options; layoffs at smaller studios; approved by Nadella/Hood (MT Newswires, 06/12) ★</li>
+            <li>OpenAI files confidential IPO paperwork with SEC; CEO Altman expects IPO within one year (MT Newswires, 06/10) ★</li>
+            <li>OpenAI acquires Ona (cloud services for AI agents) for enterprise Codex; 5M weekly Codex users (MT Newswires, 06/11)</li>
+            <li>OpenAI considers price cuts to compete with Anthropic (MT Newswires, 06/11) ★</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>Copilot ecosystem expanding via third-party integrations; OpenAI IPO path validates AI-partner strategy; Azure positioned as enterprise AI cloud of choice.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>OpenAI price war with Anthropic pressures AI API margins; OpenAI IPO creates independence that could reduce MSFT's structural advantage; Xbox restructuring adds management distraction.</div>
+        </div>
+        <div class="impact-note">Today: Copilot/Wix integration is incremental positive. OpenAI dynamics still complex. ✅ No material change today.</div>
       </div>
 
+      <!-- SPCX -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">SPCX</div>
-          <div class="ticker-stance bull">Bullish</div>
+          <div class="ticker-price">No reliable data — newly listed (IPO June 12)</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">~$161</div>
-        <div></div>
-        <div class="ticker-note">Historic IPO debut Jun 12 — +19%, $2T+ market cap, $350B in orders. Musk now first trillionaire. Options trading starts Tue, leveraged ETFs Mon. Day 2 Monday.</div>
+        <div class="ticker-news">
+          <ul>
+            <li><strong>Musk says SpaceX revenue could surpass $1 trillion by 2031</strong> (Sunday X post); FactSet analyst consensus: $328.88B. SPCX +5.9%→+7.5%→+11% through session (MT Newswires, 06:10am) ★</li>
+            <li>Hancock Prospecting (Australia) confirms "significant investment" in SpaceX IPO allocation (MT Newswires, 05:40am) ★</li>
+            <li>Korean FSS expands probe into Mirae Asset Securities failure to deliver SpaceX shares despite accepting client deposits (MT Newswires, 06:12am) ★</li>
+            <li>BRC Group expects $84.2M gross carried interest from SpaceX SPV investments (2018–2021); net ~$70.4M (MT Newswires, 08:12am)</li>
+            <li>SpaceX rented Colossus 1 datacenter (Memphis, TN) to Anthropic after latency issues — runs on NVDA Hopper/Blackwell (MT Newswires, 06/12) ★</li>
+            <li>IPO recap (06/12): Priced $135, opened $150, closed +19%+, market cap &gt;$2T — world's largest IPO at ~$75B raised</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>Post-IPO Day 2 momentum; Musk's $1T by 2031 narrative spans launch, Starlink, Terafab, AI compute; institutional oversubscription was 4x available shares.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Trading at ~90x revenue (per short seller Chanos) vs 14x for TSLA — justified only under extreme scenarios; analyst consensus at $328B vs Musk's $1T; Korean IPO probe adds early operational risk.</div>
+        </div>
+        <div class="impact-note">Today: Musk's $1T revenue claim and +7–11% intraday session confirm post-IPO bull momentum. Newly listed — expect high volatility. 🟢 Materially bullish signal.</div>
       </div>
 
+      <!-- TSLA -->
       <div class="ticker-card">
-        <div>
+        <div class="ticker-header">
           <div class="ticker-sym">TSLA</div>
-          <div class="ticker-stance neut">Neutral</div>
+          <div class="ticker-price">No pre-mkt price (FMP denied) · Wire: +1.6% pre-bell</div>
+          <div class="ticker-stance neut">● Neutral</div>
         </div>
-        <div class="ticker-price">—</div>
-        <div></div>
-        <div class="ticker-note">SPCX/TSLA merger probability at 80% (Wedbush). FSD approved in Belgium. Energy storage upside from SpaceX capex cycle.</div>
+        <div class="ticker-news">
+          <ul>
+            <li><strong>Reuters: Tesla used misleading FSD safety statistics</strong> in European regulatory submissions (Sweden, Netherlands); independent researchers call it "misleading marketing." Tesla did not respond (MT Newswires, 05:30am) ★</li>
+            <li>Tesla FSD receives Belgian government approval; next step EU homologation via Netherlands (MT Newswires, 06/11) ★</li>
+            <li>Wedbush: 80% probability SPCX–TSLA merger by 2027; "groundwork in place" (MT Newswires, 06/12)</li>
+            <li>SpaceX market cap now &gt;$2T vs Tesla — Musk's focus and capital increasingly with SPCX</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>FSD Belgian approval advances EU path; Netherlands EU-wide submission progressing; Wedbush SPCX–TSLA merger thesis (80% probability) would create transformational AI/space/EV conglomerate.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Reuters' FSD misleading-data allegation could reverse Netherlands' EU-wide approval process; SpaceX &gt;$2T market cap dwarfs TSLA — capital rotation risk; Musk's attention split.</div>
+        </div>
+        <div class="impact-note">Today: ⚠️ Reuters FSD allegation is a NEW NEGATIVE EVENT — introduces material EU regulatory risk. Belgian approval is a partial positive offset. Net: bearish development to monitor closely.</div>
       </div>
 
+      <!-- BTCUSD -->
       <div class="ticker-card">
-        <div>
-          <div class="ticker-sym">BTC</div>
-          <div class="ticker-stance bear">Bearish</div>
+        <div class="ticker-header">
+          <div class="ticker-sym">BTCUSD</div>
+          <div class="ticker-price">~$65,660 (MT Newswires wire, pre-bell ~07:43am ET)</div>
+          <div class="ticker-stance bull">● Bullish</div>
         </div>
-        <div class="ticker-price">$63,360</div>
-        <div></div>
-        <div class="ticker-note">Down 30% YTD. $4.6B ETF outflows. FOMC headwind (Warsh debut this week). SpaceX IPO capital rotation pressure on risk assets.</div>
+        <div class="ticker-news">
+          <ul>
+            <li>BTC +3% to ~$65,660 pre-bell on risk-on from US–Iran peace deal (MT Newswires overview, 07:43am)</li>
+            <li>BTC +3.7% per ETF/futures overview (MT Newswires, 08:56am); BITO (BTC ETF) +4.2%</li>
+            <li>MT Newswires BTC dataset: "Dataset not found" — no dedicated BTC wire available</li>
+            <li>FMP crypto endpoint: access denied</li>
+          </ul>
+        </div>
+        <div class="ticker-thesis">
+          <div class="bull-case"><div class="case-label">Bull</div>Iran peace deal triggers broad risk-on; oil price collapse = disinflation = potential earlier rate cuts; gold and crypto rising simultaneously; BITO +4.2% confirms institutional crypto bid.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>BTC at $65K still below 2025 highs; Fed hawkish surprise Wednesday could reverse all risk assets; no dedicated crypto news coverage confirms thin catalyst depth.</div>
+        </div>
+        <div class="impact-note">Today: Iran deal is a clear macro catalyst. Watch Fed Wednesday. 🟢 Bullish but one-event driven — follow-through uncertain.</div>
       </div>
 
     </div>
@@ -296,22 +458,30 @@
   <!-- Voices -->
   <div class="section">
     <div class="section-header">Voices</div>
+    <p style="font-size:11px;color:var(--muted);margin-bottom:12px;">⚠️ Tavily searches unavailable (OAuth required in headless run). All sourced from MT Newswires wire coverage. Direct post URLs not available; citations reference article IDs.</p>
 
     <div class="voice-item">
-      <div class="voice-name">Jensen Huang</div>
-      <div class="voice-quote">"AI revolution only in its infancy — analogous to early days of electricity" — Sequoia Capital event, Jun 10</div>
+      <div class="voice-name">Jensen Huang — Nvidia CEO</div>
+      <div class="voice-quote">No new public statements this week meeting citation requirements. Recent context (Bloomberg, 06/08, via MT Newswires): Huang called the global tech selloff "an opportunity to purchase shares at a discount."</div>
+      <div class="voice-relevance">Relevance: Vera CPU China delivery (August) and GB300/Blackwell global demand signal sustained AI infra spending. No new guidance sourced this session.</div>
     </div>
+
     <div class="voice-item">
-      <div class="voice-name">Elon Musk</div>
-      <div class="voice-quote">"We own the largest coherent gigawatt-class compute on the planet" — SpaceX IPO, Nasdaq, Jun 12</div>
+      <div class="voice-name">Elon Musk — SpaceX / xAI CEO</div>
+      <div class="voice-quote">Musk posted on X (Sunday June 14): SpaceX revenue could surpass $1 trillion by 2031 — as reported by MT Newswires (A3649082, 2026-06-15 06:10am ET). Original X post URL not available. FactSet analyst consensus: $328.88B.</div>
+      <div class="voice-relevance">Relevance: SPCX +7–11% intraday; claim spans Starlink, launch, Terafab chipmaking, and AI compute verticals. Also: Iran peace deal Truth Social posts from Sunday confirmed market-moving for oil and equities.</div>
     </div>
+
     <div class="voice-item">
-      <div class="voice-name">Donald Trump</div>
-      <div class="voice-quote">"We're talking about giving back something to the public [from AI cos]" — Oval Office, Jun 10</div>
+      <div class="voice-name">Donald Trump — U.S. President</div>
+      <div class="voice-quote">"With the opening of the Strait upon the signing of the Deal on Friday, for purposes of mine removal, oil will flow on both ends again for the Region, and the World!" — Truth Social, June 14, 2026, as reported in MT Newswires (A3649348, 2026-06-15 12:32pm ET)</div>
+      <div class="voice-relevance">Relevance: WTI −5.1%, Brent −5.5%. Formal signing in Switzerland Friday June 19 is next key event. Conflicting US–Iran accounts on final terms remain a residual risk to the rally. Focus for markets: Iran oil sanctions lifted = global oil supply surge = lower energy costs = disinflation tailwind for Fed.</div>
     </div>
+
     <div class="voice-item">
-      <div class="voice-name">Kevin Warsh</div>
-      <div class="voice-quote">First FOMC meeting as Chair this week (Jun 15–16). Deliberate pre-meeting silence. Markets blind on his rate stance — hawkish pivot vs. hold is the debate.</div>
+      <div class="voice-name">Kevin Warsh — Federal Reserve Chair</div>
+      <div class="voice-quote">No new public statements this week (pre-FOMC quiet period). Fed decision Wednesday June 18, 2pm ET.</div>
+      <div class="voice-relevance">Known stance: Markets expect 4th consecutive rate hold. May CPI at 4.2% YoY (highest since April 2023) limits dovish pivot optionality. Iran-deal oil collapse may add near-term disinflation ammo for September. Watch: (1) Dot-plot shift; (2) "higher for longer" tone; (3) any September pivot signal. Rate impact on NVDA/MSFT/GOOGL: hold + neutral tone sustains today's rally; hawkish surprise risks 2–4% drawdown in mega-cap tech.</div>
     </div>
   </div>
 
@@ -320,23 +490,20 @@
     <div class="section-header">Key Risk</div>
     <div class="risk-box">
       <div class="risk-label">⚠ This Week</div>
-      <strong>FOMC Jun 15–16</strong> — Warsh's inaugural meeting as Fed Chair. Markets pricing rate hold but easing bias removal. Biggest Fed communication event in years.<br/><br/>
-      <strong>Iran Deal Binary</strong> — Potential signing Sunday Jun 14. Sign = oil to $75–80 + risk-on surge. Collapse = WTI back to $90+.<br/><br/>
-      <em>US markets closed Fri Jun 20 (Juneteenth).</em>
+      <strong>FOMC Decision — Wednesday June 18, 2pm ET</strong><br/>
+      Warsh's 4th hold expected, but tone on 4.2% CPI (3-year high) is the market pivot. Hawkish surprise = risk-off reversal of today's tech rally. Dovish surprise + oil disinflation = further extension.
+      <br/><br/>
+      <strong>Iran Deal Formal Signing — Friday June 19 (Juneteenth)</strong><br/>
+      US markets closed. Signing occurs while markets are shut — Monday June 22 gap risk in either direction if deal collapses or is revised.
+      <br/><br/>
+      <strong>Tesla FSD EU Regulatory Risk</strong><br/>
+      Reuters' misleading-data allegation could prompt Netherlands to rescind EU-wide FSD approval request — watch for regulatory response this week.
     </div>
-  </div>
-
-  <!-- Archive -->
-  <div class="section">
-    <div class="section-header">Archive</div>
-    <ul class="archive-list">
-      <li><a href="briefs/2026-06-14.html">📄 Jun 14, 2026 — FOMC week / SpaceX IPO Day 2 / Iran deal</a></li>
-    </ul>
   </div>
 
 </div>
 
-<footer>SideStreet Briefs · Auto-generated · Not financial advice</footer>
+<footer>SideStreet Briefs · Auto-generated 2026-06-15 13:19 ET · Not financial advice</footer>
 
 </body>
 </html>
