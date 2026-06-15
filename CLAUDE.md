@@ -15,4 +15,3 @@
 
 ## Delivery
 - No push notifications needed — GitHub commit is the deliverable.
-- Twilio WhatsApp/SMS: send digest if `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `WHATSAPP_FROM`, `WHATSAPP_GROUP_TO`, and `TESS_PHONE` env vars are present.
