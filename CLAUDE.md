@@ -9,6 +9,9 @@
   git remote set-url origin "https://github.com/tkalden/sidestreet-briefs.git"
   ```
 
+## Watch list
+SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, TSLA, BTCUSD
+
 ## Brief output
 - Save markdown brief to `~/Documents/MarketBrief/brief-YYYY-MM-DD.md`
 - Update `index.html` in the repo root with today's HTML brief, then commit + push to master.
