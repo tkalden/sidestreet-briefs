@@ -149,6 +149,21 @@
     .case-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.7; margin-bottom: 2px; }
     .impact-note { margin-top: 6px; font-size: 11px; color: #6b7280; border-top: 1px solid var(--border); padding-top: 6px; }
 
+    /* Intraday update badge */
+    .intraday-badge {
+      display: inline-block;
+      background: #1e1a2e;
+      border: 1px solid #6366f1;
+      color: #a5b4fc;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-right: 4px;
+    }
+
     /* Voices */
     .voice-item { margin-bottom: 14px; }
     .voice-name { font-weight: 700; color: var(--heading); font-size: 12px; }
@@ -187,17 +202,17 @@
 
 <div class="topbar">
   <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
-  <div class="meta">Auto-published · Thu Jun 18, 2026 · ~09:00 ET</div>
+  <div class="meta">Auto-published · Thu Jun 18, 2026 · Updated ~11:00 ET</div>
 </div>
 
 <div class="container">
 
   <div class="brief-date">Pre-Market Morning Brief</div>
   <div class="brief-title">Thursday, June 18, 2026 — Iran Deal + Chip Reshoring Drive Risk-On</div>
-  <div class="brief-generated">Generated: 2026-06-18 ~09:00 ET &nbsp;|&nbsp; Futures &amp; commodity prices from MT Newswires A3651764 (08:57 AM EDT). Pre-market stock moves from MT Newswires A3651547 (06:45 AM EDT).</div>
+  <div class="brief-generated">Generated: 2026-06-18 ~09:00 ET, updated with intraday data through ~11:00 ET &nbsp;|&nbsp; Futures &amp; commodity prices from MT Newswires A3651764 (08:57 AM EDT). Pre-market stock moves from MT Newswires A3651547 (06:45 AM EDT). MSFT regular-session price from A3651860 (10:53 AM EDT).</div>
 
   <div class="data-warning">
-    ⚠️ <strong>Data note:</strong> FMP quote/crypto/index endpoints are access-denied on current plan tier. All index futures, commodity prices, and crypto moves sourced from MT Newswires wire stories. Treasury yields unavailable (FMP rate-limited). Tavily unavailable (OAuth required headless). Voices sourced from MT Newswires only with article ID citations.
+    ⚠️ <strong>Data note:</strong> FMP quote/crypto/index endpoints rate-limited on current plan. All index futures, commodity prices, and crypto moves sourced from MT Newswires wire stories. Treasury yields unavailable (FMP rate-limited). Tavily unavailable (OAuth required). All claims cite verified MT Newswires article IDs only.
   </div>
 
   <!-- Macro strip -->
@@ -233,7 +248,7 @@
       <div class="chg dn">−1.9% Iran deal</div>
     </div>
     <div class="macro-cell">
-      <div class="label">Gold</div>
+      <div class="label">Gold (Jul)</div>
       <div class="value">$4,261.40</div>
       <div class="chg dn">−2.7% safe-haven off</div>
     </div>
@@ -248,15 +263,13 @@
   <div class="section">
     <div class="section-header">Market</div>
     <div class="market-block">
-      <strong>Dominant story: Iran deal disinflationary tailwind + chip reshoring = risk-on reversal.</strong> Thursday's premarket runs a full 180 from Wednesday's tech selloff. S&amp;P 500 futures +0.7%, Nasdaq futures +1.3% — led by a near-9% Intel surge on Trump's Truth Social claim that Apple has "agreed to work with Intel to design and build its Chips in America." Trump's post also named Nvidia and Tesla partnerships with Intel, framing chip manufacturing reshoring as a national priority. Semiconductor ETFs are leading: SOXX +4.2%, XSD +2.1% premarket.
+      <strong>Dominant story: Iran deal disinflation + chip reshoring = risk-on reversal.</strong> Thursday's premarket ran a full reversal from Wednesday's tech selloff. S&amp;P 500 futures +0.7%, Nasdaq +1.3% — driven by Intel's ~9% premarket surge after Trump's Truth Social claim that Apple has "agreed to work with Intel to design and build its Chips in America." Trump named Nvidia and Tesla's existing Intel partnerships, framing chip reshoring as a national priority. Semiconductor ETFs led the recovery: SOXX +4.2%, XSD +2.1%, XLK +2.0% premarket.
       <br/><br/>
-      <strong>Iran trade deepening:</strong> The US-Iran interim agreement continues to drain the geopolitical risk premium on energy. WTI crude at $75.35 (−1.9%), gold −2.7% to $4,261.40, silver −5.6% to $67.33. The MOU formal signing is scheduled for Geneva on <strong>Friday</strong> — this keeps execution risk flags elevated through end of week and creates a binary catalyst: successful signing deepens the disinflation trade, while breakdown would re-spike crude and reverse much of Thursday's rally.
+      <strong>Iran trade deepening:</strong> The US-Iran interim agreement drained the energy risk premium — WTI crude −1.9% to $75.35, gold −2.7% to $4,261.40, silver −5.6% to $67.33. Simultaneous flight from safe-haven assets signals clean risk-on rotation into equities. Economic data reinforced the backdrop: jobless claims fell to 226K (prior revised 230K; est. 225K) and Philly Fed Manufacturing Index surged to +10.3 in June from −0.4 in May (est. 10.0). Suggests a resilient US economy giving the Fed room to hold rates without emergency intervention.
       <br/><br/>
-      <strong>Economic data this morning:</strong> Jobless claims fell to 226,000 (week ended June 13, prior revised to 230,000) — slightly above 225,000 consensus but still healthy. Philly Fed Manufacturing Index surged to +10.3 in June vs −0.4 in May, beating consensus of 10.0. May Leading Indicators due 10:00 AM ET; weekly natural gas storage at 10:30 AM ET.
+      <strong>Mid-session developments:</strong> As the regular session opened, a new regulatory overhang emerged — Microsoft and AWS are expected to receive preliminary EU Digital Markets Act scope findings as early as next week (A3651860, 10:53 AM ET). MSFT settled at $377.86 (−0.28%) as the China Azure bull story (revenues tripling, ByteDance $1B+/year) clashes with the EU regulatory bear. The divergence between semiconductor strength (SOXX +4.2%) and flat-to-negative big-tech open is the defining intraday tension.
       <br/><br/>
-      <strong>Fed backdrop (post-Wednesday FOMC):</strong> New Chair Kevin Warsh held rates at 3.50%–3.75% (4th consecutive hold) Wednesday at 2pm ET. Markets absorbed the decision well — the absence of a hawkish shock is being treated as a positive. Pre-market recovery in tech names (NVDA +1.2%, MSFT +0.9%) confirms Wednesday's selloff was an overreaction to FOMC uncertainty rather than a structural rotation.
-      <br/><br/>
-      <strong>Premarket movers (MT Newswires A3651547, 06:45 ET):</strong> INTC +~9% (Intel chip reshoring) · NVDA +1.2% · MU +4.6% · NBIS +5.1% · MSFT +0.9% · SPCX −0.4 to −1%+.
+      <strong>Premarket movers (MT Newswires A3651547, 06:45 ET):</strong> INTC +~9% (chip reshoring) · NVDA +1.2% · MU +4.6% · NBIS +5.1% · MSFT +0.9% · SPCX −0.4% to −1%+. May Leading Indicators due 10:00 AM ET; Natural Gas Storage 10:30 AM ET.
     </div>
   </div>
 
@@ -274,16 +287,16 @@
         </div>
         <div class="ticker-news">
           <ul>
-            <li>No MT Newswires stories tagged SNDK on June 18 — not in today's top premarket movers (MT Newswires A3651547)</li>
-            <li>Wednesday context: SNDK +2.6% premarket recovering from −5.5% Tuesday selloff (MT Newswires A3650776, 06:33 ET)</li>
-            <li>No analyst ratings, earnings, or corporate news visible in wires for today</li>
+            <li>No MT Newswires primary stories tagged SNDK on June 18 — not in today's top premarket movers (A3651547)</li>
+            <li>Jun 17 WSB: SNDK +2.6% premarket Wed, recovering from −5.5% Tue close (A3650776)</li>
+            <li>Jun 8–9 analyst upgrade cluster: BofA PT $2,100/Buy [A3645463] · Cantor PT $2,900/Overweight [A3645244] · Mizuho PT $2,200/Outperform [A3645938] · FactSet consensus: overweight, mean PT $1,863.13</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>AI-driven NAND memory demand extending upcycle into 2027; retail/Reddit community momentum; no news = no new negative catalyst.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Memory cycles historically volatile; absence from today's wires signals no institutional catalyst; high-multiple compression risk in rotation environment.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>AI-driven NAND demand cycle extending into 2027; coordinated three-firm PT upgrade cluster signals institutional conviction; SOXX +4.2% sector tailwind today.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Absent from today's top WSB movers; high short-term volatility (−5.5%/+2.6% in consecutive sessions); no company-specific catalyst today; pre-market move unavailable.</div>
         </div>
-        <div class="impact-note">Today: Neutral — no new information. Broad Nasdaq futures rally (+1.3%) is the primary supportive driver. ✅ Thesis unchanged.</div>
+        <div class="impact-note">Today: Neutral. No new SNDK information. Broad semiconductor rally (SOXX +4.2%) is the only driver. ✅ Thesis unchanged.</div>
       </div>
 
       <!-- NVDA -->
@@ -295,80 +308,79 @@
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Nvidia-backed Verse Enterprises</strong> collaborating with Calibrant Energy to power data centers with off-grid batteries and solar; NVDA among backers of $54M Series B; targeting 100+ data center sites by early 2027 (MT Newswires A3651647, 07:41 AM EDT)</li>
-            <li><strong>Bitdeer deployed 2 NVDA GB300 NVL72 clusters</strong> for AI cloud; mined 921 BTC in May, up from 783 April; Bitdeer shares +2.6% premarket (MT Newswires A3651682, 07:53 AM EDT)</li>
-            <li>Trump cited NVDA–Intel partnership in Truth Social chip reshoring post; Intel +~9% premarket (MT Newswires A3651486, 06:04 AM EDT)</li>
+            <li><strong>Verse Enterprises (NVDA-backed) partnering with Calibrant Energy</strong> to power data centers off-grid via batteries/solar; NVDA among backers in $54M Series B; targeting 100+ sites by early 2027 (A3651647, 07:41 AM EDT)</li>
+            <li><strong>Bitdeer deployed 2 NVDA GB300 NVL72 clusters</strong> for AI cloud; mined 921 BTC in May (up from 783 April); Bitdeer +2.6% premarket (A3651682, 07:53 AM EDT)</li>
+            <li>Trump Truth Social cited NVDA–Intel existing partnership in chip reshoring post; drove INTC +~9% premarket (A3651486, 06:04 AM EDT)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>GB300 NVL72 deployment cycles accelerating across multiple customers; Verse energy infrastructure investment signals Nvidia funding the full data center supply chain — extending moat beyond GPUs; US chip reshoring narrative provides political tailwind.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Closed Wednesday −1.3%; tech-to-financials rotation pressure ongoing; energy supply to data centers is a nascent cost headwind not yet revenue-material; Verse/Calibrant is early-stage.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Data center energy infrastructure investment (Verse/Calibrant) extends NVDA's moat beyond GPUs into full DC supply chain. GB300 NVL72 real-world deployments confirm next-gen hardware cycle. US chip nationalism narrative bolsters NVDA's US-centric positioning.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Closed −1.3% Wednesday; Verse/Calibrant is early-stage, not revenue-material; any AI capex slowdown hits NVDA first and hardest.</div>
         </div>
-        <div class="impact-note">Today: Net positive — energy infrastructure positioning is a novel AI infrastructure layer. Premarket recovery confirms Wednesday's dip was noise. 🟢 Thesis strengthens.</div>
+        <div class="impact-note">Today: Net positive. Energy infrastructure positioning adds a novel bullish layer. Premarket +1.2% recovery confirms Wednesday dip was noise. 🟢 Thesis strengthens.</div>
       </div>
 
       <!-- AMD -->
       <div class="ticker-card">
         <div class="ticker-header">
           <div class="ticker-sym">AMD</div>
-          <div class="ticker-price">Pre-mkt not reported in wires · avg analyst PT $496.32</div>
+          <div class="ticker-price">Pre-mkt not reported in wires · FactSet avg analyst PT $496.32</div>
           <div class="ticker-stance bull">● Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>No MT Newswires stories tagged AMD on June 18. Pre-market move not reported.</li>
-            <li><strong>Bernstein raised AMD PT to $600 from $525, maintains Outperform</strong>; avg analyst consensus $496.32, buy rating (MT Newswires A3650720, 06/17 05:57 ET) ★</li>
-            <li>AMD investment arm co-invested in Amazon's $310M Odyssey ML round — building AI "world models" to simulate physical reality, valued at $1.45B (MT Newswires A3650657, 06/17)</li>
-            <li>Google, Tesla, AMD increasingly turning to Samsung for chipmaking as TSMC capacity strained by AI surge (MT Newswires A3650650, 06/17)</li>
+            <li><strong>Bernstein raises AMD PT to $600 from $525, maintains Outperform</strong> (Jun 17); FactSet consensus: buy, mean PT $496.32 (A3650720, 06/17 05:57 ET)</li>
+            <li>AMD investment arm co-invested in <strong>Odyssey ML $310M round</strong> — AI "world models" startup valued $1.45B; alongside NVDA, Amazon, Google's Jeff Dean (A3650657, 06/17)</li>
+            <li>Google, Tesla, AMD increasingly <strong>diversifying to Samsung chipmaking</strong> as TSMC capacity strained by AI demand surge (A3650650, 06/17)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Bernstein $600 PT is ~$104 above consensus — signals meaningful underappreciation of AMD AI GPU trajectory; Odyssey ML positions AMD in frontier AI worldsim computing; Samsung diversification reduces foundry concentration.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>No new news today; AMD behind NVDA in AI GPU mindshare; multi-foundry strategy adds cost complexity; broad tech rotation risk.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Bernstein $600 PT is ~$104 above FactSet consensus — signals underappreciated AI GPU trajectory. Odyssey ML positions AMD in frontier AI worldsim computing. Samsung multi-sourcing reduces foundry concentration risk vs NVDA's TSMC dependence.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>No AMD-specific news today; NVDA CUDA ecosystem moat remains formidable; multi-foundry approach adds cost complexity; wide analyst PT dispersion signals uncertainty about trajectory.</div>
         </div>
-        <div class="impact-note">Today: Stable — Bernstein PT raise (yesterday) remains freshest signal. Broad macro tailwinds support risk-on tone favorable to AMD. ✅ Thesis unchanged.</div>
+        <div class="impact-note">Today: Stable. Bernstein raise (yesterday) is freshest signal; SOXX +4.2% premarket provides sector tailwind. ✅ Thesis unchanged.</div>
       </div>
 
       <!-- GOOGL -->
       <div class="ticker-card">
         <div class="ticker-header">
           <div class="ticker-sym">GOOGL</div>
-          <div class="ticker-price">Pre-mkt not reported in wires</div>
+          <div class="ticker-price">Pre-mkt not reported in today's wires</div>
           <div class="ticker-stance bear">● Bearish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Key AI researcher Noam Shazeer departs Google for OpenAI</strong> as lead of AI architecture research; Shazeer is a co-inventor of the transformer architecture foundational to modern LLMs (MT Newswires A3651435, 05:27 AM EDT) — Bloomberg ★</li>
-            <li><strong>Waymo recalls 3,871 robotaxis</strong> over software flaw allowing vehicles to enter closed freeway construction zones at speed; NHTSA confirmed recall; freeway operations restricted pending software fix (MT Newswires A3651438, 05:35 AM EDT)</li>
-            <li>Anthropic CEO Dario Amodei at G7 urging coordinated AI policies; Macron cited US AI export restrictions as focusing need for reliable AI supply chains (MT Newswires A3651475, 06:14 AM EDT)</li>
+            <li><strong>Key AI researcher Noam Shazeer departs Google for OpenAI</strong> as lead of AI architecture research; Shazeer co-invented the transformer architecture foundational to modern LLMs — Bloomberg (A3651435, 05:27 AM EDT)</li>
+            <li><strong>Waymo recalls 3,871 robotaxis</strong> over software flaw allowing vehicles to drive into closed freeway construction zones at speed; NHTSA confirmed recall; freeway operations restricted pending software fix (A3651438, 05:35 AM EDT)</li>
+            <li>Anthropic CEO Dario Amodei urged G7 leaders to coordinate AI policies; Macron cited US AI export restrictions as focusing need for reliable AI supply chains (A3651475, 06:14 AM EDT)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Alphabet's AI ecosystem (TPUs, Search data moat, DeepMind, GCP scale) survives individual talent departures; Waymo proactive recall response is a positive regulatory-relations signal; broad risk-on supports Alphabet recovery.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Shazeer (transformer co-inventor) leaving for OpenAI is a significant talent and morale signal at a critical Gemini competitive juncture; Waymo recall adds AV safety scrutiny at commercialization phase; UK CMA search mandate (yesterday) adds simultaneous regulatory burden.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Alphabet's AI infrastructure depth (TPUs, Search data moat, DeepMind, GCP scale) survives individual researcher departures. Waymo proactive NHTSA recall response signals good regulatory-relations posture. Broad risk-on supports GOOGL recovery.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Shazeer (transformer co-inventor) departing for OpenAI is a significant talent and morale signal at a critical Gemini competitive juncture. Waymo recall adds AV safety scrutiny at commercialization phase. OpenAI IPO filing may accelerate further talent migration.</div>
         </div>
-        <div class="impact-note">Today: Net negative — dual negative stories (AI talent drain + AV regulatory action) in same premarket session. ⚠️ Thesis erodes on two fronts simultaneously.</div>
+        <div class="impact-note">Today: Net negative. Dual headline risks (AI talent drain + AV recall) in same premarket session. ⚠️ Thesis erodes on two fronts simultaneously.</div>
       </div>
 
       <!-- MSFT -->
       <div class="ticker-card">
         <div class="ticker-header">
           <div class="ticker-sym">MSFT</div>
-          <div class="ticker-price">Pre-mkt +0.9% (recovering from −3.8% Wed close)</div>
-          <div class="ticker-stance bull">● Bullish</div>
+          <div class="ticker-price">Pre-mkt +0.9% · Regular session $377.86 (−0.28%) at 10:53 AM EDT</div>
+          <div class="ticker-stance neut">● Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Azure AI revenue in China tripled in FY2025</strong> (after ~400% surge in FY2024); ByteDance is Microsoft's biggest customer, expected to spend $1B+/year on Azure AI and cloud; OpenAI GPT models hosted outside China served through Azure (MT Newswires A3651447, 05:46 AM EDT) — Bloomberg ★</li>
-            <li><strong>OpenAI to display ads on ChatGPT for Japanese users</strong>; free version and low-cost tier; Dentsu Digital, Hakuhodo DY ONE, CyberAgent as ad partners in Japan (MT Newswires A3651488, 06:19 AM EDT) — Nikkei Asia, market chatter</li>
-            <li>Yesterday: OpenAI Q1 cash burn $3.7B on $5.7B revenue; drove MSFT −3.7% (MT Newswires A3651167, 06/17)</li>
+            <li><strong>Azure AI revenue in China tripled in FY2025</strong> (after ~400% surge FY2024); ByteDance reportedly MSFT's largest customer spending $1B+/year on Azure AI and cloud; OpenAI GPT models served to Chinese customers through Azure hosted outside China — Bloomberg (A3651447, 05:46 AM EDT)</li>
+            <li>OpenAI to start <strong>displaying ads on ChatGPT for Japanese users</strong> via Dentsu Digital, Hakuhodo DY ONE, CyberAgent; free and low-cost subscription tiers — Nikkei Asia (A3651488, 06:19 AM EDT)</li>
+            <li><span class="intraday-badge">Intraday</span> <strong>EU Digital Markets Act:</strong> MSFT and AWS expected to receive preliminary DMA scope findings as early as next week; Commission likely to indicate both may fall within EU digital competition framework — Bloomberg (A3651860, 10:53 AM EDT · $377.86, −0.28%)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>China Azure AI triple-growth story is a massive and underappreciated revenue driver; ByteDance $1B+/year validates Azure as global enterprise AI backbone; ChatGPT ads signal OpenAI's path to monetization and reduced Microsoft subsidy burden.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>China Azure revenue politically exposed amid US-China AI export tensions (G7 export restriction discussion is live); OpenAI's $3.7B Q1 cash burn = ongoing Microsoft subsidy; ChatGPT ads signal pressure on subscription-only model.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>China Azure AI triple-growth is a massive and underappreciated revenue driver. ByteDance $1B+/year validates Azure as global enterprise AI backbone. ChatGPT Japan ads signal OpenAI's path to monetization and reduced MSFT subsidy burden.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>China Azure revenue politically exposed amid active US-China AI export policy debate (G7 AI export restriction discussions live). EU DMA scope determination could force structural Azure changes in Europe. MSFT recovering from −3.8% Wednesday selloff — fragile rebound.</div>
         </div>
-        <div class="impact-note">Today: Net positive — China Azure triple-revenue story is a significant new narrative not priced in. Premarket +0.9% recovery confirms Wednesday's −3.8% was an overreaction. 🟢 Thesis strengthens.</div>
+        <div class="impact-note">Today: Mixed. China AI bull story vs EU DMA regulatory bear balancing out mid-session. $377.86 (−0.28%) reflects the tug-of-war. Watch for additional EU headlines. ⚠️ DMA overhang caps the recovery.</div>
       </div>
 
       <!-- SPCX -->
@@ -380,17 +392,17 @@
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Arete initiates SpaceX at Buy with $401 price target</strong> — highest known PT; avg analyst consensus PT $213.40, overweight (MT Newswires A3651572, 06:47 AM EDT) ★</li>
-            <li><strong>Oppenheimer raises PT to $250 from $190, maintains Outperform</strong> — second analyst upgrade today (MT Newswires A3651744, 08:48 AM EDT)</li>
-            <li><strong>FreeCast entered reseller agreement with SpaceX's Starlink</strong>; FreeCast (CAST) shares surged +169% premarket on the news (MT Newswires A3651601, 07:12 AM EDT)</li>
-            <li>Yesterday: Roelof Botha (former Sequoia Capital) elected independent director (A3651246); Burry says put options "too expensive"; first post-IPO retreat</li>
+            <li><strong>Arete Research initiates SpaceX at Buy with $401 PT</strong> (highest known PT) — FactSet avg consensus: overweight, mean PT $213.40 (A3651572, 06:47 AM EDT)</li>
+            <li><strong>Oppenheimer raises SPCX PT to $250 from $190, maintains Outperform</strong> — second analyst upgrade on same day (A3651744, 08:48 AM EDT)</li>
+            <li>FreeCast (CAST) surged +169% premarket after announcing <strong>Starlink reseller agreement</strong> — illustrates Starlink commercial ecosystem expansion (A3651601, 07:12 AM EDT)</li>
+            <li>First post-IPO retreat from record highs; <strong>active put option trading</strong> and technical downward pressure flagged (A3651764, 08:57 AM EDT)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Arete $401 PT suggests upside optionality in Starlink; Oppenheimer PT raise confirms upward analyst revision cycle; Starlink reseller agreements demonstrate organic commercial expansion; Botha board appointment adds institutional governance credibility.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Multi-day post-IPO retreat despite analyst upgrades; analyst mean PT $213.40 well below current price — speculative premium; active put option trading flags elevated downside hedging; market still making post-IPO price discovery.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Two analyst initiations/upgrades in single session. Starlink commercial ecosystem expanding via reseller agreements. Arete $401 PT signals significant upside optionality in Starlink broadband TAM. Ongoing analyst revision cycle could bring consensus PT toward bull case.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Multi-day post-IPO retreat with active put option trading despite analyst upgrades. FactSet mean PT $213.40 well below current price — speculative premium needs to compress. Active post-IPO price discovery between $213 consensus and $401 Arete bull case.</div>
         </div>
-        <div class="impact-note">Today: Mixed — analyst upgrade cycle is structurally bullish but market is in active post-IPO price discovery between the Arete $401 extreme bull case and $213 consensus. ⚠️ Watch volume and options flow.</div>
+        <div class="impact-note">Today: Mixed. Analyst upgrade cycle is structurally bullish but market engaged in active post-IPO price discovery. ⚠️ Watch SPCX options flow and volume for directional clues.</div>
       </div>
 
       <!-- TSLA -->
@@ -402,37 +414,36 @@
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Trump's Truth Social post cited Tesla's <strong>existing partnership with Intel</strong> in US chip manufacturing reshoring context — secondary mention only (MT Newswires A3651486, 06:04 AM EDT)</li>
-            <li>No Tesla-specific primary news in today's wires</li>
-            <li>Yesterday: Google, Tesla, AMD increasingly turning to Samsung for chipmaking as TSMC capacity constrained (MT Newswires A3650650, 06/17)</li>
+            <li>Trump Truth Social cited Tesla's <strong>existing Intel partnership</strong> in chip reshoring context — secondary mention only (A3651486, 06:04 AM EDT)</li>
+            <li>No Tesla-specific primary stories in today's wires</li>
+            <li>Jun 17: Google, Tesla, AMD <strong>diversifying to Samsung chipmaking</strong> as TSMC capacity constrained by AI demand (A3650650)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Trump citing Tesla-Intel partnership aligns TSLA with US chip reshoring political narrative; Samsung foundry diversification reduces TSMC concentration risk; no new negative catalyst today gives prior selloff opportunity to stabilize.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Zero primary positive catalysts specifically for Tesla today; ongoing Senate/NHTSA FSD safety investigation from prior sessions remains live and unresolved; multiple consecutive sessions of declines; Musk attention split with SpaceX post-IPO.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Trump citation of Tesla-Intel partnership aligns TSLA with US chip reshoring political narrative. Samsung foundry diversification reduces TSMC concentration risk. No new negative catalyst today provides room for price stabilization.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Zero primary positive TSLA catalysts today; absent from today's top WSB movers; multiple consecutive sessions of weakness; no premarket move reported.</div>
         </div>
-        <div class="impact-note">Today: Neutral → slight positive. Trump citation is a minor tailwind. Prior bear catalysts (FSD NHTSA, multi-session selloff) remain active. Broad tech rally offers support. ✅ Thesis unchanged — watch NHTSA.</div>
+        <div class="impact-note">Today: Neutral. No new Tesla-specific information. Broad tech rally provides sector support but TSLA needs its own catalyst to break trend. ✅ Thesis unchanged — watch for any NHTSA/FSD developments.</div>
       </div>
 
       <!-- BTCUSD -->
       <div class="ticker-card">
         <div class="ticker-header">
           <div class="ticker-sym">BTCUSD</div>
-          <div class="ticker-price">Prior close unavailable · pre-mkt −0.6% · BITO −0.5%</div>
+          <div class="ticker-price">Price level unavailable from wires · pre-mkt −0.6% · BITO −0.5%</div>
           <div class="ticker-stance neut">● Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>BTC −0.6% premarket; BITO −0.5%; EETH +0.4%; BETH flat (MT Newswires A3651764, 08:57 AM EDT)</li>
-            <li>Yesterday premarket: BTC −1.3% ahead of Fed decision (MT Newswires A3650956, 06/17)</li>
-            <li>Bitdeer mined 921 BTC in May (up from 783 April), deployed NVDA GB300 NVL72 clusters for AI cloud (MT Newswires A3651682, 07:53 AM EDT)</li>
+            <li>BTC −0.6% premarket Thursday; BITO (ProShares Bitcoin Strategy ETF) −0.5%; EETH (Ether ETF) +0.4%; BETH flat (A3651764, 08:57 AM EDT)</li>
+            <li>Bitdeer (BTDR) mined <strong>921 BTC in May</strong> (up from 783 April); mining rigs under mgmt rose to 277K; Bitdeer +2.6% premarket on NVDA GB300 cluster deployment news (A3651682, 07:53 AM EDT)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>US-Iran deal is structurally disinflationary — lower energy costs = reduced CPI = less rate pressure on crypto; Philly Fed beat signals growth-without-inflation backdrop; Fed hold at 3.50-3.75% removes tightening tail risk; premarket decline modest vs crypto volatility norms.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>BTC declining premarket two consecutive days (−1.3% Wed, −0.6% Thu); gold −2.7% and silver −5.6% signal broad risk-asset derisking; no price level available creates opacity; BTC underperforming equity futures.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>US-Iran disinflation trade is structurally supportive of risk assets long-term. Philly Fed beat signals growth-without-inflation backdrop. BTC −0.6% decline is modest vs crypto volatility norms. Mining production expanding (Bitdeer +921 BTC May) signals healthy network activity.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>BTC explicitly underperforming equity rally — declining while S&amp;P futures +0.7%. Gold −2.7% and silver −5.6% signal broad safe-haven/alternative asset derisking into stocks. Price level opacity (wires only have % moves). No BTC-specific positive catalyst.</div>
         </div>
-        <div class="impact-note">Today: Mixed — two-day slide needs to stabilize. May Leading Indicators (10am ET) and nat gas data (10:30am ET) are next macro triggers. Pre-market price level unavailable.</div>
+        <div class="impact-note">Today: Underperforming equity rally. May Leading Indicators (10am ET) is next macro trigger. Watch whether BTC catches a bid post-open or continues to lag. Pre-market price level unavailable.</div>
       </div>
 
     </div>
@@ -445,36 +456,36 @@
     <div class="voice-item">
       <div class="voice-name">President Donald Trump — on US chip manufacturing</div>
       <div class="voice-quote">"...agreed to work with Intel to design and build its Chips in America."</div>
-      <div class="voice-relevance">Source: MT Newswires A3651486 (06:04 AM EDT, 06/18/2026) · Context: Truth Social post also cited Nvidia and Tesla partnerships with Intel; drove INTC +~9% premarket and sparked semiconductor sector rally (SOXX +4.2%).</div>
+      <div class="voice-relevance">Source: MT Newswires A3651486 (06:04 AM EDT, 06/18/2026) · Context: Truth Social post also cited Nvidia and Tesla partnerships with Intel; drove INTC +~9% premarket and sparked semiconductor sector rally (SOXX +4.2%). NVDA +1.2% premarket.</div>
     </div>
 
   </div>
 
-  <!-- Key Risk -->
+  <!-- Key Risks -->
   <div class="section">
     <div class="section-header">Key Risks</div>
     <div class="risk-box">
       <div class="risk-label">⚠ This Session &amp; Week</div>
-      <strong>1. US-Iran Deal Signing — Friday, Geneva</strong><br/>
-      Formal MOU signing is tomorrow. Market has fully priced the disinflation trade (WTI −1.9% today, down significantly from prior highs). A last-minute breakdown, implementation dispute, or delayed signing would re-spike crude and reverse much of Thursday's risk-on rally. Highest near-term binary event for macro and WTI.
+      <strong>1. US-Iran Deal Durability</strong><br/>
+      Market has fully priced the disinflation trade (WTI −1.9%, gold −2.7%). A breakdown in the interim agreement — diplomatic reversal, implementation dispute, or Iranian rejection — would re-spike crude and reverse much of Thursday's rally. Highest near-term binary event for macro and WTI exposure.
       <br/><br/>
-      <strong>2. GOOGL AI Talent Drain — Shazeer to OpenAI</strong><br/>
-      Noam Shazeer (transformer co-inventor) departing for OpenAI as head of AI architecture research. If this signals broader talent migration trend, it would directly accelerate OpenAI's model capability development and weaken Alphabet's Gemini competitive position. Watch for additional departure reports in coming days.
+      <strong>2. MSFT / AWS EU Digital Markets Act Scope Ruling</strong><br/>
+      Preliminary DMA findings expected as early as next week (A3651860). If the European Commission formally designates Microsoft and AWS within DMA scope, it could require structural changes to cloud operations in Europe — impacting MSFT's and AMZN's largest non-US revenue base. Active regulatory risk entering the coming week.
       <br/><br/>
-      <strong>3. SPCX Post-IPO Valuation Compression</strong><br/>
-      SpaceX in multi-day post-IPO retreat despite analyst upgrades. Arete $401 vs consensus $213 gap is extremely wide; active put option trading (Burry noted) signals elevated downside hedging. Near-term price discovery phase could extend toward consensus fair value, creating significant volatility.
+      <strong>3. GOOGL AI Talent Drain — Shazeer to OpenAI</strong><br/>
+      Noam Shazeer (transformer architecture co-inventor) departing Google for OpenAI as head of AI architecture research (A3651435). If this signals a broader talent migration pattern, it directly accelerates OpenAI's model capabilities relative to Gemini. Watch for additional departure reports.
       <br/><br/>
-      <strong>4. TSLA FSD NHTSA Investigation Overhang</strong><br/>
-      Senate/NHTSA FSD investigation request from Wednesday remains active. No new update today but investigation is live. NHTSA confirmation of FSD safety data issues would materially impair the autonomous vehicle monetization thesis and risk EU/US FSD approval status.
+      <strong>4. SPCX Post-IPO Valuation Compression</strong><br/>
+      SpaceX in multi-day post-IPO retreat with active put option trading despite analyst upgrades. Arete $401 vs FactSet consensus $213 creates extreme PT dispersion. The $213–$401 price discovery range represents significant potential volatility. Near-term technical correction could persist as early IPO buyers exit.
       <br/><br/>
-      <strong>5. US-China AI Export Policy Escalation</strong><br/>
-      Microsoft's China Azure AI business (ByteDance $1B+/year, triple growth in FY25) sits directly in the crosshairs of US AI export policy. G7 discussions this week (Anthropic CEO cited US export restrictions) signal policy tightening is actively debated at the highest levels. A new AI export rule targeting Azure/OpenAI models in China would be a direct headwind to MSFT's fastest-growing segment.
+      <strong>5. May Leading Indicators (10:00 AM ET) + Natural Gas Storage (10:30 AM ET)</strong><br/>
+      Two scheduled macro data releases today. A weak leading indicators print would undercut the Philly Fed/jobless claims recovery narrative and re-open recession concerns. Natural gas inventory data matters for energy sector positioning post-Iran deal.
     </div>
   </div>
 
 </div>
 
-<footer>SideStreet Briefs · Auto-generated 2026-06-18 ~09:00 ET · Sources: MT Newswires (primary) · FMP (rate-limited, calendar only) · Not financial advice</footer>
+<footer>SideStreet Briefs · Auto-generated 2026-06-18, updated ~11:00 ET · Sources: MT Newswires (primary) · FMP (rate-limited, calendar only) · Not financial advice</footer>
 
 </body>
 </html>
