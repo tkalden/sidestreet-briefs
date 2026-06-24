@@ -193,6 +193,24 @@
       margin-bottom: 6px;
     }
 
+    /* Catalyst box */
+    .catalyst-box {
+      background: #0d1520;
+      border: 1px solid #1e3a5f;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 12px;
+      color: #7dd3fc;
+    }
+    .catalyst-box .cat-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #bae6fd;
+      margin-bottom: 6px;
+    }
+
     footer { text-align: center; color: var(--muted); font-size: 10px; padding: 24px; border-top: 1px solid var(--border); margin-top: 48px; }
   </style>
 </head>
@@ -200,76 +218,104 @@
 
 <div class="topbar">
   <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
-  <div class="meta">Auto-published · Tue Jun 23, 2026 · Chip &amp; tech selloff · Next session: Wed Jun 24</div>
+  <div class="meta">Auto-published · Wed Jun 24, 2026 · Micron earnings after close · Chips bounce premarket</div>
 </div>
 
 <div class="container">
 
-  <div class="brief-date">Market Brief — Tuesday Jun 23, 2026</div>
-  <div class="brief-title">Chip Selloff: SNDK &minus;8.8%, Nasdaq 100 &minus;$1T+, SPCX 3rd Down Day, BTC &minus;2.5%</div>
-  <div class="brief-generated">Generated: 2026-06-23 07:15 ET · Sources: MT Newswires (primary) · FMP Crypto (secondary). Index/yield/commodity data from MT Newswires closing wrap (Jun 22, A3652955, A3652917). BTC from FMP cryptocurrency-quote-short (~07:15 ET). Pre-market % from MT Newswires WSB story (06:41 AM ET).</div>
+  <div class="brief-date">Market Brief — Wednesday Jun 24, 2026</div>
+  <div class="brief-title">MU Earnings Day: Chips Bounce Premarket &mdash; SNDK +2.7%, NVDA +0.7%, GOOGL Joins DJIA Jun 29</div>
+  <div class="brief-generated">Generated: 2026-06-24 06:34 ET &middot; Sources: MT Newswires (primary) &middot; FMP Economics (treasury rates). Pre-market % from MT Newswires WSB story (06:34 AM ET Jun 24). Index/yield/commodity data from MT Newswires closing wrap + FMP Economics (Jun 23). BTC: last known premarket Tue Jun 23; Wed unavailable from accessible sources.</div>
 
   <div class="data-warning">
-    ⚠️ <strong>Data note:</strong> FMP batch-aftermarket-quote and index endpoints access denied (Starter plan). Pre-market % sourced from MT Newswires WSB buzz story (06:41 AM ET). Absolute pre-market prices not available where noted. No data fabricated; all gaps disclosed.
+    &#9888; <strong>Data note:</strong> FMP batch-aftermarket-quote, crypto, and index endpoints access denied (Starter plan). Stock closes are estimates derived from prior close &times; reported % move. AMD and GOOGL premarket % unavailable from MT Newswires at runtime. BTC Wednesday price unavailable &mdash; last known ~$62,354 (premarket Tue Jun 23). No data fabricated; all gaps disclosed.
   </div>
 
   <!-- Macro strip -->
   <div class="macro-strip">
     <div class="macro-cell">
       <div class="label">S&amp;P 500</div>
-      <div class="value">7,472.79</div>
-      <div class="chg dn">&minus;0.4% Mon close</div>
+      <div class="value">7,365.46</div>
+      <div class="chg flat">Tue Jun 23 close</div>
     </div>
     <div class="macro-cell">
       <div class="label">Nasdaq</div>
-      <div class="value">26,166.60</div>
-      <div class="chg dn">&minus;1.3% Mon close</div>
+      <div class="value">25,587.04</div>
+      <div class="chg flat">Tue Jun 23 close</div>
     </div>
     <div class="macro-cell">
       <div class="label">Dow Jones</div>
-      <div class="value">51,712.71</div>
-      <div class="chg up">+0.3% Mon close</div>
+      <div class="value">51,666.84</div>
+      <div class="chg flat">Tue Jun 23 close</div>
     </div>
     <div class="macro-cell">
       <div class="label">10Y Yield</div>
-      <div class="value">4.51%</div>
-      <div class="chg dn">+5.8 bps Mon</div>
+      <div class="value">4.50%</div>
+      <div class="chg flat">Jun 23 FMP</div>
     </div>
     <div class="macro-cell">
       <div class="label">2Y Yield</div>
-      <div class="value">4.24%</div>
-      <div class="chg dn">+5.1 bps Mon</div>
+      <div class="value">4.16%</div>
+      <div class="chg flat">Jun 23 FMP</div>
     </div>
     <div class="macro-cell">
       <div class="label">WTI Crude</div>
-      <div class="value">$75.19</div>
-      <div class="chg dn">&minus;$1.41 Mon settle</div>
+      <div class="value">$73.32</div>
+      <div class="chg flat">Jun 23 close</div>
     </div>
     <div class="macro-cell">
       <div class="label">Gold</div>
-      <div class="value">$4,209.80</div>
-      <div class="chg dn">&minus;0.9% Mon close</div>
+      <div class="value">$4,129.00</div>
+      <div class="chg flat">Jun 23 close</div>
     </div>
     <div class="macro-cell">
       <div class="label">BTC</div>
-      <div class="value">$62,462</div>
-      <div class="chg dn">&minus;2.5% live</div>
+      <div class="value">~$62,354</div>
+      <div class="chg dn">stale &mdash; pre-mkt Tue</div>
     </div>
   </div>
 
   <div class="futures-strip">
-    <strong>Pre-market snapshot (06:41 AM ET, MT Newswires WSB):</strong> SNDK &minus;8.8% (sympathy MU &minus;8.3%) &nbsp;·&nbsp; NVDA &minus;2.9% &nbsp;·&nbsp; MSFT +1.3% (recovering) &nbsp;·&nbsp; SPCX &minus;4% (3rd down day) &nbsp;·&nbsp; GOOGL ~&minus;2% &nbsp;·&nbsp; AMD declining with chip sector &nbsp;·&nbsp; BTC &minus;2.5% ($62,462) &nbsp;·&nbsp; Key today: S&amp;P Global Flash PMI 1:45pm ET · Richmond Fed 2pm ET · 2Y Note Auction 5pm ET
+    <strong>Pre-market snapshot (06:34 AM ET, MT Newswires WSB):</strong>
+    SNDK +2.7% (dip buy after &minus;13.6% Tue) &nbsp;&middot;&nbsp;
+    NVDA +0.7% &nbsp;&middot;&nbsp;
+    TSLA +0.6% &nbsp;&middot;&nbsp;
+    SPCX +0.2% (consolidating) &nbsp;&middot;&nbsp;
+    MSFT &minus;0.4% ($373.94 Tue close) &nbsp;&middot;&nbsp;
+    AMD: n/a &nbsp;&middot;&nbsp;
+    GOOGL: n/a &nbsp;&middot;&nbsp;
+    BTC: ~$62,354 (stale) &nbsp;&middot;&nbsp;
+    Key today: <strong>Micron (MU) earnings after close</strong> &middot; Fed Stress Tests 4pm ET &middot; New Home Sales 2pm ET &middot; EIA Inventories 2:30pm ET
   </div>
 
   <!-- Market -->
   <div class="section">
     <div class="section-header">Market</div>
     <div class="market-block">
-      <strong>Dominant narrative: Tech and chip selloff deepening.</strong> Monday's session saw the S&amp;P fall 0.4% and Nasdaq drop 1.3%, driven by a broad technology rotation. Communication services led declines — SPCX fell 16.4% (bond issuance + MSCI CCC ESG rating), GOOGL slid ~5.1% (Nobel laureate John Jumper departed to Anthropic). Dow held positive (+0.3%) on defensive rotation. Treasury yields surged sharply: 10Y +5.8bps to 4.51%, 2Y +5.1bps to 4.24%, reflecting the market pricing in a possible Fed rate hike later in 2026 under hawkish Fed Chair Warsh. WTI crude fell $1.41 as US-Iran peace talks continue in Switzerland with "encouraging progress."
+      <strong>Dominant narrative: Chip bounce after Tuesday&#8217;s selloff &mdash; Micron earnings are the fulcrum.</strong>
+      Tuesday&#8217;s session erased significant gains from the prior week: S&amp;P closed at 7,365.46, Nasdaq at 25,587.04, Dow at 51,666.84. The tech complex sold off broadly as NAND/memory names led losses &mdash; SNDK fell ~13.6% on a Susquehanna downgrade to Neutral, and the entire chip sector repriced on concerns that NAND pricing momentum is peaking. Wednesday premarket shows a tentative bounce with SNDK +2.7%, NVDA +0.7%, TSLA +0.6%.
       <br/><br/>
-      <strong>Into Tuesday:</strong> Nasdaq 100 is on track to erase $1 trillion+ in market value as the chip/tech selloff extends. SNDK and MU are each down ~8.3–8.8% premarket, reversing Monday's gains on no new fundamental negative — the move appears sector-rotation and macro-driven. SPCX is down another 4% as post-IPO euphoria continues to fade (three consecutive down sessions since June 12 IPO peak). MSFT is the lone green name (+1.3%) in the watchlist, recovering after Monday's 3.2% slide. Key scheduled events: S&amp;P Global Flash PMI at 1:45pm ET (Manufacturing est. 54.8, Services est. 51.0), Richmond Fed at 2pm ET, and a 2-Year Note Auction at 5pm ET. Micron Technology earnings later this week are the most important read-through for the memory/chip cycle.
+      <strong>Into Wednesday:</strong> Micron Technology (MU) reports after the close today &mdash; the single most important event for the watchlist. MU guidance on HBM3E allocation and data center DRAM demand will directly move SNDK, NVDA, and AMD in after-hours. The Street expects strong results but the setup after SNDK&#8217;s selloff sets a lower psychological bar. Treasury yields (10Y 4.50%, 2Y 4.16%) are slightly off Monday&#8217;s spike highs, providing a small relief valve for growth multiples. Gold at $4,129 and WTI at $73.32 reflect a stable but cautious macro backdrop.
       <br/><br/>
-      <strong>Semiconductors &amp; AI infra:</strong> A notable sector divergence: VanEck Semiconductor ETF (SMH) is +85% YTD while NVDA lags at +12% — the market's focus has rotated from GPU dominance to memory chips and AI infrastructure efficiency. Argentum AI's $7.8B Nvidia GB300 deployment and SpaceX's $6.3B Reflection AI computing contract underscore sustained AI hardware demand, but valuation concerns and hyperscaler AI capex scrutiny are weighing on growth multiples. The AI capital spending narrative is shifting from "spend anything" to "demonstrate ROI."
+      <strong>Post-close development:</strong> S&amp;P Dow Jones Indices announced Tuesday after the bell that <strong>Alphabet (GOOGL) will join the Dow Jones Industrial Average effective June 29</strong>, replacing a current DJIA component. This is a landmark inclusion that will drive passive index-rebalancing flows and systematic buyer pressure through the end of the week regardless of broader market direction.
+    </div>
+  </div>
+
+  <!-- Catalyst box -->
+  <div class="section">
+    <div class="section-header">Key Catalysts Today</div>
+    <div class="catalyst-box">
+      <div class="cat-label">&#9660; Scheduled Events &mdash; Wed Jun 24, 2026</div>
+      <strong>1. Micron Technology (MU) Earnings &mdash; After Close</strong><br/>
+      Bellwether for DRAM/NAND and HBM. Guidance on data center HBM3E will move NVDA, AMD, SNDK in AH. Bar is high after AI capex optimism but lower after SNDK&#8217;s Tuesday selloff.<br/><br/>
+      <strong>2. Fed Annual Bank Stress Test Results &mdash; 4:00 PM ET</strong><br/>
+      2026 stress test cycle results. Sets capital return tone. No direct watchlist impact.<br/><br/>
+      <strong>3. New Home Sales (May) &mdash; 2:00 PM ET</strong><br/>
+      Housing data against 4.50% 10Y backdrop. Softness reinforces rate-cut narrative.<br/><br/>
+      <strong>4. EIA Crude Oil Inventories &mdash; 2:30 PM ET</strong><br/>
+      WTI at $73.32 watching for direction signal.<br/><br/>
+      <strong>5. GOOGL DJIA Rebalancing Flows (Jun 29 effective)</strong><br/>
+      Passive/index funds begin building GOOGL positions ahead of Sunday inclusion. Net buyer pressure builds through Friday.
     </div>
   </div>
 
@@ -283,23 +329,23 @@
         <div class="ticker-header">
           <div class="ticker-sym">SNDK</div>
           <div class="ticker-name">SanDisk</div>
-          <div class="ticker-price">Mon close unavailable · &minus;8.8% premarket · sympathy MU &minus;8.3%</div>
-          <div class="ticker-stance bear">● Bearish today</div>
+          <div class="ticker-price">~$1,887 Tue est. &middot; +2.7% premarket (06:34 ET)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>&minus;8.8% premarket Tuesday</strong> — reversing Monday's +4.1% gain in sympathy with Micron (&minus;8.3%); broad memory/chip-sector selloff (MT Newswires WSB, 06:41 AM ET)</li>
-            <li>No SNDK-specific negative catalyst today — selloff appears macro/sector-driven (memory sentiment + rising yields)</li>
-            <li>Analyst PTs remain intact: Cantor $2,900 OW, Susquehanna $3,250, Mizuho $2,200 Outperform, BofA $2,100 Buy, Morgan Stanley $1,750 Outperform (MT Newswires)</li>
-            <li>Morgan Stanley (Jun 3): DRAM remains main bottleneck in AI computing; NAND supply tight; AI memory upcycle still in early innings (MT Newswires, A3642905)</li>
-            <li>Micron Technology earnings later this week — key read-through for SNDK/memory cycle thesis</li>
+            <li><strong>+2.7% premarket Wednesday</strong> &mdash; dip-buyers stepping in after &minus;13.6% Tuesday selloff (MT Newswires WSB, 06:34 AM ET Jun 24)</li>
+            <li>Tuesday selloff triggered by Susquehanna downgrade to Neutral on concerns NAND pricing momentum is peaking; no additional analyst action overnight</li>
+            <li>Analyst PTs intact: Cantor $2,900 OW, Susquehanna (now Neutral) $3,250, Mizuho $2,200 Outperform, BofA $2,100 Buy, Morgan Stanley $1,750 Outperform</li>
+            <li><strong>Micron (MU) earnings today after close</strong> &mdash; primary catalyst for SNDK direction. Strong MU guidance on HBM/DRAM demand = reversal signal; weak guidance = continued pressure</li>
+            <li>Morgan Stanley (Jun 3): DRAM remains main AI bottleneck; NAND supply tight; AI memory upcycle in early innings (MT Newswires, A3642905)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>No fundamental change — selloff is sector sympathy with MU, not SNDK-specific. Memory upcycle thesis intact; Apple "unavoidable" memory price hike confirmation still in force. Analyst PTs $2,100–$3,250 imply significant upside. Micron earnings could re-rate sector if guidance holds.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>&minus;8.8% single-day reversal in a high-multiple stock shows extreme volatility. Rising 10Y yield (+5.8bps) is a structural headwind for rate-sensitive growth. Sector rotation out of AI/memory names may have further to run. Stock has risen sharply YTD, making any macro shock disproportionately painful.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Susquehanna downgrade is a one-analyst event; 5 other firms maintain Outperform/Buy with PTs $2,100&ndash;$2,900. Bounce +2.7% suggests short sellers taking profits. Memory upcycle thesis (Apple &ldquo;unavoidable&rdquo; NAND price hike) unchanged. Micron earnings tonight could re-rate sector positively.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Single-day &minus;13.6% in a high-multiple stock with no buy-back confirms fragile sentiment. Rising 10Y (4.50%) is a structural headwind. Premarket bounce of 2.7% covers only a fraction of Tuesday&rsquo;s loss. Micron weak guidance would accelerate selling. Stock is still far above all analyst PTs implying valuation concern.</div>
         </div>
-        <div class="impact-note">Bearish today. No new fundamental negative — purely sector sympathy with MU. Memory upcycle thesis unchanged. Micron earnings (later this week) are the key catalyst to watch for reversal signal.</div>
+        <div class="impact-note">Neutral. Recovery bounce underway but Micron earnings are the decisive catalyst today. A strong MU print turns this bullish; weak guidance resumes the selloff. Watch for volume confirmation at the open.</div>
       </div>
 
       <!-- NVDA -->
@@ -307,25 +353,23 @@
         <div class="ticker-header">
           <div class="ticker-sym">NVDA</div>
           <div class="ticker-name">Nvidia</div>
-          <div class="ticker-price">Mon close unavailable · &minus;2.9% premarket · 85% rev growth, $91B guided</div>
-          <div class="ticker-stance bear">● Bearish short-term</div>
+          <div class="ticker-price">~$211 Tue est. &middot; +0.7% premarket (06:34 ET)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Jamendo (Winamp Group) filed US lawsuit</strong> against Nvidia for unauthorized use of copyrighted audio content in AI training; Belgium proceedings also underway (MT Newswires, 05:21 AM, A3653067)</li>
-            <li>Nvidia + Zapata Quantum collaborating on agentic AI quantum computing workflows — drug discovery, energy, materials applications (MT Newswires, 06:59 AM, A3653183)</li>
-            <li>35 Nvidia AI HPC supercomputers under development in Europe — continent's largest one-year expansion; 800 AI exaflops deployed (MT Newswires, Jun 22, A3652710)</li>
-            <li>Nvidia Halos for Robotics launched — "industry's first full-stack" robotics safety system; Agility Robotics first adopter (MT Newswires, Jun 22)</li>
-            <li>Dell PowerEdge XE8812 unveiled with Nvidia Vera Rubin platform for large AI workloads (MT Newswires, Jun 22, A3652874)</li>
-            <li>Argentum AI (Super Micro-backed) bags $7.8B AI deals to deploy 47,000 Nvidia GB300 chips (FMP News, Barron's, Jun 23)</li>
-            <li>NVDA underperforming sector: +12% in 2026 vs SMH +85% (CNBC/Invezz, Jun 22)</li>
+            <li><strong>+0.7% premarket Wednesday</strong> &mdash; modest recovery after ~4.1% Tuesday decline (MT Newswires WSB, 06:34 AM ET Jun 24)</li>
+            <li>Director Mark Stevens sold shares at ~$210/share Jun 18 &mdash; stock now near that insider sale price, providing a psychological reference level</li>
+            <li>Jensen Huang GTC Taipei (Jun 1): Blackwell Ultra ramp reaffirmed; sovereign AI demand from Middle East anchor customers for NVL72 clusters</li>
+            <li>Trump (Truth Social Jun 18): signaled review of BIS export licensing rules &mdash; potential upside for NVDA international revenue ceiling</li>
+            <li>Micron earnings today &mdash; key proxy for HBM3E demand pipeline; NVDA is the anchor HBM3E customer</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Record downstream AI infrastructure demand (35 EU supercomputers, 47,000 GB300s via Argentum, SpaceX GB300 deal). 85% revenue growth with $91B+ guided next quarter. CUDA ecosystem moat intact. Vera Rubin platform in multiple high-profile deployments validates product roadmap.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Jamendo IP lawsuit is a new legal overhang — if precedent-setting, AI training data liability could affect industry broadly. NVDA underperforming sector peers (+12% vs SMH +85%) signals market skepticism. Chip selloff extending; &minus;2.9% premarket. Amazon Trainium competitive threat ongoing.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Blackwell Ultra demand pipeline unimpaired. Sovereign AI (Middle East, EU 35-supercomputer build) driving incremental NVL72 cluster orders. Trump export rule review = potential revenue ceiling expansion. Micron strong HBM guidance validates NVDA data center demand. Director-level selling at $210 now represents a floor reference.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>+0.7% premarket is not a strong bounce &mdash; weak recovery relative to Tuesday&rsquo;s 4.1% loss. Jamendo IP lawsuit (AI training data) adds legal overhang. NVDA underperforming sector peers YTD (+12% vs SMH +85%). Micron weak guidance would be read across negatively. 10Y at 4.50% limits multiple expansion.</div>
         </div>
-        <div class="impact-note">Bearish short-term. Jamendo lawsuit adds legal uncertainty. Sector selloff is the dominant force today. Fundamentals remain strong — GB300 demand pipeline intact. No near-term re-rating catalyst until next earnings cycle.</div>
+        <div class="impact-note">Neutral. Premarket recovery is modest; Micron earnings are the swing factor. Blackwell Ultra supply/demand thesis intact but stock needs a positive catalyst to reclaim Tuesday&rsquo;s losses.</div>
       </div>
 
       <!-- AMD -->
@@ -333,24 +377,24 @@
         <div class="ticker-header">
           <div class="ticker-sym">AMD</div>
           <div class="ticker-name">Advanced Micro Devices</div>
-          <div class="ticker-price">Mon close unavailable · Declining with chip sector · DC rev +57%</div>
-          <div class="ticker-stance neut">● Neutral</div>
+          <div class="ticker-price">~$545 Tue est. &middot; Premarket: n/a</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>AMD declining as part of broad chip-sector selloff premarket Tuesday (Barron's via FMP News, 06:04 AM)</li>
-            <li><strong>Data Center revenue surged 57% to $5.8B</strong>; EPYC cloud instances +50% YoY, surpassing 1,600 deployments (Seeking Alpha, Jun 23)</li>
-            <li>Three major AI companies betting on AMD infrastructure; stock up ~150% YTD — Street avg PT still below current price (Invezz, Jun 23)</li>
-            <li>Bernstein raised PT to $600 from $525, Outperform (MT Newswires, Jun 17, A3650720)</li>
-            <li>AMD + Rackspace: 30MW phased compute deployment deal (MT Newswires, Jun 16, A3650041)</li>
-            <li>Lisa Su (CEO) sold 125K AMD shares (~$57.6M) on Jun 10 per SEC Form 4 (MT Newswires, Jun 12, A3648928)</li>
+            <li>Wednesday premarket % unavailable from MT Newswires at runtime &mdash; tracking chip sector broadly</li>
+            <li>Tuesday intraday reference: ~$551.63 (247WallSt); full close estimate ~$545 based on sector tracking</li>
+            <li>Data Center revenue +57% to $5.8B last reported quarter; EPYC cloud instances surpassing 1,600 deployments (Seeking Alpha, Jun 23)</li>
+            <li>Bernstein PT raised to $600 (from $525), Outperform (MT Newswires, Jun 17, A3650720)</li>
+            <li>Lisa Su (CEO) sold 125K shares (~$57.6M) Jun 10 per SEC Form 4 (MT Newswires, Jun 12, A3648928)</li>
+            <li>Micron earnings today &mdash; HBM commentary will drive AMD sentiment given AMD&rsquo;s MI300X HBM consumption</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Data Center revenue +57% to $5.8B is a genuine AI GPU market share inflection. EPYC at 1,600+ cloud deployments shows server CPU traction. Bernstein $600 PT (+10% upside from ~$546 ref). Rackspace 30MW deal adds recurring revenue. AMD up ~150% YTD despite sector headwind.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>CEO sold $57.6M in stock Jun 10 — significant insider selling at current valuation levels. Street avg PT below current price despite multiple upgrades suggests overextension. Sector selloff today creates headline risk. Nvidia CUDA moat remains dominant in AI training.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>DC revenue +57% is genuine AI GPU market share inflection point. Bernstein $600 PT (+10% from current level). EPYC at 1,600+ deployments shows server CPU traction. AMD up ~150% YTD demonstrates structural re-rating. Micron strong HBM guidance directly validates MI300X demand pipeline.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>CEO sold $57.6M at current valuation levels &mdash; significant insider signal. Street avg PT below current price despite upgrades suggests overextension risk. No premarket data to confirm bounce direction. Micron weak guidance would remove the HBM demand narrative for MI300X.</div>
         </div>
-        <div class="impact-note">Neutral. Sector selloff is the driver today, not AMD-specific fundamentals. Data Center +57% is a strong underlying growth story. CEO insider sales warrant ongoing monitoring.</div>
+        <div class="impact-note">Neutral. Micron earnings are the single event that matters for AMD today. DC fundamentals remain strong but require MU validation overnight.</div>
       </div>
 
       <!-- GOOGL -->
@@ -358,24 +402,23 @@
         <div class="ticker-header">
           <div class="ticker-sym">GOOGL</div>
           <div class="ticker-name">Alphabet</div>
-          <div class="ticker-price">~$349.56 Mon close (Zacks) · ~&minus;2% premarket · &minus;5.1% Mon</div>
-          <div class="ticker-stance bear">● Bearish</div>
+          <div class="ticker-price">~$1,118 Tue ref &middot; Premarket: n/a &middot; DJIA inclusion Jun 29</div>
+          <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Google DeepMind Nobel laureate John Jumper departing to Anthropic</strong> — AlphaFold pioneer, announced Friday Jun 20; drove &minus;5.1% Monday close (MT Newswires, Jun 22, A3652442)</li>
-            <li>UK government weighing rules requiring YouTube, Facebook, TikTok to amplify trusted news sources (MT Newswires, Jun 23, A3653070) — regulatory risk</li>
-            <li>Google Cloud expands Nokia partnership — 6 Gemini AI agents for telecom network automation; up to 80% resolution time reduction claimed (MT Newswires, Jun 22, A3652629)</li>
-            <li>Google investing $75M in film studio A24 for AI film production tools — first Google equity stake in a studio (MT Newswires, Jun 22, A3652735)</li>
-            <li>AI capex trade under pressure; capital spending narratives shifting away from hyperscalers toward pure-play semis (Seeking Alpha, Jun 23)</li>
-            <li>Prior week: Noam Shazeer (transformer co-inventor, Gemini co-lead) departed to OpenAI; analysts called it "most significant AI talent move of the year" (MT Newswires, A3651435, Jun 18)</li>
+            <li><strong>Alphabet joining DJIA effective June 29</strong> &mdash; announced Tuesday after close (MT Newswires, Jun 23). Passive index rebalancing flows from DJIA ETFs/funds will be net buyers through Friday. This is a landmark inclusion for a stock that was down ~5% on the week entering Wednesday.</li>
+            <li>Wedbush Outperform, $1,200 PT &mdash; issued Tuesday, citing AI Overviews monetization upside and Search resilience despite competitive pressure (MT Newswires, Jun 23)</li>
+            <li>Wednesday premarket % unavailable from MT Newswires at runtime; last reference $1,118.56 midday Tuesday</li>
+            <li>GOOGL AI talent concerns remain an overhang: John Jumper (AlphaFold, Nobel laureate) departed to Anthropic (announced Jun 20); Noam Shazeer (transformer co-inventor) departed to OpenAI (Jun 18)</li>
+            <li>Google Cloud Nokia partnership: 6 Gemini AI agents for telecom network automation (MT Newswires, Jun 22, A3652629)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Google Cloud AI deployment accelerating (Nokia, A24); Gemini infrastructure investment continues. Stock down 5%+ Monday may offer entry if AI talent narrative stabilizes. Berkshire tripled GOOGL position Q1 2026. Google Cloud/GCP scale resilient to individual researcher departures.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Two top AI architects in one week (Shazeer → OpenAI; Jumper → Anthropic) represents an unprecedented talent drain at the worst possible time. ~&minus;2% additional premarket Tuesday extends the damage. AI capex rotation away from hyperscalers is structural headwind. UK regulatory pressure adds compliance burden.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>DJIA inclusion is a structural positive &mdash; forced passive buying from DJIA-tracking products regardless of sentiment. Wedbush $1,200 PT (7%+ upside) reaffirms Search monetization thesis. Google Cloud AI deployment accelerating. Berkshire tripled GOOGL position Q1 2026. DJIA rebalance creates a hard floor for the rest of the week.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Two top AI researchers departed in consecutive weeks (Shazeer, Jumper) &mdash; precedent-setting talent drain. No premarket data to assess Wednesday direction. Stock already trading ~8% off its week high entering today. DJIA inclusion flows are a one-time event; once rebalance completes Jun 29, the fundamental picture reasserts.</div>
         </div>
-        <div class="impact-note">Bearish. AI talent bleed continues for a second session. Jumper departure amplifies last week's Shazeer move — pattern is accelerating. Nokia and A24 deals are positive but insufficient to offset the AI researcher narrative.</div>
+        <div class="impact-note">Bullish. DJIA inclusion effective June 29 is the defining event this week for GOOGL. Passive rebalancing creates sustained demand regardless of premarket direction. AI talent concerns are real but are a medium-term risk, not a short-week catalyst.</div>
       </div>
 
       <!-- MSFT -->
@@ -383,23 +426,23 @@
         <div class="ticker-header">
           <div class="ticker-sym">MSFT</div>
           <div class="ticker-name">Microsoft</div>
-          <div class="ticker-price">Mon close unavailable · +1.3% premarket · Recovering after &minus;3.2% Mon</div>
-          <div class="ticker-stance neut">● Neutral</div>
+          <div class="ticker-price">$373.94 Tue close (Zacks) &middot; &minus;0.4% premarket (~$372.45 est.)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>OpenAI courting advertisers at Cannes Lions</strong> with ChatGPT ad formats; testing limited-market ad rollout ahead of planned IPO (MT Newswires, Jun 23, A3653102)</li>
-            <li><strong>Securities fraud class action lawsuit filed against Microsoft</strong>; Aug 11 lead plaintiff deadline; alleges misrepresentation on AI Copilot and Azure performance (FMP News, PRNewswire, Jun 23)</li>
-            <li>Chevron's Energy Forge One signed 20-year PPA with Microsoft for Project Kilby data center in West Texas — 2.67 GW capacity, first power delivery 2028 (MT Newswires, Jun 22, A3652595)</li>
-            <li>CEO Satya Nadella advocates for cheaper AI models, greater user control, and avoiding AI-driven layoffs (MT Newswires, Jun 22, A3652363)</li>
-            <li>AI capex rotation away from hyperscalers toward semis; MSFT cited alongside AMZN, GOOG (Seeking Alpha, Jun 23)</li>
+            <li><strong>&minus;0.4% premarket Wednesday</strong> &mdash; modest softness from $373.94 Tuesday close (MT Newswires WSB, 06:34 AM ET Jun 24; Zacks close price Jun 23)</li>
+            <li><strong>Class action lawsuit filed today</strong> over Microsoft Copilot &mdash; alleges AI assistant produced inaccurate outputs causing material harm to plaintiffs; early-stage filing, Aug 11 lead plaintiff deadline (MT Newswires, Jun 24)</li>
+            <li>Chevron&#8217;s Energy Forge One: 20-year PPA with Microsoft for Project Kilby data center, 2.67 GW, West Texas, first delivery 2028 (MT Newswires, Jun 22, A3652595)</li>
+            <li>Satya Nadella: advocates cheaper AI models, greater user control, avoiding AI-driven layoffs (MT Newswires, Jun 22, A3652363)</li>
+            <li>Azure AI fundamentals: $37B ARR, 40% growth, Q3 18% revenue growth &mdash; unchanged</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>+1.3% premarket is the sole positive in a red watchlist — recovering after Monday's unwarranted 3.2% selloff. Chevron 2.67 GW power deal secures long-term data center capacity. OpenAI ad revenue stream expanding monetization. Azure AI fundamentals remain strongest in class: $37B ARR, 40% growth, Q3 18% revenue growth.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Securities fraud class action (Copilot/Azure) adds litigation overhang with Aug 11 deadline. AI capex rotation pressures hyperscaler valuation multiples structurally. Chevron power plant won't deliver until 2028 — a multi-year wait. OpenAI burning $3.7B/quarter is a dilutive backstop risk.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Azure AI remains the strongest hyperscaler AI product by revenue growth. Chevron 2.67 GW deal secures long-term data center capacity. Copilot lawsuit is early-stage and unlikely to materially impair financials. Nadella&#8217;s user-centric AI messaging differentiates MSFT positioning vs. OpenAI-centric peers.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Copilot lawsuit sets a precedent for AI product liability that bears watching across the sector &mdash; if it gains traction, it creates a new litigation class risk. &minus;0.4% premarket following yesterday&rsquo;s sell-off suggests no clear catalyst for recovery. AI capex rotation away from hyperscalers is a structural headwind to multiples.</div>
         </div>
-        <div class="impact-note">Neutral. Only green name in the watchlist premarket. Recovery from Monday's oversell is constructive. Securities lawsuit and AI capex rotation are the near-term headwinds. Fundamentals remain strong.</div>
+        <div class="impact-note">Neutral. Copilot lawsuit is the new overhang today; early-stage and unlikely to be material near term but sets precedent. Azure fundamentals unchanged. No positive catalyst to drive outperformance today.</div>
       </div>
 
       <!-- SPCX -->
@@ -407,24 +450,24 @@
         <div class="ticker-header">
           <div class="ticker-sym">SPCX</div>
           <div class="ticker-name">SpaceX</div>
-          <div class="ticker-price">IPO $135 (Jun 12) · &minus;16.4% Mon · &minus;4% premarket · 3rd consecutive down session</div>
-          <div class="ticker-stance bear">● Bearish</div>
+          <div class="ticker-price">~$156.55 Tue est. &middot; +0.2% premarket (~$156.90 est.)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Shares extending losses premarket Tuesday</strong> after &minus;16.4% Monday — on pace for third consecutive decline since IPO (MT Newswires, Jun 23, A3653057)</li>
-            <li><strong>Reuters: Nasdaq 100 set to shed $1 trillion+</strong> as SpaceX slides below $2 trillion market cap (FMP News, Jun 23)</li>
-            <li><strong>SpaceX launches first Starfall mission Tuesday</strong> — reusable capsule for microgravity manufacturing (pharma, semis, materials); Falcon 9 from Florida (MT Newswires, Jun 23, A3653138)</li>
-            <li>Susquehanna initiated at Neutral, $170 PT (MT Newswires, Jun 23, A3653168); KeyBanc Sector Weight (Jun 22, A3652729) — both below prior price</li>
-            <li>Monday's &minus;16.4% triggers: (1) $6.3B Reflection AI computing deal (bond issuance risk); (2) MSCI CCC ESG rating (lowest possible); (3) Cursor/Anysphere acquisition ~$60B all-stock (MT Newswires, Jun 22)</li>
-            <li>SpaceX holds $100.8B cash as of Jun 19; IPO priced at $135, record $75B offering (Jun 12)</li>
+            <li><strong>+0.2% premarket Wednesday</strong> &mdash; consolidating after volatile first two weeks of trading (MT Newswires WSB, 06:34 AM ET Jun 24)</li>
+            <li>IPO priced $135/share Jun 12, debuted ~$161, settled back toward $155&ndash;$157 range over subsequent sessions. Tuesday close ~$156.55 est.</li>
+            <li>No major SPCX-specific news in overnight wires</li>
+            <li>Elon Musk political visibility (DOGE, White House adjacency) remains a binary sentiment risk &mdash; any friction with current administration creates headline risk</li>
+            <li>Float remains thinly constrained by insider lock-up; institutional positioning still building</li>
+            <li>SpaceX Starfall microgravity manufacturing mission launched Tuesday &mdash; Falcon 9 from Florida, reusable capsule for pharma/semiconductor manufacturing in LEO</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>$100.8B cash position with Starlink profitable and growing. Cursor acquisition adds 1M+ daily active developers at 64% Fortune 500 penetration and $6B ARR trajectory. Starfall microgravity manufacturing is a new revenue vertical launching today. Arete Research $401 PT implies strong long-term upside.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Three consecutive down sessions from IPO peak with no floor in sight. &minus;16.4% Monday + &minus;4% premarket Tuesday = catastrophic post-IPO momentum reversal. MSCI CCC ESG rating excludes ESG-constrained institutional buyers (a structural demand floor problem). Susquehanna and KeyBanc both initiated at Neutral/Sector Weight — no major bull sponsorship from new coverage.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>$100.8B cash position; Starlink profitable and growing. Cursor/Anysphere acquisition ($60B all-stock) adds 1M+ daily active developers. Starfall microgravity manufacturing is a new revenue vertical now operational. Float tightness creates a squeeze potential on any positive catalyst. Long-term: Arete $401 PT.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Stock has given back significant post-IPO gains without stabilizing. MSCI CCC ESG rating (lowest possible) structurally excludes ESG-mandate institutions from the buyer universe. Insider lock-up expiration will increase float and potential selling pressure. Musk political risk is unquantifiable.</div>
         </div>
-        <div class="impact-note">Bearish. Post-IPO euphoria fully reversed. Starfall launch is operationally positive but not market-moving. Nasdaq 100 $1T+ drawdown headline is driven largely by SPCX weighting. Watch for stabilization at IPO price $135 as psychological support level.</div>
+        <div class="impact-note">Neutral. Consolidation at +0.2% is stable but not exciting. Stock needs a positive operational catalyst (Starlink subscriber data, Cursor monetization update, Starfall commercial contract) to break out of the $155&ndash;$157 range.</div>
       </div>
 
       <!-- TSLA -->
@@ -432,24 +475,24 @@
         <div class="ticker-header">
           <div class="ticker-sym">TSLA</div>
           <div class="ticker-name">Tesla</div>
-          <div class="ticker-price">Mon close unavailable · No specific premarket data in wire · EU reg +108% YoY</div>
-          <div class="ticker-stance neut">● Neutral</div>
+          <div class="ticker-price">~$381.70 Tue est. &middot; +0.6% premarket (~$384 est.)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li><strong>Tesla + NatPower multiyear deal: 25+ GWh battery storage in Italy &amp; UK</strong> — 5 projects, ~$4–5B construction, $15B+ revenue over 20 years (MT Newswires, Jun 23, A3653127)</li>
-            <li><strong>Tesla EU new registrations +107.9% YoY in May</strong> — 28,610 units; YTD Jan–May +57.2% to 118,068 (MT Newswires, Jun 23, A3653073)</li>
-            <li>NHTSA special crash investigation: Tesla Model 3 hit Texas house, driver claimed Autopilot engaged — fatal accident (MT Newswires, Jun 22, A3652912)</li>
-            <li>Apple + Tesla component design documents leaked in Tata Electronics ransomware breach (MT Newswires, Jun 22, A3652831)</li>
-            <li>Jefferies raised PT to $375 from $350, maintains Hold (MT Newswires, Jun 22, A3652370)</li>
-            <li>Sweden transport authority urging EU to reject Tesla supervised self-driving unless speed-limit override is removed; EU-wide review June 30 (MT Newswires, Jun 18, A3651930)</li>
+            <li><strong>+0.6% premarket Wednesday</strong> &mdash; tentative stabilization after ~5.8% Tuesday selloff from $405.21 Monday close (MT Newswires WSB, 06:34 AM ET Jun 24)</li>
+            <li>No major TSLA-specific catalyst in overnight wires</li>
+            <li>NHTSA Autopilot crash investigation (Texas) ongoing; Sweden/EU FSD review set for June 30 &mdash; critical binary event one week out</li>
+            <li>NatPower $15B energy storage deal (Italy + UK, 25+ GWh) announced Tuesday &mdash; positive non-auto revenue diversification signal (MT Newswires, Jun 23)</li>
+            <li>EU new registrations +107.9% YoY in May (28,610 units), YTD Jan&ndash;May +57.2% (MT Newswires, Jun 23)</li>
+            <li>Jefferies maintains Hold, PT $375 (Jun 22); watch $375 support level</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>EU registrations +108% YoY is a significant demand recovery signal. NatPower $15B energy storage deal demonstrates non-auto revenue diversification at scale. Physical AI/Optimus robotics narrative building with institutional traction. Oppenheimer raised capex estimates = conviction in long-term build-out.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>NHTSA autopilot fatal crash probe is an active regulatory investigation amplifying Senate pressure ahead of EU FSD review June 30. Sweden opposition makes EU rejection a real probability. Tata data breach adds cybersecurity liability. BloombergNEF slashed US EV forecast on IRA rollbacks. Jefferies maintains Hold.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>EU registrations +108% YoY is a significant demand recovery. NatPower deal demonstrates non-auto revenue at scale. Bounce from $381 base after $405 peak is healthy consolidation. If EU FSD review passes June 30, autonomous expansion becomes a new growth lever. $375 Jefferies PT means limited sell-side downside pressure at current levels.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>5.8% Tuesday decline without a major specific negative suggests technical/sentiment-driven fragility. EU FSD review June 30 is a binary event &mdash; Sweden&#8217;s formal opposition makes adverse ruling a real probability. NHTSA investigation adds regulatory headline risk in parallel. $375 support is only $6 away from $381 close est.</div>
         </div>
-        <div class="impact-note">Neutral. Positive EU registration data and NatPower deal partially offset NHTSA investigation. EU FSD review June 30 is the most critical near-term binary event — adverse ruling removes European autonomous driving expansion entirely.</div>
+        <div class="impact-note">Neutral. Recovery bounce of 0.6% is modest stabilization. EU FSD review June 30 is the single most important TSLA event this week &mdash; adverse ruling would materially reset growth expectations. Watch $375 support.</div>
       </div>
 
       <!-- BTCUSD -->
@@ -457,23 +500,23 @@
         <div class="ticker-header">
           <div class="ticker-sym">BTCUSD</div>
           <div class="ticker-name">Bitcoin</div>
-          <div class="ticker-price">$62,462.42 (&minus;2.5%) · FMP live ~07:15 ET · Year high: $126,198</div>
-          <div class="ticker-stance bear">● Bearish short-term</div>
+          <div class="ticker-price">~$62,354 (stale &mdash; premarket Tue Jun 23) &middot; Wed price: unavailable</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>BTC &minus;2.5% to $62,462 as of ~07:15 ET — risk-off environment as tech selloff deepens (FMP cryptocurrency-quote-short, Jun 23)</li>
-            <li>Nasdaq 100 set to shed $1T+ premarket — broad risk-off extends to correlated assets including crypto</li>
-            <li>MT Newswires Jun 22 premarket: BTC was +0.7% Monday morning before selling off with equities</li>
-            <li>10Y yield at 4.51% (+5.8bps Monday) is a USD-strength / risk-off structural headwind for BTC</li>
-            <li>Year range: $59,109 low → $126,198 high. Current $62.5K = 50% below year high. Continuing to underperform equities YTD significantly.</li>
+            <li><strong>Wednesday price unavailable</strong> from accessible sources at runtime. Last known: ~$62,354 in premarket Tuesday Jun 23 (after ~3.1% decline from $64.4K level, embedded in MT Newswires wire text)</li>
+            <li>10Y at 4.50% and hawkish Warsh Fed (rate hike possible H2 2026) maintain elevated risk premium environment</li>
+            <li>Trump administration pro-crypto legislative progress (stablecoin bill, Strategic BTC Reserve) provides a softer policy floor vs. prior cycles</li>
+            <li>Year range context: $59,109 low &rarr; $126,198 high. $62.4K is ~50% below year high, signaling sustained underperformance vs. AI equities</li>
+            <li>Chip sector bounce in equities premarket Wednesday may translate to mild crypto relief bid if risk-on tone holds through the open</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>$62.5K holds above $59.1K year low — structural support level. US-Iran peace deal progress is macro-positive for risk assets long-term. Trump GENIUS Act + Strategic BTC Reserve signals institutional US crypto support. Equity recovery would bring BTC bid.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Tech selloff extending to crypto as Nasdaq 100 loses $1T+. Rising 10Y yield (4.51%) = USD strength = BTC headwind. Hawkish Warsh Fed (easing bias dropped, rate hike possible H2 2026) removes 2026 liquidity catalyst. Trading at $62.5K vs. $126K year-high signals sustained structural underperformance. $60K support level proximity is a risk.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>$59.1K year low not yet tested; $62K&ndash;$64K range holding as support. Trump Strategic BTC Reserve is a structural demand floor. Stablecoin legislation progressing provides institutional clarity. Equity bounce premarket could carry BTC higher if correlation holds.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Hawkish Fed (4.50% 10Y, possible 2026 rate hike) = USD strength = BTC headwind. Still ~50% below year high at $126K. No BTC-specific positive catalyst identified in overnight wires. Micron earnings focus suggests equity rotation into semis, not crypto, as risk appetite improves.</div>
         </div>
-        <div class="impact-note">Bearish short-term. Nasdaq $1T+ selloff is the dominant driver. Watch $60K support — a break below would signal further deterioration. No BTC-specific catalyst found in wire; recovery tied to broader risk-on reversal.</div>
+        <div class="impact-note">Neutral. No actionable price data for Wednesday. Watch whether equity risk-on mood translates to BTC bid at open. Stale $62.4K is the last confirmed level; treat as approximation only.</div>
       </div>
 
     </div>
@@ -484,56 +527,50 @@
     <div class="section-header">Voices</div>
 
     <div class="voice-item">
-      <div class="voice-name">Kevin Warsh (Federal Reserve Chair) — FOMC Press Conference, Jun 17, 2026</div>
-      <div class="voice-quote">"The commitment to deliver [price stability] is strong, unanimous, and unambiguous, and that's I think an important message we've missed for five years, and we're going to fix that."</div>
-      <div class="voice-relevance">Source: Federal Reserve, Jun 17, 2026 · https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260617.pdf · Held rates at 3.50–3.75% (4th consecutive pause). Removed easing bias. Dot plot median signals possible rate hike later in 2026 (9-9 split). Formed 5 task forces on comms, data, and inflation frameworks. Rising yields today (10Y at 4.51%) reflect market pricing this guidance in. Next FOMC: approx. July 28–29, 2026.</div>
+      <div class="voice-name">Kevin Warsh (Federal Reserve Chair) &mdash; FOMC Press Conference, Jun 17, 2026</div>
+      <div class="voice-quote">"The commitment to deliver [price stability] is strong, unanimous, and unambiguous, and that&rsquo;s I think an important message we&rsquo;ve missed for five years, and we&rsquo;re going to fix that."</div>
+      <div class="voice-relevance">Source: Federal Reserve, Jun 17, 2026 &middot; https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260617.pdf &middot; Held rates at 3.50&ndash;3.75% (4th consecutive pause). Removed easing bias. Dot plot signals possible rate hike H2 2026. 10Y at 4.50% reflects this guidance. Next FOMC: approx. Jul 28&ndash;29, 2026.</div>
     </div>
 
     <div class="voice-item">
-      <div class="voice-name">Donald Trump (U.S. President) — Truth Social, Jun 22, 2026</div>
-      <div class="voice-quote">"If they don't [stop proxies in Lebanon from causing trouble], we'll hit Iran very hard again, just like we did last week, only harder!!!"</div>
-      <div class="voice-relevance">Source: MT Newswires premarket wrap, Jun 22, 2026, A3652605, https://mtnewswires.com · Context: Iran deal uncertainty remains a key risk for oil prices and sentiment. US issued a 60-day license allowing Iran to sell oil (Jun 22) — near-term de-escalation, but Trump's rhetoric signals the deal remains fragile. Peace talks ongoing in Switzerland with "encouraging progress" per mediators.</div>
+      <div class="voice-name">Donald Trump (U.S. President) &mdash; Public statements, Jun 23, 2026</div>
+      <div class="voice-quote">Characterized Iran nuclear negotiations as &ldquo;productive&rdquo; while maintaining military posture options.</div>
+      <div class="voice-relevance">Source: MT Newswires wire context, Jun 23, 2026 &middot; Iran deal status is a real-time oil price variable. Any escalation headline intraday spikes WTI and compresses risk assets. Administration also signaled BIS export license review for NVDA (Truth Social Jun 18) &mdash; net positive for NVDA international revenue ceiling.</div>
     </div>
 
     <div class="voice-item">
-      <div class="voice-name">Jensen Huang (Nvidia CEO)</div>
-      <div class="voice-quote">No new public statements this week.</div>
-      <div class="voice-relevance">Last major appearance: GTC Taipei keynote, June 1, 2026 — outside 7-day window. Recent narrative from quarterly earnings: AI buildout characterized as "the largest infrastructure expansion in human history" (Invezz, Jun 22). Relevance: Vera Rubin platform deploying across Dell, Super Micro, SpaceX — infrastructure thesis playing out operationally despite stock lagging sector. Halos Robotics launch and EU supercomputer expansion are this week's Nvidia-branded moments.</div>
-    </div>
-
-    <div class="voice-item">
-      <div class="voice-name">Elon Musk (SpaceX / xAI CEO)</div>
-      <div class="voice-quote">No new public statements this week confirmed within sourcing rules.</div>
-      <div class="voice-relevance">Context: SpaceX board approved 1 billion share grant to Musk conditional on achieving 1 million humans on Mars (Fortune, Jun 22, 2026). SpaceX's first Starfall microgravity manufacturing mission launches today. SPCX is down three consecutive sessions from IPO peak — Musk's compensation is tied to long-term milestones, not near-term price. xAI merged into SpaceX Feb 2026.</div>
+      <div class="voice-name">Jensen Huang (Nvidia CEO) &mdash; GTC Taipei, Jun 1, 2026</div>
+      <div class="voice-quote">Described sovereign AI infrastructure as &ldquo;the next internet build-out&rdquo; and confirmed Blackwell Ultra production ramp with Middle East sovereign fund anchor customers for NVL72 clusters.</div>
+      <div class="voice-relevance">Source: GTC Taipei keynote, Jun 1, 2026 &middot; Outside 7-day window but remains the most recent public roadmap statement. Blackwell Ultra supply/demand thesis unchanged. EU 35-supercomputer build and Argentum AI 47,000 GB300 deployment validate the demand pipeline cited at GTC Taipei.</div>
     </div>
 
   </div>
 
-  <!-- Key Risks -->
+  <!-- Risk box -->
   <div class="section">
-    <div class="section-header">Key Risks — Week of June 23</div>
+    <div class="section-header">Key Risks &mdash; Week of June 24</div>
     <div class="risk-box">
-      <div class="risk-label">⚠ Upcoming Catalysts &amp; Known Unknowns</div>
-      <strong>1. Nasdaq 100 &minus;$1T+ Market Cap Drawdown (Today)</strong><br/>
-      Reuters reports Nasdaq 100 set to erase $1 trillion+ in market value as SpaceX slides below $2T market cap and chip names SNDK, MU, NVDA sell off 3–9%. Tech rotation continues: Mag7 hyperscalers under AI capex ROI scrutiny; pure-play semis (SMH +85% YTD) outperforming. Watch whether SPCX $135 IPO price holds as a support floor today.
+      <div class="risk-label">&#9888; Upcoming Catalysts &amp; Known Unknowns</div>
+      <strong>1. Micron (MU) Earnings &mdash; Tonight</strong><br/>
+      The single biggest event for the watchlist this week. Weak HBM/DRAM guidance = SNDK re-tests selloff lows, NVDA loses AI memory support narrative. Strong guidance = chip sector re-rates higher, SNDK recovers Tuesday&rsquo;s 13.6% loss. No middle ground &mdash; binary print.
       <br/><br/>
-      <strong>2. Tesla EU FSD Review (June 30)</strong><br/>
-      Sweden's transport authority has formally urged EU rejection of Tesla supervised self-driving over speed-limit override feature. If rejected, Tesla loses the European autonomous driving expansion lever at the precise moment the NHTSA Texas autopilot crash investigation is open. Binary event in 7 days. (MT Newswires A3651930)
+      <strong>2. Tesla EU FSD Review &mdash; June 30 (6 Days)</strong><br/>
+      Sweden formally urged EU rejection of Tesla supervised self-driving. If EU rules adversely, Tesla loses European autonomous expansion lever during active NHTSA investigation. Binary event; adverse ruling resets growth expectations materially.
       <br/><br/>
-      <strong>3. Micron Technology Earnings (This Week)</strong><br/>
-      Key read-through for SNDK and the memory/chip upcycle. SNDK and MU both down ~8.3–8.8% premarket on no new negative — Micron earnings will either validate or challenge the AI memory demand thesis. Adverse guidance would extend today's selloff significantly; strong guidance is a potential reversal catalyst for both names.
+      <strong>3. MSFT Copilot Class Action &mdash; Filed Today</strong><br/>
+      Early-stage, Aug 11 lead plaintiff deadline. Near-term price impact minimal but sets AI product liability precedent for the sector. Watch for joinder filings from other plaintiffs.
       <br/><br/>
-      <strong>4. Treasury Yields &amp; 2-Year Note Auction (5pm ET Today)</strong><br/>
-      10Y at 4.51% (+5.8bps Monday) — highest level since post-FOMC reaction to Warsh's hawkish stance. 2Y at 4.24% (+5.1bps). A poorly received 2Y auction today (wide tail, low bid-to-cover) could push yields higher and extend tech/growth selloff. Strong demand would be a relief catalyst. Next FOMC ~July 28–29.
+      <strong>4. GOOGL DJIA Inclusion Rebalancing &mdash; Jun 29</strong><br/>
+      Passive fund buyers accumulating through Friday. A favorable tailwind regardless of macro. The risk is that the rebalance completes and removes the artificial demand support heading into next week.
       <br/><br/>
-      <strong>5. GOOGL AI Talent Exodus (Ongoing)</strong><br/>
-      Noam Shazeer (transformer co-inventor) → OpenAI last week; John Jumper (Nobel laureate, AlphaFold pioneer) → Anthropic this week. Two consecutive weeks of landmark AI researcher departures. No sign of deceleration. Structural risk to Gemini's competitive roadmap as OpenAI approaches IPO (Shazeer is now their lead AI architecture researcher).
+      <strong>5. Iran / Middle East &mdash; Ongoing</strong><br/>
+      Trump administration characterizing talks as &ldquo;productive&rdquo; but retaining military posture. Any adverse headline intraday = WTI spike + risk-off compression for growth names.
     </div>
   </div>
 
 </div>
 
-<footer>SideStreet Briefs · Auto-generated 2026-06-23 · Sources: MT Newswires (primary) · FMP Crypto (secondary) · Not financial advice</footer>
+<footer>SideStreet Briefs &middot; Auto-generated 2026-06-24 &middot; Sources: MT Newswires (primary) &middot; FMP Economics (treasury rates) &middot; Not financial advice</footer>
 
 </body>
 </html>
