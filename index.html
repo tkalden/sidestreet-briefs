@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SideStreet Briefs &mdash; Thu Jul 2, 2026</title>
+  <title>SideStreet Briefs &mdash; Fri Jul 3, 2026</title>
   <style>
     :root {
       --bg: #0a0e17;
@@ -72,6 +72,16 @@
       padding: 10px 14px;
       font-size: 11px;
       color: #fde68a;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .holiday-banner {
+      background: #0d1a2b;
+      border: 1px solid #1e3a5f;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 11px;
+      color: #93c5fd;
       margin-bottom: 20px;
       line-height: 1.5;
     }
@@ -144,7 +154,7 @@
       padding: 12px 16px;
     }
     .ticker-card:hover { border-color: #374151; }
-    .ticker-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+    .ticker-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
     .ticker-sym { font-weight: 700; font-size: 14px; color: var(--heading); }
     .ticker-name { font-size: 11px; color: var(--muted); }
     .ticker-price { font-size: 12px; color: var(--text); }
@@ -218,111 +228,113 @@
 
 <div class="topbar">
   <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
-  <div class="meta">Auto-published &middot; Thu Jul 2, 2026 &middot; MT Newswires trial expired (FMP-only today) &middot; Non-Farm Payrolls 8:30am ET &middot; TSLA deliveries due &middot; Markets closed Fri Jul 3</div>
+  <div class="meta">Auto-published &middot; Fri Jul 3, 2026 &middot; US Markets CLOSED (Independence Day observed) &middot; MT Newswires trial expired (FMP-only today) &middot; Next session Mon Jul 6</div>
 </div>
 
 <div class="container">
 
-  <div class="brief-date">Market Brief &mdash; Thursday Jul 2, 2026</div>
-  <div class="brief-title">Chip Rally Reverses Sharply: SNDK -13.7%, AMD -8.1% on "Bubble Risk" Call &mdash; MSFT, TSLA Buck the Slide Ahead of Payrolls</div>
-  <div class="brief-generated">Generated: 2026-07-02 07:36 ET &middot; Sources: FMP (pre-mkt prices, rates, gold, crude, crypto, news) &middot; WebSearch (Voices/macro context) &middot; MT Newswires unavailable (EDGE subscription/trial expired for all symbols). Pre-mkt prices are bid/ask midpoint from FMP batch-aftermarket-quote ~07:36 ET vs. Jul 1 close (batch-quote).</div>
+  <div class="brief-date">Market Brief &mdash; Friday Jul 3, 2026</div>
+  <div class="brief-title">Markets Closed for Independence Day: AI-Chip Selloff Wipes $137B as SNDK Sinks 14%, TSLA Falls Despite Delivery Beat &mdash; SPCX Heads Into Nasdaq-100</div>
+  <div class="brief-generated">Generated: 2026-07-03 07:35 ET &middot; Sources: FMP (closing prices, rates, gold, crude, crypto, news) &middot; WebSearch (Voices/macro context) &middot; MT Newswires unavailable (EDGE subscription/trial expired for all symbols; CORE dataset not found). All equity/rate/commodity data reflects Thursday, Jul 2 close since US markets are closed today.</div>
+
+  <div class="holiday-banner">
+    &#128198; <strong>US MARKETS CLOSED &mdash; Independence Day (Observed).</strong> July 4, 2026 falls on a Saturday, so NYSE/Nasdaq observe the holiday Friday, July 3. Bond markets closed after a 2:00pm ET early close Thursday. All prices below reflect Thursday's close. Markets reopen Monday, July 6, 2026.
+  </div>
 
   <div class="data-warning">
-    &#9888; <strong>Data note:</strong> MT Newswires returned "Access denied &mdash; free trial expired" for every symbol today (SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, TSLA, BTC) &mdash; the entire wire-quality news layer is unavailable, not just partial. This brief is built entirely from FMP News + WebSearch fallback. All gaps are disclosed, nothing is fabricated. Recommend renewing the MT Newswires trial/subscription.
+    &#9888; <strong>Data note:</strong> MT Newswires returned "Access denied &mdash; free trial expired" for every symbol today (SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, TSLA, BTC) on the EDGE tier, and the CORE tier dataset was not found &mdash; the entire wire-quality news layer is unavailable, not just partial. This brief is built entirely from FMP News + WebSearch fallback. All gaps are disclosed, nothing is fabricated.
   </div>
 
   <!-- Macro strip -->
   <div class="macro-strip">
     <div class="macro-cell">
       <div class="label">S&amp;P 500</div>
-      <div class="value">7,483.23</div>
-      <div class="chg dn">-16.13 (-0.22%)</div>
+      <div class="value">7,483.24</div>
+      <div class="chg flat">+0.01 (~flat)</div>
     </div>
     <div class="macro-cell">
       <div class="label">Nasdaq</div>
-      <div class="value">26,040.03</div>
-      <div class="chg dn">-173.69 (-0.66%)</div>
+      <div class="value">25,832.67</div>
+      <div class="chg dn">-207.36 (-0.80%)</div>
     </div>
     <div class="macro-cell">
       <div class="label">Dow</div>
-      <div class="value">52,305.24</div>
-      <div class="chg dn">-13.96 (-0.03%)</div>
+      <div class="value">52,900.07</div>
+      <div class="chg up">+594.83 (+1.14%)</div>
     </div>
     <div class="macro-cell">
       <div class="label">10Y Yield</div>
-      <div class="value">4.48%</div>
-      <div class="chg flat">as of 7/1</div>
+      <div class="value">4.49%</div>
+      <div class="chg flat">as of 7/2</div>
     </div>
     <div class="macro-cell">
       <div class="label">2Y Yield</div>
-      <div class="value">4.17%</div>
-      <div class="chg flat">as of 7/1</div>
+      <div class="value">4.14%</div>
+      <div class="chg flat">as of 7/2</div>
     </div>
     <div class="macro-cell">
       <div class="label">WTI Crude</div>
-      <div class="value">$67.10</div>
-      <div class="chg dn">-$2.40</div>
+      <div class="value">$68.49</div>
+      <div class="chg dn">-$0.20 (-0.29%)</div>
     </div>
     <div class="macro-cell">
       <div class="label">Gold</div>
-      <div class="value">$4,075.20</div>
-      <div class="chg dn">-$7.20</div>
+      <div class="value">$4,197.50</div>
+      <div class="chg up">+$71.80 (+1.74%)</div>
     </div>
     <div class="macro-cell">
       <div class="label">BTC</div>
-      <div class="value">$61,201.75</div>
-      <div class="chg up">+2.07%</div>
+      <div class="value">$61,864.70</div>
+      <div class="chg up">+0.60%</div>
     </div>
   </div>
 
   <div class="futures-strip">
-    <strong>Pre-market snapshot (~07:36 ET, FMP batch-aftermarket-quote midpoint vs. Jul 1 close):</strong>
-    SNDK <span style="color:#ef4444">-13.67%</span> ($1,963.00) &nbsp;&middot;&nbsp;
-    NVDA <span style="color:#ef4444">-1.86%</span> ($196.38) &nbsp;&middot;&nbsp;
-    AMD <span style="color:#ef4444">-8.11%</span> ($533.78) &nbsp;&middot;&nbsp;
-    GOOGL <span style="color:#22c55e">+0.47%</span> ($359.05) &nbsp;&middot;&nbsp;
-    MSFT <span style="color:#22c55e">+3.81%</span> ($387.23) &nbsp;&middot;&nbsp;
-    SPCX <span style="color:#ef4444">-7.25%</span> ($158.47) &nbsp;&middot;&nbsp;
-    TSLA <span style="color:#22c55e">+1.54%</span> ($427.08) &nbsp;&middot;&nbsp;
-    BTC $61,201.75 (+2.07%) &nbsp;&middot;&nbsp;
-    Key today: <strong>Non-Farm Payrolls &amp; Unemployment Rate 8:30am ET (HIGH) &middot; Factory Orders 10:00am ET &middot; Markets closed Fri Jul 3</strong>
+    <strong>Thursday close snapshot (Jul 2 session, since equity markets are closed today):</strong>
+    SNDK <span style="color:#ef4444">-14.13%</span> ($1,745.00) &nbsp;&middot;&nbsp;
+    NVDA <span style="color:#ef4444">-1.39%</span> ($194.83) &nbsp;&middot;&nbsp;
+    AMD <span style="color:#ef4444">-4.26%</span> ($517.82) &nbsp;&middot;&nbsp;
+    GOOGL <span style="color:#ef4444">-0.36%</span> ($359.91) &nbsp;&middot;&nbsp;
+    MSFT <span style="color:#22c55e">+1.62%</span> ($390.49) &nbsp;&middot;&nbsp;
+    SPCX <span style="color:#22c55e">+2.83%</span> ($162.00) &nbsp;&middot;&nbsp;
+    TSLA <span style="color:#ef4444">-7.49%</span> ($393.45) &nbsp;&middot;&nbsp;
+    BTC $61,864.70 (+0.60%) &nbsp;&middot;&nbsp;
+    Next session: <strong>Mon Jul 6 &mdash; ISM Services PMI (HIGH) &amp; Fed Waller Speech</strong>
   </div>
 
   <!-- Market -->
   <div class="section">
     <div class="section-header">Market</div>
     <div class="market-block">
-      <strong>The memory/AI-chip trade that led 2026's first-half rally reversed sharply to start Q3, after BofA flagged "bubble risk" across chip names.</strong>
+      <strong>Thursday's session was dominated by a broad AI/memory-chip selloff &mdash; chipmakers collectively lost roughly $137B in market cap in a single day &mdash; as investors took profits after a blistering H1 2026 rally (Nasdaq-100 +26% in Q2 alone).</strong>
       <br/><br/>
-      All three major indexes point lower: S&amp;P 500 7,483.23 (-0.22%), Nasdaq 26,040.03 (-0.66%), Dow 52,305.24 (-0.03%). Micron, Intel, AMD and SanDisk &mdash; which collectively added roughly $2T in combined value during Q2 &mdash; are giving back gains on a broad profit-taking rotation, with SNDK down as much as 13.7% pre-market and AMD off 8.1%. NAND/DRAM supply shortages are still expected to persist into 2028 per sell-side commentary, and Micron's own blowout quarter (multi-year customer contracts) is seen as a positive read-through for SanDisk's August report &mdash; the pullback looks like a valuation reset, not a change in the underlying demand thesis.
+      The Dow actually rose 1.14% on rotation out of AI-chip names into other sectors, while the Nasdaq fell 0.80% and the S&amp;P 500 finished essentially flat. SanDisk was the hardest hit, down 14.1% after a historic H1 run (~+858% YTD), followed by Tesla (-7.5%) and AMD (-4.3%). Micron/Kioxia-adjacent supply-chain names carried similar weakness. Nvidia itself framed a $3&ndash;4 trillion AI capex opportunity through 2030 even as its own shares fell 1.4% with the sector.
       <br/><br/>
-      <strong>Rates:</strong> 10Y at 4.48%, 2Y at 4.17% (most recent FMP treasury print, Jul 1 &mdash; today's isn't out yet). Fed Chair Kevin Warsh struck a hawkish tone at the ECB's Sintra forum yesterday, saying "we've all looked around, and we've seen that prices are too high," while declining to pre-signal the July rate decision.
+      <strong>Rates:</strong> 10Y at 4.49%, 2Y at 4.14% (most recent FMP treasury print, Jul 2). June nonfarm payrolls missed estimates (+57K vs. expectations) while unemployment ticked down to 4.2% &mdash; a mixed labor print that eased near-term Fed hike fears. Fed Chair Kevin Warsh, speaking at the ECB's Sintra forum on Jul 1, said "we've all looked around, and we've seen that prices are too high," while declining to pre-signal the July rate decision.
       <br/><br/>
-      <strong>Data day ahead:</strong> June Non-Farm Payrolls (8:30am ET, High impact, consensus +110K vs. prior +172K) and the Unemployment Rate (consensus held at 4.3%, High impact) headline the calendar, alongside Factory Orders (10:00am ET). A soft print would sharpen bets on Fed cuts even against Warsh's hawkish framing. No watch-list earnings are scheduled in the next 14 days. <strong>U.S. markets are closed Friday, July 3</strong> for Independence Day (observed, since July 4 falls on a Saturday) &mdash; next session is Monday, July 6.
+      <strong>Holiday closure:</strong> U.S. markets are closed today, Friday, July 3, for Independence Day (observed, since July 4 falls on a Saturday). No watch-list earnings are scheduled in the next 14 days. The next session, Monday, July 6, brings a high-impact ISM Services PMI print and a Fed Waller speech &mdash; the first real read on services momentum since the June jobs miss.
       <br/><br/>
-      <strong>BTC bouncing:</strong> Bitcoin is up 2.07% to $61,201.75, rebounding off a recent low near $58,000 on what CoinDesk called the "first real bounce of the selloff," driven by dovish rate-cut speculation and continued corporate treasury buying (Metaplanet added 2,823 BTC, now holding 43,000).
+      <strong>BTC holding steady:</strong> Bitcoin is up 0.60% to $61,864.70, holding above the $61,000 level as soft jobs data eased Fed rate-hike fears and spot ETFs snapped a 10-day outflow streak &mdash; though $294.6M in fresh ETF outflows and cautious options positioning suggest the bounce remains fragile.
       <br/><br/>
-      <strong>MSFT and TSLA bucking the slide:</strong> Microsoft is up 3.8% pre-market on strong AI monetization data (AI ARR +123% Y/Y to $37B, RPO +99% Y/Y to $627B) and a new 5-year AI/cloud deal with Haleon. Tesla is up 1.5% ahead of today's closely watched Q2 delivery report (Street looking for ~406K units), even as reports surface of the new Semi model's first fatal crash.
+      <strong>MSFT and SPCX bucking the slide:</strong> Microsoft rose 1.6% on news of a new $2.5B "Frontier Company" AI-implementation business, even as reports surfaced of ~5,000 upcoming layoffs. SpaceX rose 2.8% ahead of its Nasdaq-100 inclusion (effective Tuesday, Jul 7), with Musk denying a WSJ report of a secret SpaceX AI handset device as "Utterly false."
     </div>
   </div>
 
   <!-- Catalyst box -->
   <div class="section">
-    <div class="section-header">Key Catalysts Today &amp; Upcoming</div>
+    <div class="section-header">Key Catalysts &mdash; Next Session &amp; Near-Term</div>
     <div class="catalyst-box">
-      <div class="cat-label">&#9660; Scheduled Events &mdash; Thu Jul 2 &amp; Near-Term</div>
-      <strong>1. Non-Farm Payrolls &amp; Unemployment Rate (Jun) &mdash; 8:30am ET</strong> [HIGH IMPACT]<br/>
-      NFP consensus +110K vs. prior +172K; Unemployment Rate consensus held at 4.3%. The marquee U.S. data risk today, especially against Warsh's hawkish Sintra remarks.<br/><br/>
-      <strong>2. TSLA Q2 Deliveries &mdash; Due Today</strong> [HIGH IMPACT for TSLA]<br/>
-      Street estimate ~406K vehicles vs. ~384K a year ago. Michael Burry has disclosed a fresh short bet against Tesla ahead of the print.<br/><br/>
-      <strong>3. Factory Orders (May) &mdash; 10:00am ET</strong> [MEDIUM IMPACT]<br/>
-      Consensus -1.8% MoM vs. prior +4.8%.<br/><br/>
-      <strong>4. SPCX Nasdaq-100 Inclusion &mdash; July 7</strong> [HIGH IMPACT for SPCX]<br/>
-      SpaceX joins the Nasdaq-100 via the new "fast track" rule just 15 trading days after its June 12 IPO; index funds are expected to buy ~$4.3B of stock around the change.<br/><br/>
-      <strong>5. U.S. Markets Closed &mdash; Friday, July 3</strong><br/>
-      Independence Day observed (July 4 falls on a Saturday). Next session: Monday, July 6.<br/><br/>
-      <strong>6. No Watch-List Earnings &mdash; Next 14 Days</strong> [Confirmed via FMP earnings calendar]<br/>
-      No SNDK/NVDA/AMD/GOOGL/MSFT/SPCX/TSLA earnings dates fall between Jul 2&ndash;16.
+      <div class="cat-label">&#9660; Scheduled Events &mdash; Upcoming</div>
+      <strong>1. ISM Services PMI (Jun) &mdash; Mon Jul 6, 2:00pm ET</strong> [HIGH IMPACT]<br/>
+      Prior 54.5. First services-sector read since the soft June jobs report; also watch ISM Non-Manufacturing Prices (High impact).<br/><br/>
+      <strong>2. Fed Governor Waller Speech &mdash; Mon Jul 6, 3:00pm ET</strong> [MEDIUM IMPACT]<br/>
+      First scheduled Fed commentary since Chair Warsh's hawkish Sintra remarks on Jul 1.<br/><br/>
+      <strong>3. SPCX Nasdaq-100 Inclusion &mdash; Tue Jul 7</strong> [HIGH IMPACT for SPCX]<br/>
+      SpaceX joins the Nasdaq-100 following its Russell 1000 debut earlier this week; the mandatory IPO-bank quiet period also ends Tuesday, likely bringing a wave of new analyst coverage.<br/><br/>
+      <strong>4. No Watch-List Earnings &mdash; Next 14 Days</strong> [Confirmed via FMP earnings calendar]<br/>
+      No SNDK/NVDA/AMD/GOOGL/MSFT/SPCX/TSLA earnings dates fall between Jul 3&ndash;17.<br/><br/>
+      <strong>5. U.S. Markets Closed Today &mdash; Friday, July 3</strong><br/>
+      Independence Day observed (July 4 falls on a Saturday). Next session: Monday, July 6.
     </div>
   </div>
 
@@ -336,22 +348,22 @@
         <div class="ticker-header">
           <div class="ticker-sym">SNDK</div>
           <div class="ticker-name">SanDisk</div>
-          <div class="ticker-price">$1,963.00 mid (-$310.73 / -13.67% vs Jul 1 close $2,273.73) &middot; 07:36 ET</div>
+          <div class="ticker-price">$1,745.00 (-$287.22 / -14.13% vs Jul 1 close $2,032.22) &middot; Thu Jul 2 close</div>
           <div class="ticker-stance bear">&#9679; Bearish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>One of the day's biggest premarket decliners after a sharp drop in the prior session (Barrons, Jul 2)</li>
-            <li>"Sandisk's and Micron's stocks sink as the rotation trade builds, but supply shortages should limit losses" &mdash; analysts still see room to run given NAND shortages expected into 2028 (MarketWatch, Jul 1)</li>
-            <li>"Micron Drops 8%, SanDisk Slumps 10%, Western Digital Falls 7%" &mdash; broad memory-sector selloff, plus a fresh class-action lawsuit targeting major memory chipmakers (24/7 Wall Street, Jul 1)</li>
-            <li>"Sandisk Is One of the Biggest Winners After Micron's Blowout Earnings" &mdash; Micron's beat-and-raise quarter is seen as a positive read-through for SNDK's own August report (Motley Fool, Jul 1)</li>
+            <li>Shares plunged ~14% Thursday as investors rotated out of AI memory/hardware names after an extraordinary H1 2026 run (~+858% YTD) &mdash; profit-taking, not a fundamental reversal (FMP News, Invezz, Jul 2)</li>
+            <li>Kioxia and Sandisk began production of 10th-generation 3D Flash memory (BiCS10) at the Kitakami Plant Fab2 in Japan (FMP News, Business Wire, Jul 3)</li>
+            <li>Sandisk announced sampling of BiCS10 1Tb TLC 3D NAND &mdash; 59% bit-density improvement over prior generation (FMP News, Business Wire, Jul 2)</li>
+            <li>Named the best-performing S&amp;P 500 stock of H1 2026 by Motley Fool (FMP News, Jul 3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Structural NAND/enterprise SSD shortage expected to persist into 2028; QLC SSD portfolio targeting AI storage demand with multi-year supply deals.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Extreme valuation re-rating risk after a &gt;50x run since early 2025; new class-action lawsuit targets major memory chipmakers.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Structural NAND/memory shortage; Kioxia JV production ramp (BiCS10, Fab2) supports multi-year bit growth; direct beneficiary of AI-driven storage demand.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Stock was up ~858% YTD before today; valuation stretched after an extraordinary run; memory pricing is inherently cyclical.</div>
         </div>
-        <div class="impact-note">Material today &mdash; a -13.7% pre-market move on sector-wide rotation is a sharp near-term repricing, though the underlying supply-shortage thesis is intact.</div>
+        <div class="impact-note">The -14% single-day drop reads as a valuation/positioning reset amid a sector-wide selloff, not a change to the underlying shortage/production-ramp story.</div>
       </div>
 
       <!-- NVDA -->
@@ -359,22 +371,22 @@
         <div class="ticker-header">
           <div class="ticker-sym">NVDA</div>
           <div class="ticker-name">Nvidia</div>
-          <div class="ticker-price">$196.38 mid (-$3.71 / -1.86% vs Jul 1 close $200.09) &middot; 07:36 ET</div>
-          <div class="ticker-stance neut">&#9679; Neutral</div>
+          <div class="ticker-price">$194.83 (-$2.75 / -1.39% vs Jul 1 close $197.58) &middot; Thu Jul 2 close</div>
+          <div class="ticker-stance bear">&#9679; Bearish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"The Palantir-Nvidia Sovereign AI Deal Will Reshape Who Wins the AI Infrastructure Race" (24/7 Wall Street, Jul 2)</li>
-            <li>"Nvidia: The Drawdown Is An Opportunity To Pounce" &mdash; beat-and-raise quarter, Data Center revenue +92% Y/Y; Blackwell/Rubin pipeline visibility doubled to $1T through 2027; dividend hiked to $0.25 and a new $80B buyback (Seeking Alpha, Jul 2)</li>
-            <li>Nvidia to offer start-up customers compute-for-revenue-share deals (CNBC, Jul 2)</li>
-            <li>"Chip stocks that notched record rallies in second quarter start Q3 with a dud" (CNBC, Jul 1)</li>
+            <li>Caught in the broad AI-chipmaker selloff Thursday alongside memory/chip peers &mdash; ~$137B wiped from the sector in a day (FMP News, Finbold, Jul 3)</li>
+            <li>Nvidia projects AI infrastructure capex could reach $3&ndash;4 trillion by 2030 (FMP News, Motley Fool, Jul 3)</li>
+            <li>Launched a new program offering AI startups GPU access via token credits in exchange for a revenue share (FMP News, Invezz, Jul 3)</li>
+            <li>Recruited 26-year Microsoft sales veteran Nick Parker as EVP of worldwide field operations, with a $40M+ pay package (FMP News, GeekWire, Jul 2)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Dominant AI compute platform; $1T Blackwell/Rubin pipeline visibility through 2027; expanding capital returns.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Valuation/"bubble risk" concerns across AI infrastructure names; Michael Burry disclosed a fresh short.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Dominant AI-compute position; management sees a $3&ndash;4T AI capex TAM by 2030; new GPU revenue-share program extends reach into AI startups.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Rich valuation; hyperscaler capex/customer-concentration risk; growing competition from custom silicon.</div>
         </div>
-        <div class="impact-note">No material change &mdash; pre-market weakness reads as sector rotation, not company-specific news.</div>
+        <div class="impact-note">No material change &mdash; the pullback is sector-wide profit-taking rather than an Nvidia-specific issue.</div>
       </div>
 
       <!-- AMD -->
@@ -382,22 +394,22 @@
         <div class="ticker-header">
           <div class="ticker-sym">AMD</div>
           <div class="ticker-name">Advanced Micro Devices</div>
-          <div class="ticker-price">$533.78 mid (-$47.13 / -8.11% vs Jul 1 close $580.91) &middot; 07:36 ET</div>
+          <div class="ticker-price">$517.82 (-$23.06 / -4.26% vs Jul 1 close $540.88) &middot; Thu Jul 2 close</div>
           <div class="ticker-stance bear">&#9679; Bearish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"Intel Drops 7%, AMD Slides 5%, Taiwan Semiconductor Falls 6% as BoA Flags 'Bubble Risk'" (24/7 Wall Street, Jul 1)</li>
-            <li>"AMD: Market Has Completely Misread The AI CPU Supercycle" &mdash; bullish thesis on EPYC server CPU share gains and agentic inference demand (Seeking Alpha, Jul 1)</li>
-            <li>"Wall Street Keeps Hiking Its Price Targets on This AI Powerhouse" (24/7 Wall Street, Jul 1)</li>
-            <li>AMD expands AI reach with new Versal Premium Gen 2 MoP SoCs (Zacks, Jul 1)</li>
+            <li>Traded down with the broader chip-sector pullback Thursday (FMP News, Finbold; Benzinga, Jul 2)</li>
+            <li>Bear case per Motley Fool/24-7 Wall Street: "AMD doesn't have the growth that Nvidia does" (FMP News, Jul 2)</li>
+            <li>"Michael Burry bear case" for AI chips resurfacing &mdash; skepticism about AI-memory/GPU hardware economics (FMP News, 24-7 Wall Street, Jul 2)</li>
+            <li>Some analysts (Investopedia) call the pullback a buy-the-dip opportunity ("screaming buys") (FMP News, Jul 2)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>EPYC server CPU share gains from the "AI CPU supercycle"; rising sell-side price targets.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>BofA "bubble risk" note weighing on chip-sector sentiment broadly.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Riding the same AI-compute buildout as Nvidia at a lower multiple; datacenter GPU roadmap gaining share.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>"Doesn't have the growth that Nvidia does" per bearish commentary; caught up in broader skepticism about AI-hardware economics.</div>
         </div>
-        <div class="impact-note">No material change &mdash; move tracks the broader semis selloff rather than AMD-specific news.</div>
+        <div class="impact-note">No material change &mdash; no AMD-specific news; the stock moved with the sector-wide AI-chip drawdown.</div>
       </div>
 
       <!-- GOOGL -->
@@ -405,21 +417,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">GOOGL</div>
           <div class="ticker-name">Alphabet</div>
-          <div class="ticker-price">$359.05 mid (+$1.68 / +0.47% vs Jul 1 close $357.37) &middot; 07:36 ET</div>
+          <div class="ticker-price">$359.91 (-$1.30 / -0.36% vs Jul 1 close $361.21) &middot; Thu Jul 2 close</div>
           <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"After eight years, Google loses final appeal against $4.7 billion European Union fine" &mdash; EU's top court dismissed Alphabet's appeal of the &euro;4.1B Android antitrust fine (MarketWatch/Reuters/CNBC, Jul 2)</li>
-            <li>Berkshire (Greg Abel) added to its GOOGL stake (Benzinga, Jul 1)</li>
-            <li>Named alongside TSLA as a top "Magnificent Seven" pick for the rest of 2026-27 by Freedom Capital Markets (Benzinga, Jul 1)</li>
+            <li>EU Court of Justice upheld the European Commission's &euro;4.1B ($4.67B) Android antitrust fine against Google, ending its legal challenge; shares traded ~1% lower (FMP News, Proactive Investors/NY Post, Jul 2)</li>
+            <li>Google disrupted the "NetNut" proxy network used to route malware/malicious traffic (FMP News, Reuters, Jul 2)</li>
+            <li>Google and Amazon both reported sharp increases in greenhouse-gas emissions tied to AI datacenter buildout (FMP News, TechCrunch/TechXplore, Jul 2&ndash;3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Top "Magnificent Seven" pick; Berkshire adding to its stake; AI/Waymo optionality.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>EU antitrust exposure now finalized at &euro;4.1B after an eight-year legal fight.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Cloud/Gemini AI growth, Waymo's autonomy lead, diversified ad + cloud model.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Regulatory overhang (EU antitrust, ongoing DOJ scrutiny); rising AI infrastructure capex pressuring margins and climate commitments.</div>
         </div>
-        <div class="impact-note">No material change &mdash; the antitrust ruling was widely anticipated and the stock is trading higher, not lower, on the news.</div>
+        <div class="impact-note">EU court upheld the &euro;4.1B Android fine &mdash; a modest, largely anticipated negative with no material change to the core cloud/AI thesis.</div>
       </div>
 
       <!-- MSFT -->
@@ -427,22 +439,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">MSFT</div>
           <div class="ticker-name">Microsoft</div>
-          <div class="ticker-price">$387.23 mid (+$14.21 / +3.81% vs Jul 1 close $373.02) &middot; 07:36 ET</div>
+          <div class="ticker-price">$390.49 (+$6.21 / +1.62% vs Jul 1 close $384.28) &middot; Thu Jul 2 close</div>
           <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"Microsoft's AI Discount Won't Last" &mdash; RPO +99% Y/Y to $627B (~$157B convertible within 12 months); AI ARR +123% Y/Y to $37B; Azure guided ~40% constant-currency growth next quarter (Seeking Alpha, Jul 2)</li>
-            <li>Stock up 4% on a new 5-year AI/cloud partnership with Haleon (Invezz, Jul 1)</li>
-            <li>Partners with Singapore's Lightstorm on an India-Southeast Asia undersea cable (Reuters, Jul 1)</li>
-            <li>Active securities class action; Rosen Law Firm lead-plaintiff deadline Aug 11, 2026 (GlobeNewswire, Jul 1)</li>
+            <li>Announced a $2.5B investment to launch "Microsoft Frontier Company," a new AI-implementation business unit placing 6,000 engineers/consultants with enterprise customers (FMP News, Proactive Investors/Bloomberg, Jul 2)</li>
+            <li>Reportedly preparing another round of layoffs affecting ~5,000 workers across sales, consulting and Xbox next week, even amid rising AI capex (FMP News, Fox Business, Jul 2)</li>
+            <li>Securities fraud class action filed alleging misrepresentations about "functionality issues" (FMP News, GlobeNewswire, Jul 3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>AI ARR +123% Y/Y, RPO +99% Y/Y, Azure guided ~40% growth; new enterprise AI wins.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Reports of fresh job cuts even as AI capex accelerates; active securities class action (Aug 11 deadline).</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Enterprise AI monetization (Copilot, Azure); new $2.5B "Frontier Company" business signals a deeper push into AI implementation services.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Reported ~5,000-worker layoffs next week even as AI capex rises; new securities-fraud litigation; stock had one of its worst months in June.</div>
         </div>
-        <div class="impact-note">Material positive today &mdash; the Haleon deal and AI monetization data are driving the outsized +3.8% pre-market gain.</div>
+        <div class="impact-note">The Frontier Company investment is an incremental positive for the enterprise-AI monetization thesis; layoff reports and litigation are watch items but not thesis-changing today.</div>
       </div>
 
       <!-- SPCX -->
@@ -450,22 +461,22 @@
         <div class="ticker-header">
           <div class="ticker-sym">SPCX</div>
           <div class="ticker-name">SpaceX &mdash; IPO'd Jun 12, 2026</div>
-          <div class="ticker-price">$158.47 mid (-$12.39 / -7.25% vs Jul 1 close $170.86) &middot; 07:36 ET</div>
-          <div class="ticker-stance bear">&#9679; Bearish</div>
+          <div class="ticker-price">$162.00 (+$4.46 / +2.83% vs Jul 1 close $157.54) &middot; Thu Jul 2 close</div>
+          <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"SpaceX may emerge as ultimate blueprint for new wave of mega-cap IPOs" (CNBC, Jul 2)</li>
-            <li>First company to use the new Nasdaq "fast track" rule, joining the Nasdaq-100 on July 7 after just 15 days of trading (Motley Fool, Jul 2)</li>
-            <li>Stock has round-tripped most of its post-IPO pop, now back near its $150 offer price (Motley Fool, Jul 2)</li>
-            <li>Musk denied a WSJ report that SpaceX showed investors an AI "handset-like" device prototype ahead of the IPO (Forbes/Reuters/TechCrunch, Jul 1)</li>
+            <li>SpaceX is set to join the Nasdaq-100 index effective Tuesday, following a strong debut in the Russell 1000 earlier this week (FMP News, Barron's, Jul 3)</li>
+            <li>Elon Musk denied a WSJ report (Jul 1) that SpaceX showed investors a prototype AI handset device integrating xAI technology and Qualcomm chips &mdash; called it "Utterly false" in an X post (WebSearch: billionaires.africa, Jul 2)</li>
+            <li>Evolving into an integrated launch/connectivity/AI-infrastructure platform; Starlink at 10.3M subscribers; AI hosting deals imply ~$26B in annualized recurring revenue (FMP News, Seeking Alpha, Jul 3)</li>
+            <li>Stock swung from $150 to $225 and back within two weeks &mdash; thin float (&lt;5% of shares) driving volatility; mandatory IPO-bank quiet period ends Tuesday (FMP News, Motley Fool, Jul 2&ndash;3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Nasdaq-100 inclusion effective July 7 expected to draw ~$4.3B in passive inflows; broadly positive Wall Street reviews post-IPO.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Newly listed with high post-IPO volatility; stock has faded back toward its $150 offer price; unconfirmed AI-device report added noise.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Nasdaq-100 inclusion (effective Tue Jul 7) adds index-flow demand; AI/Starlink infrastructure optionality; average Wall St target implies ~19% upside.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Newly listed with a thin float (&lt;5% of shares), driving extreme volatility; heavy losses ($4.9B in 2025, $4.3B in Q1 2026); IPO quiet period ends Tuesday.</div>
         </div>
-        <div class="impact-note">Material today &mdash; a -7.25% pre-market move continues the post-IPO fade; watch for stabilization ahead of the July 7 index-inclusion catalyst.</div>
+        <div class="impact-note">Musk's "utterly false" denial removes one overhang, while Nasdaq-100 inclusion is a fresh, concrete positive catalyst for index-related demand.</div>
       </div>
 
       <!-- TSLA -->
@@ -473,22 +484,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">TSLA</div>
           <div class="ticker-name">Tesla</div>
-          <div class="ticker-price">$427.08 mid (+$6.48 / +1.54% vs Jul 1 close $420.60) &middot; 07:36 ET</div>
-          <div class="ticker-stance bull">&#9679; Bullish</div>
+          <div class="ticker-price">$393.45 (-$31.85 / -7.49% vs Jul 1 close $425.30) &middot; Thu Jul 2 close</div>
+          <div class="ticker-stance bear">&#9679; Bearish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"Tesla Deliveries Need to Beat Expectations to Lift the Stock" &mdash; Street looking for ~406K Q2 deliveries vs. ~384K a year ago (Barrons, Jul 2)</li>
-            <li>U.S. closes 2022 NHTSA probe into 695,000 Tesla vehicles over unexpected braking, citing low demonstrated hazard (Reuters, Jul 2)</li>
-            <li>Tesla's electric Semi involved in its first fatal crash, killing two people (Forbes, Jul 1)</li>
-            <li>Stock up ~10% over the past week on robotaxi/Optimus buzz (24/7 Wall Street, Jul 1); Michael Burry disclosed a fresh short (Business Insider, Jul 1)</li>
+            <li>Q2 deliveries beat estimates: 480,126 vehicles, +25% YoY, vs. ~406,000 consensus &mdash; yet shares fell as the market focused on ~190x forward-earnings valuation and margin pressure from cheap financing (FMP News, Proactive Investors/Seeking Alpha, Jul 2&ndash;3)</li>
+            <li>A Texas driver was charged with manslaughter after a Tesla operating on Autopilot crashed into a home, killing a 76-year-old woman (FMP News, Reuters/NYT, Jul 2)</li>
+            <li>Barron's: VP of vehicle engineering Lars Moravy teased "cool news" coming next week (FMP News, Jul 3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Q2 delivery report due today with growth expected; robotaxi/Optimus narrative driving a ~10% one-week rally.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>First fatal crash involving the new Semi model; Michael Burry disclosed a fresh short position.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Q2 deliveries beat handily (480,126 vs. ~406K consensus, +25% YoY); management teasing new news next week.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>~190x forward earnings valuation is hard to square with margin pressure from cheap financing; fatal Autopilot-related crash adds fresh legal/regulatory risk.</div>
         </div>
-        <div class="impact-note">Material &mdash; delivery numbers due today are a binary near-term catalyst for the stock.</div>
+        <div class="impact-note">Stock fell -7.5% despite the delivery beat &mdash; a "beat and sold" reaction reinforcing valuation concerns; the Autopilot fatality/manslaughter charge is a new legal risk to track.</div>
       </div>
 
       <!-- BTCUSD -->
@@ -496,21 +506,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">BTCUSD</div>
           <div class="ticker-name">Bitcoin</div>
-          <div class="ticker-price">$61,201.75 (+$1,239.95 / +2.07% vs prior close $59,961.80) &middot; 07:36 ET (FMP cryptocurrency-quote)</div>
-          <div class="ticker-stance bull">&#9679; Bullish</div>
+          <div class="ticker-price">$61,864.70 (+$371.71 / +0.60% vs prior close $61,492.99) &middot; 07:35 ET (FMP cryptocurrency-quote)</div>
+          <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>"Smaller tokens lead as bitcoin, sol rally in 'first real bounce of the selloff'" &mdash; rebound on dovish Fed signals (CoinDesk, Jul 2)</li>
-            <li>BTC recovering, trading near $61,000 after bouncing off ~$58,000 lows (Cryptonews, Jul 2)</li>
-            <li>Metaplanet adds 2,823 BTC to its treasury, lifting holdings to 43,000 (Cryptopolitan/TokenPost, Jul 2)</li>
+            <li>Holding above $61,000 (ether above $1,700) ahead of the US Independence Day holiday, as soft June jobs data eased Fed rate-hike fears; spot ETFs snapped a 10-day outflow streak (FMP News, The Block, Jul 3)</li>
+            <li>Options markets show traders "not fully buying the bounce" &mdash; defensive positioning has eased but not disappeared (FMP News, CoinDesk, Jul 3)</li>
+            <li>US spot Bitcoin ETFs saw $294.6M in outflows even as Ethereum funds saw more resilient demand (FMP News, NewsBTC, Jul 3)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Bouncing off a ~$58,000 low with continued corporate treasury accumulation (Metaplanet now holds 43,000 BTC).</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Fed Chair Warsh's hawkish "prices are too high" stance at Sintra cuts against the "dovish Fed" narrative cited for today's bounce.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Soft June payrolls easing Fed rate-hike fears is typically supportive for risk assets; price holding the $61K level; ETF outflow streak just snapped.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Spot ETF outflows continuing (-$294.6M); options positioning shows traders "not fully buying the bounce."</div>
         </div>
-        <div class="impact-note">No material change &mdash; today's move is a continuation of the post-selloff bounce, not a new catalyst.</div>
+        <div class="impact-note">No material change &mdash; the bounce reads as tentative/defensive rather than a decisive trend shift.</div>
       </div>
 
     </div>
@@ -522,19 +532,19 @@
 
     <div class="voice-item">
       <div class="voice-name">Jensen Huang (Nvidia CEO) &mdash; No new statement this week</div>
-      <div class="voice-quote">No sourced in-window (7-day) quote found. Most recent tracked remarks &mdash; the GTC Taipei keynote on agentic AI and the Vera Rubin platform &mdash; fall outside the 7-day window.</div>
+      <div class="voice-quote">No sourced in-window (7-day) quote found. Most recent tracked remarks &mdash; the GTC Taipei keynote on agentic AI &mdash; were Jun 1, 2026, outside the 7-day window.</div>
       <div class="voice-relevance">No new public statements this week (verified).</div>
     </div>
 
     <div class="voice-item">
-      <div class="voice-name">Elon Musk (SpaceX / xAI CEO) &mdash; No new statement this week</div>
-      <div class="voice-quote">Musk denied a WSJ AI-handset-prototype report via company statement on Jul 1, but that is not an on-record direct quote meeting our sourcing bar. His last confirmed on-record remark &mdash; confirming the "Starmind" AI-satellite constellation name on X &mdash; was Jun 24, just outside the 7-day window.</div>
-      <div class="voice-relevance">No new public statements this week (verified).</div>
+      <div class="voice-name">Elon Musk (SpaceX / xAI CEO)</div>
+      <div class="voice-quote">"Utterly false." &mdash; X post, July 1, 2026, denying a Wall Street Journal report that SpaceX showed investors a prototype AI handset device integrating xAI technology and Qualcomm Snapdragon chips.</div>
+      <div class="voice-relevance">Source: <a href="https://www.billionaires.africa/2026/07/02/elon-musk-denies-wsj-report-spacex-showed-investors-secret-ai-device/" style="color:var(--accent)">billionaires.africa, Jul 2, 2026</a> &middot; Directly addresses AI-device speculation around SPCX just as the stock heads into Nasdaq-100 inclusion.</div>
     </div>
 
     <div class="voice-item">
       <div class="voice-name">Donald Trump (U.S. President) &mdash; No new statement this week</div>
-      <div class="voice-quote">No sourced in-window quote with a verifiable date/URL found.</div>
+      <div class="voice-quote">No sourced in-window quote with a verifiable date/URL found. Most recent identifiable markets/economy remarks ("OIL IS FLOWING," "THE STOCK MARKETS ARE ROARING") date to mid-June 2026, outside the 7-day window.</div>
       <div class="voice-relevance">No new public statements this week (verified).</div>
     </div>
 
@@ -548,29 +558,29 @@
 
   <!-- Risk box -->
   <div class="section">
-    <div class="section-header">Key Risks &mdash; Today &amp; This Week</div>
+    <div class="section-header">Key Risks &mdash; This Week</div>
     <div class="risk-box">
       <div class="risk-label">&#9888; Known Unknowns &amp; Tail Risks</div>
-      <strong>1. Non-Farm Payrolls &amp; Unemployment Rate &mdash; 8:30am ET, High Impact</strong><br/>
-      Consensus +110K vs. prior +172K; Unemployment Rate held at 4.3%. A soft print could sharpen Fed-cut bets against Warsh's hawkish Sintra tone; a hot print could pressure rate-sensitive tech multiples further.
+      <strong>1. AI-Chip / Memory Sector Drawdown</strong><br/>
+      Thursday's ~$137B single-day market-cap wipeout across AI chipmakers followed a blistering H1 2026 rally. Watch Monday's open for follow-through or a bounce as the holiday-thinned session concludes.
       <br/><br/>
-      <strong>2. Chip-Sector "Bubble Risk" Rotation</strong><br/>
-      BofA's bubble-risk flag triggered a broad reversal in memory/AI-chip names (SNDK -13.7%, AMD -8.1%, SPCX -7.3% pre-market). Watch for follow-through or a bounce as the session progresses.
+      <strong>2. ISM Services PMI &amp; Fed Waller &mdash; Mon Jul 6</strong><br/>
+      First services-sector data and Fed commentary since the soft June jobs report; could reinforce or contradict Warsh's hawkish Sintra tone.
       <br/><br/>
-      <strong>3. TSLA Q2 Delivery Print &mdash; Due Today</strong><br/>
-      Estimates center around 406K deliveries. Michael Burry's fresh short bet raises the stakes on a miss; the Semi's first fatal crash is a fresh headline overhang.
+      <strong>3. TSLA Legal/Regulatory Overhang</strong><br/>
+      A Texas driver's manslaughter charge tied to a fatal Autopilot-related crash adds fresh scrutiny risk even after a strong Q2 delivery beat.
       <br/><br/>
-      <strong>4. Warsh vs. "Dovish Fed" Crypto Narrative</strong><br/>
-      BTC's bounce is being attributed to dovish Fed signals, in tension with Warsh's explicitly hawkish "prices are too high" remarks from the same day &mdash; a potential source of volatility if the market re-prices around the actual policy stance.
+      <strong>4. SPCX Volatility Into Index Inclusion</strong><br/>
+      Thin float (&lt;5% of shares) plus the IPO-bank quiet period ending Tuesday could produce sharp moves &mdash; in either direction &mdash; around the Jul 7 Nasdaq-100 addition.
       <br/><br/>
       <strong>5. Primary News-Wire Outage</strong><br/>
-      MT Newswires access is fully denied today (trial/subscription expired) across all watch-list symbols. This brief relied entirely on FMP News and WebSearch fallback &mdash; renew the MT Newswires entitlement to restore wire-quality ground truth for tomorrow's brief.
+      MT Newswires access is fully denied today (EDGE trial/subscription expired; CORE dataset not found) across all watch-list symbols. This brief relied entirely on FMP News and WebSearch fallback &mdash; recommend renewing the MT Newswires entitlement to restore wire-quality ground truth.
     </div>
   </div>
 
 </div>
 
-<footer>SideStreet Briefs &middot; Auto-generated 2026-07-02 ~07:36 ET &middot; Sources: FMP (prices/rates/gold/crude/crypto/news) &middot; WebSearch (Voices/macro context) &middot; MT Newswires unavailable (trial expired) &middot; Not financial advice</footer>
+<footer>SideStreet Briefs &middot; Auto-generated 2026-07-03 ~07:35 ET &middot; Sources: FMP (prices/rates/gold/crude/crypto/news) &middot; WebSearch (Voices/macro context) &middot; MT Newswires unavailable (trial expired) &middot; Not financial advice</footer>
 
 </body>
 </html>
