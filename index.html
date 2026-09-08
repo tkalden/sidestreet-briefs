@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SideStreet Briefs &mdash; Mon Sep 7, 2026</title>
+  <title>SideStreet Briefs &mdash; Tue Sep 8, 2026</title>
   <style>
     :root {
       --bg: #0a0e17;
@@ -228,89 +228,83 @@
 
 <div class="topbar">
   <div class="logo">SIDE<span>STREET</span> BRIEFS</div>
-  <div class="meta">Auto-published &middot; Mon Sep 7, 2026 &middot; US markets closed (Labor Day) &middot; MT Newswires/Tavily unauthorized, FMP quote/index/commodity endpoints plan-gated &middot; Next session Tue Sep 8</div>
+  <div class="meta">Auto-published &middot; Tue Sep 8, 2026 &middot; Premarket &middot; MT Newswires/Tavily unauthorized, FMP quote/index/commodity batch endpoints plan-gated (per-symbol endpoints used instead) &middot; Next session Wed Sep 9</div>
 </div>
 
 <div class="container">
 
-  <div class="brief-date">Market Brief &mdash; Monday Sep 7, 2026</div>
-  <div class="brief-title">Markets Closed for Labor Day as Iran-US Tanker Strikes Push Oil Toward $97 Ahead of a Hawkish Fed Decision</div>
-  <div class="brief-generated">Generated: 2026-09-07 07:38 ET &middot; Sources: FMP (news, last-trade prices, crypto, treasury rates, earnings calendar), WebSearch (index closes, WTI, Voices) &middot; MT Newswires and Tavily unauthorized (connector re-authorization not available in this headless session); FMP's batch-aftermarket-quote, batch-quote, all-index-quotes, and WTI commodity endpoints returned ACCESS DENIED (Starter plan). Self-audit (0 hard flags) is in the review file.</div>
-
-  <div class="holiday-banner">
-    &#128197; <strong>US markets closed today &mdash; Labor Day.</strong> All stock prices below reflect Friday 9/4/2026's last trade, not premarket or intraday levels. Next trading session: Tuesday, Sept 8, 2026.
-  </div>
+  <div class="brief-date">Market Brief &mdash; Tuesday Sep 8, 2026</div>
+  <div class="brief-title">Oil Jumps to a 6-Week High as Houthi Strikes Hit Saudi Energy Facilities on Top of the Iran-US Tanker Conflict</div>
+  <div class="brief-generated">Generated: 2026-09-08 07:40 ET &middot; Sources: FMP (per-symbol premarket quotes, news, crypto, treasury rates, earnings calendar), WebSearch (index futures, WTI, gold, Voices) &middot; MT Newswires and Tavily unauthorized (connector re-authorization not available in this headless session); FMP's batch-aftermarket-quote, all-index-quotes, and commodity endpoints returned ACCESS DENIED (Starter plan) &mdash; worked around via FMP's per-symbol aftermarket-quote/quote-short endpoints. Self-audit (0 hard flags) is in the review file.</div>
 
   <div class="data-warning">
-    &#9888; <strong>Data note:</strong> MT Newswires and Tavily require connector re-authorization not available in this headless session, so no wire-service headlines are included below &mdash; all news is FMP News-sourced, supplemented by WebSearch for Voices and macro figures. FMP's <code>batch-aftermarket-quote</code>, <code>batch-quote</code>, <code>all-index-quotes</code>, and its WTI commodity lookup are gated behind a paid plan tier this account does not have &mdash; ACCESS DENIED (or symbol-not-found) on every call. Stock prices shown use FMP's <code>quote-short</code> endpoint (last trade = Friday 9/4 close, since markets are shut today). S&amp;P/Nasdaq/Dow closes and WTI came from WebSearch of financial press, cross-checked across multiple outlets. BTC, gold, treasury yields, news, and the earnings calendar all came through FMP directly. Full self-audit (0 hard flags) is in the review file.
+    &#9888; <strong>Data note:</strong> MT Newswires and Tavily require connector re-authorization not available in this headless session, so no wire-service headlines are included below &mdash; all news is FMP News-sourced, supplemented by WebSearch for Voices and index/commodity levels. FMP's <code>batch-aftermarket-quote</code>, <code>all-index-quotes</code>, and <code>commodity</code> endpoints are gated behind a paid plan tier this account does not have &mdash; ACCESS DENIED on every call. Stock premarket prices below instead use FMP's per-symbol <code>aftermarket-quote</code> (bid/ask midpoint) and <code>quote-short</code> (prior close) endpoints, which are not plan-gated. S&amp;P/Nasdaq/Dow futures, WTI, and gold came from WebSearch of financial press, cross-checked across multiple outlets. BTC, treasury yields, news, and the earnings calendar all came through FMP directly. Treasury yields are last updated 9/4 (no update since). Full self-audit (0 hard flags) is in the review file.
   </div>
 
   <!-- Macro strip -->
   <div class="macro-strip">
     <div class="macro-cell">
-      <div class="label">S&amp;P 500</div>
-      <div class="value">7,718.60</div>
-      <div class="chg dn">&#9660; -0.38% (Fri close, WebSearch)</div>
+      <div class="label">S&amp;P 500 (fut)</div>
+      <div class="value">7,702</div>
+      <div class="chg dn">&#9660; -0.25% (WebSearch)</div>
     </div>
     <div class="macro-cell">
-      <div class="label">Nasdaq</div>
-      <div class="value">26,506.99</div>
-      <div class="chg dn">&#9660; -0.29% (Fri close, WebSearch)</div>
+      <div class="label">Nasdaq (fut)</div>
+      <div class="value">29,586</div>
+      <div class="chg up">&#9650; +0.07% (WebSearch)</div>
     </div>
     <div class="macro-cell">
-      <div class="label">Dow</div>
-      <div class="value">53,414.25</div>
-      <div class="chg dn">&#9660; -0.51% (Fri close, WebSearch)</div>
+      <div class="label">Dow (fut)</div>
+      <div class="value">53,051</div>
+      <div class="chg dn">&#9660; -0.73% (WebSearch)</div>
     </div>
     <div class="macro-cell">
       <div class="label">10Y Yield</div>
       <div class="value">4.78%</div>
-      <div class="chg flat">as of 9/4 (FMP)</div>
+      <div class="chg flat">as of 9/4 (FMP, stale)</div>
     </div>
     <div class="macro-cell">
       <div class="label">2Y Yield</div>
       <div class="value">4.37%</div>
-      <div class="chg flat">as of 9/4 (FMP)</div>
+      <div class="chg flat">as of 9/4 (FMP, stale)</div>
     </div>
     <div class="macro-cell">
       <div class="label">WTI Crude</div>
-      <div class="value">~$92.06</div>
-      <div class="chg up">&#9650; +0.63% on Iran tanker strikes (WebSearch)</div>
+      <div class="value">~$94.36</div>
+      <div class="chg up">&#9650; +2.32%, 6-week high (WebSearch)</div>
     </div>
     <div class="macro-cell">
       <div class="label">Gold</div>
-      <div class="value">$4,435.00</div>
-      <div class="chg dn">&#9660; -0.93% (FMP)</div>
+      <div class="value">~$4,440</div>
+      <div class="chg flat">premarket, chg unconfirmed (WebSearch)</div>
     </div>
     <div class="macro-cell">
       <div class="label">BTC</div>
-      <div class="value">$79,430.55</div>
-      <div class="chg dn">&#9660; -1.15%</div>
+      <div class="value">$78,441.91</div>
+      <div class="chg dn">&#9660; -0.82% (FMP)</div>
     </div>
   </div>
 
   <div class="futures-strip">
-    <strong>Holiday snapshot:</strong> No premarket quotes today &mdash; US markets are closed for Labor Day, and FMP's aftermarket/premarket endpoints are plan-gated regardless. All stock levels above and below are Friday 9/4 last trades. &nbsp;&middot;&nbsp;
-    Key event ahead: <strong>FOMC rate decision Wed, Sept 16 at 2:00pm ET</strong>, with August CPI due Sept 11 as the last major data point beforehand. No watch-list earnings in the next 14 days.
+    <strong>Premarket snapshot as of ~07:40 ET.</strong> Stock levels below are FMP per-symbol premarket bid/ask midpoints vs. Friday 9/4's last close (Monday was Labor Day &mdash; markets closed). &nbsp;&middot;&nbsp;
+    Key event ahead: <strong>August CPI Thursday, Sept 11</strong>, then the <strong>FOMC rate decision Wed, Sept 16 at 2:00pm ET</strong>. No watch-list earnings in the next 14 days.
   </div>
 
   <!-- Market -->
   <div class="section">
     <div class="section-header">Market</div>
     <div class="market-block">
-      <strong>US equity markets are closed today for Labor Day.</strong> Friday's session closed lower across the board (S&amp;P -0.38%, Nasdaq -0.29%, Dow -0.51%) after a blowout August payrolls report (+162K vs. +53K expected, unemployment steady at 4.1%) pushed Treasury yields higher and raised the market-implied odds of a Fed <strong>rate hike</strong> &mdash; not a cut &mdash; at this month's FOMC meeting.
+      <strong>US equity futures are mixed-to-lower this morning</strong> (Dow -0.73%, S&amp;P -0.25%, Nasdaq +0.07%) as a fresh Middle East escalation dominates the tape: Houthi forces struck multiple Saudi energy facilities and utilities on Tuesday, wounding 70+ people, on top of last week's Iran&ndash;US tanker strikes in the Strait of Hormuz. Together the two conflicts threaten both the Bab al-Mandeb and Hormuz oil chokepoints simultaneously, and WTI has rallied to a six-week high (~$94.36, +2.32%) on the news.
       <br/><br/>
-      <strong>The dominant risk story is the escalating US&ndash;Iran conflict</strong> in the Strait of Hormuz: US Central Command says it "permanently disabled" two Iranian oil tankers and destroyed a third on September 5 in retaliation for Iranian missile fire at a US carrier group. Brent has pushed toward $97/bbl and WTI is trading near $92 on the news &mdash; a genuine tail risk for energy-sensitive inflation heading into the September 16 FOMC decision.
+      <strong>The Fed narrative is unchanged from Friday:</strong> the blowout August jobs report (+162K vs. +53K expected) plus Fed Chair Kevin Warsh's hawkish Jackson Hole framing (Aug 28) have market-implied odds leaning toward a rate <strong>hike</strong> &mdash; not a cut &mdash; at the September 16 FOMC meeting. Today's only scheduled US data of note, NFIB Small Business Optimism, missed (98.7 vs. 99.3 expected, down from 99.8), a soft read on small-business sentiment amid the rate and inflation uncertainty. August CPI (Thursday, Sept 11) is the last major data point before the FOMC decision.
       <br/><br/>
-      <strong>Fed Chair Kevin Warsh's hawkish Jackson Hole framing (Aug 28)</strong> remains the operative Fed narrative: he reaffirmed the 2% PCE inflation target and said this summer's inflation readings "do not tell me that underlying trends have meaningfully improved." No fresh Fed commentary has been sourced this week; the next scheduled Fed event is the FOMC decision on Sept 16 at 2:00pm ET, with August CPI (Sept 11) the last major data point beforehand.
+      <strong>No watch-list earnings in the next 14 days:</strong> SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, and TSLA are all clear of the Sept 8&ndash;22 earnings calendar per FMP.
       <br/><br/>
-      <strong>No watch-list earnings in the next 14 days:</strong> SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, and TSLA are all clear of the Sept 7&ndash;21 earnings calendar per FMP.
+      <strong>Memory and AI infrastructure remain the strongest pocket of the tape:</strong> SanDisk and Micron are both up premarket, extending Friday's surge, with SanDisk set to join the S&amp;P 100 on Sept 21 off a ~500% YTD rally. Nvidia's Jensen Huang doubled down on his "AGI has arrived" framing this week, and Nvidia-backed Firmus signed a new OpenAI data-center deal in Malaysia. AMD posted a strong AI/data-center quarter but is now drawing valuation scrutiny &mdash; commentary increasingly frames Broadcom as AMD's key competitive threat in custom AI silicon.
       <br/><br/>
-      <strong>Memory and AI infrastructure remain the strongest pocket of the tape:</strong> SanDisk disclosed 10 long-term supply agreements (avg. 4+ years, contractual price floors) covering &gt;50% of FY27 bit shipments, and Nvidia CEO Jensen Huang declared "AGI has arrived" citing OpenAI's GPT-6 Astra, while AMD's data-center revenue mix hit 58% of sales (guided toward ~63% in Q3) alongside its Anthropic GPU commitment. Nvidia itself trades closest to its 52-week high among large-cap chip names, while AMD, Micron, Broadcom, and Marvell remain 18&ndash;32% off theirs.
+      <strong>Tesla is modestly positive today</strong> after Slovenia became the sixth European country to clear Tesla's FSD driver-assistance system, and Seeking Alpha reiterated a "strong buy" &mdash; a more constructive tone than Monday's post-Cybercab skepticism (Goldman Sachs, Ross Gerber) that drove TSLA's ~5% Monday decline.
       <br/><br/>
-      <strong>Tesla's Cybercab reception was lukewarm:</strong> the September 3 robotaxi launch "failed to impress investors" per post-launch coverage, and TSLA posted the watchlist's largest Friday decline (-5.92%) amid growing scrutiny of the gap between Tesla's AI narrative and its reported financials.
-      <br/><br/>
-      <strong>Rates and crypto:</strong> 10Y last confirmed at 4.78%, 2Y at 4.37% (both as of Fri 9/4 via FMP treasury-rates; no update over the holiday weekend). Bitcoin is down about 1.15% to $79,430.55, consistent with modest profit-taking (~110,000 BTC in recent long-term-holder realized gains) even as ETF inflows hit $3.8B over the trailing three weeks &mdash; the strongest stretch of 2026 (FMP crypto, WebSearch).
+      <strong>Rates and crypto:</strong> 10Y last confirmed at 4.78%, 2Y at 4.37% (both as of 9/4 via FMP treasury-rates; no update since). Bitcoin is down about 0.82% to $78,441.91, consistent with a broader narrative that spot BTC ETFs remain roughly $1B shy of breaking even for 2026 even after a recent inflow rebound.
     </div>
   </div>
 
@@ -322,15 +316,15 @@
       <strong>1. August CPI &mdash; Thursday, Sept 11</strong> [Upcoming]<br/>
       The last major inflation data point before the FOMC decision; a hot print would reinforce Warsh's hawkish framing and rate-hike odds.<br/><br/>
       <strong>2. FOMC Rate Decision &mdash; Wednesday, Sept 16, 2:00pm ET</strong> [Upcoming]<br/>
-      Markets are weighing a hike (not a cut) after Friday's blowout jobs report and Warsh's Jackson Hole remarks; Summary of Economic Projections (dot plot) also due.<br/><br/>
-      <strong>3. US&ndash;Iran Strait of Hormuz Conflict &mdash; Developing</strong> [Developing]<br/>
-      Active tit-for-tat strikes on oil tankers; further escalation is a direct upside risk to oil and, by extension, headline inflation.<br/><br/>
-      <strong>4. SPCX Share-Lockup Expiration &mdash; Sept 24</strong> [Near-term]<br/>
-      A concrete supply overhang for the newly-listed stock, flagged across multiple outlets this week.<br/><br/>
-      <strong>5. No Watch-List Earnings Through Sept 21</strong> [Confirmed]<br/>
+      Markets are weighing a hike (not a cut) after last week's blowout jobs report and Warsh's Jackson Hole remarks; Summary of Economic Projections (dot plot) also due.<br/><br/>
+      <strong>3. Dual Middle East Oil-Chokepoint Conflict &mdash; Developing</strong> [Developing]<br/>
+      Houthi strikes on Saudi energy facilities (Sept 8) plus ongoing Iran&ndash;US tanker strikes in the Strait of Hormuz threaten both Bab al-Mandeb and Hormuz simultaneously &mdash; a direct upside risk to oil and headline inflation.<br/><br/>
+      <strong>4. SPCX Share-Lockup Expiration &mdash; Sept 24 (319M shares)</strong> [Near-term]<br/>
+      A now-quantified supply overhang for the newly-listed stock: 319 million additional shares become eligible to trade.<br/><br/>
+      <strong>5. No Watch-List Earnings Through Sept 22</strong> [Confirmed]<br/>
       SNDK, NVDA, AMD, GOOGL, MSFT, SPCX, and TSLA are all clear of the next 14 days' earnings calendar (FMP).<br/><br/>
       <strong>6. Data-Source Gap (Operational)</strong> [Operational]<br/>
-      MT Newswires and Tavily are unauthorized this session, and FMP's stock-quote, index, and WTI-commodity endpoints returned ACCESS DENIED (Starter plan) &mdash; no confirmed premarket prices this run, and index/WTI levels are WebSearch-sourced rather than from a primary feed.
+      MT Newswires and Tavily are unauthorized this session, and FMP's batch stock-quote, index, and commodity endpoints returned ACCESS DENIED (Starter plan) &mdash; premarket stock prices came from FMP's per-symbol endpoints instead, while index futures/WTI/gold are WebSearch-sourced rather than from a primary feed.
     </div>
   </div>
 
@@ -344,21 +338,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">SNDK</div>
           <div class="ticker-name">SanDisk</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $1,740.00 (+$185.01 / +11.90%)</div>
+          <div class="ticker-price">$1,761.16 premarket (+1.22%) vs. Fri close $1,740.00, as of 07:37 ET</div>
           <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Locked in 10 long-term supply agreements (avg. 4+ years, contractual price floors) covering &gt;50% of FY27 bit shipments (Motley Fool, 9/7)</li>
-            <li>Stock up ~24% since last earnings report on continued NAND pricing-cycle strength (Zacks, 9/4)</li>
-            <li>Rallied Friday alongside the memory/AI-chip complex after Nvidia's Hugging Face acquisition lifted sentiment (Motley Fool, 9/4)</li>
+            <li>Micron and SanDisk up nearly 2% premarket, extending the memory-stock rally on tight supply/AI demand (Invezz, 9/8)</li>
+            <li>Seeking Alpha: trades at ~10x forward FCF, ~$24B FY27 free cash flow expected, 100% of excess FCF earmarked for shareholders (Seeking Alpha, 9/8)</li>
+            <li>Set to join the S&amp;P 100 before trading opens Sept 21, off new long-term supply agreements covering &gt;50% of FY27 bit shipments (GuruFocus, 9/7)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Multi-year supply contracts with price floors lock in &gt;50% of FY27/FY28 bit shipments, insulating Sandisk from the next NAND downturn.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Stock is up sharply in a short window (+24% since earnings); any AI-capex digestion or NAND oversupply signal could trigger a fast unwind.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Multi-year supply contracts with price floors lock in &gt;50% of FY27/FY28 bit shipments; ~10x FCF with a full shareholder-return commitment.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Stock is up ~500% YTD; any AI-capex digestion or NAND oversupply signal could trigger a fast unwind.</div>
         </div>
-        <div class="impact-note">Reinforcing &mdash; new supply-agreement disclosure directly supports the bull case.</div>
+        <div class="impact-note">Reinforcing &mdash; confirmed S&amp;P 100 inclusion (9/21) and premarket again outperforming the tape.</div>
       </div>
 
       <!-- NVDA -->
@@ -366,21 +360,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">NVDA</div>
           <div class="ticker-name">Nvidia</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $230.36 (+$1.91 / +0.84%)</div>
+          <div class="ticker-price">$231.09 premarket (+0.32%) vs. Fri close $230.36, as of 07:38 ET</div>
           <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>CEO Jensen Huang declared "AGI has arrived," citing OpenAI's GPT-6 Astra trained on 100K+ Grace Blackwell NVLink72 systems, with 400K more GPUs coming online (X/Jensen Huang via Invezz, 9/7)</li>
-            <li>Trades ~2.6% below its 52-week high while chip peers (AMD, Micron, Broadcom, Marvell) remain 18&ndash;32% below theirs (Motley Fool, 9/6)</li>
-            <li>Seeking Alpha reiterates Buy with a raised target post-Q2; $12.9B Hugging Face deal seen as a strategic open-source AI push (Seeking Alpha, 9/6)</li>
+            <li>Jensen Huang's Sept 6 "AGI has arrived" post continues to reverberate across coverage (Seeking Alpha, 24/7 Wall St, 9/8)</li>
+            <li>24/7 Wall Street flags Hugging Face community-retention risk from the $12.9B acquisition (24/7 Wall St, 9/8)</li>
+            <li>Nvidia-backed Firmus signed a new OpenAI Malaysia data-center deal (Reuters, 9/7); board member sold &gt;$410M in stock (GuruFocus, 9/7)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Continued dominance in AI compute; Huang's AGI framing and the Hugging Face acquisition extend the ecosystem moat.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Server-depreciation-schedule debate (peers extending useful life to 5.5&ndash;6 years) raises questions about replacement-cycle durability.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Continued AI-compute dominance; Huang's AGI framing and expanding ecosystem deals extend the moat.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Hugging Face bet carries open-source-community risk; large insider sale is a headline overhang.</div>
         </div>
-        <div class="impact-note">No material change today &mdash; narrative reinforcement, muted price reaction.</div>
+        <div class="impact-note">No material change &mdash; narrative reinforcement, muted premarket reaction.</div>
       </div>
 
       <!-- AMD -->
@@ -388,21 +382,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">AMD</div>
           <div class="ticker-name">Advanced Micro Devices</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $477.57 (+$21.41 / +4.69%)</div>
+          <div class="ticker-price">$482.83 premarket (+1.10%) vs. Fri close $477.57, as of 07:38 ET</div>
           <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Data-center revenue reached 58% of Q2 sales (up from 42% a year ago); guidance implies ~63% in Q3 (Motley Fool, 9/6)</li>
-            <li>Up-to-$5B Anthropic investment (2GW of Instinct MI450 GPUs) back in focus as Anthropic's IPO prospectus is reportedly imminent (Motley Fool, 9/5)</li>
-            <li>Rated Buy by Seeking Alpha on 50% YoY revenue growth and 107% YoY data-center growth, despite a rich ~60x forward P/E (Seeking Alpha, 9/4)</li>
+            <li>Seeking Alpha: AMD now more expensive than Nvidia and Broadcom on forward P/E (~72x) despite +50% YoY Q2 revenue growth (Seeking Alpha, 9/7)</li>
+            <li>24/7 Wall Street: Wall Street "worried" about AMD post-earnings despite the beat; Broadcom flagged as the key AI-chip threat (24/7 Wall St, 9/7)</li>
+            <li>Finbold ML model projects consolidation/slight rise through Sept 30 (Finbold, 9/8)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Data-center mix shift and the Anthropic GPU commitment show AMD converting AI hype into contracted revenue.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Valuation (~60x forward P/E) already prices in much of the ramp; execution risk on Anthropic deal contingencies through FY28.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Data-center mix now 58% of sales (guided ~63% in Q3); record revenue growth shows AI hype converting to contracted revenue.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Valuation now richer than Nvidia/Broadcom (~72x forward P/E) with margins still lagging.</div>
         </div>
-        <div class="impact-note">Reinforcing &mdash; Friday's rally reflects the Anthropic/data-center narrative gaining traction.</div>
+        <div class="impact-note">Mixed &mdash; premarket modestly positive, but the "AMD is now the expensive one" narrative is a new risk to watch.</div>
       </div>
 
       <!-- GOOGL -->
@@ -410,21 +404,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">GOOGL</div>
           <div class="ticker-name">Alphabet</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $338.46 (-$4.02 / -1.17%)</div>
+          <div class="ticker-price">$336.08 premarket (-0.70%) vs. Fri close $338.46, as of 07:37 ET</div>
           <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
+            <li>Google rolled out EU search-result changes Tuesday to satisfy antitrust regulators, which it says will degrade UX and raise costs (Reuters, 9/8)</li>
+            <li>Bulls call Alphabet "the best bargain in the Magnificent Seven"; Gemini grew from 400M to 1B+ monthly users in just over a year (Motley Fool, 9/7&ndash;9/8)</li>
             <li>Bill Ackman's Pershing Square exited its entire Alphabet stake in Q2, rotating into Netflix (Motley Fool, 9/7)</li>
-            <li>Bulls counter that Alphabet is "the best bargain in the Magnificent Seven" and that Gemini's app grew from 400M to 1B+ monthly users in just over a year (Motley Fool, 9/5&ndash;9/7)</li>
-            <li>Schwab Network strategist says GOOGL is outperforming even as the market "writes its obituary" on some segments (Schwab Network, 9/6)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
           <div class="bull-case"><div class="case-label">Bull</div>Cheapest "Magnificent Seven" name on some valuation measures; Gemini user growth shows consumer AI traction.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Ackman's full exit signals a credible investor sees limited near-term upside or capex-return risk.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Ackman's full exit signals a credible investor sees limited near-term upside; new EU search changes add a cost drag.</div>
         </div>
-        <div class="impact-note">Mixed &mdash; a high-profile sale is a sentiment headwind, but no fundamental change.</div>
+        <div class="impact-note">Modestly negative &mdash; the EU search-result changes are a new, concrete regulatory cost.</div>
       </div>
 
       <!-- MSFT -->
@@ -432,21 +426,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">MSFT</div>
           <div class="ticker-name">Microsoft</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $499.70 (-$10.42 / -2.04%)</div>
+          <div class="ticker-price">$499.53 premarket (-0.03%) vs. Fri close $499.70, as of 07:38 ET &mdash; wide bid/ask spread ($495.55/$503.50)</div>
           <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Seattle Times and Newsday became the latest publishers to sue OpenAI and Microsoft over alleged use of their journalism in AI training (TechCrunch, 9/5)</li>
-            <li>Named the "cheapest of the three" mega-cap cloud names in a comparative valuation piece on Amazon/Alphabet/Microsoft (Motley Fool, 9/5)</li>
-            <li>Several small institutional 13F position changes reported (Defense World, 9/5) &mdash; routine, not market-moving</li>
+            <li>Microsoft's next Xbox ("Project Helix") faces a "$1,000 problem" on consumer pricing tolerance (GuruFocus, 9/7)</li>
+            <li>MSFT sits within reach of a record high, but a cash-flow line item will decide the breakout; separately flagged as flat on the year despite Azure momentum (24/7 Wall St/MarketBeat, 9/7)</li>
+            <li>Zacks reiterates MSFT on its Focus List as a top long-term stock (Zacks, 9/7)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Cheapest of the big-three cloud/AI names on relative valuation; Azure/AI integration remains a core enterprise moat.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Mounting AI-copyright litigation (now including Seattle Times, Newsday) is a growing legal/financial overhang.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Azure/AI integration remains a core enterprise moat; some coverage sees a path toward $600.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Stock is flat on the year despite AI enthusiasm; new-Xbox pricing strategy faces consumer pushback risk.</div>
         </div>
-        <div class="impact-note">No material change today.</div>
+        <div class="impact-note">No material change &mdash; wide premarket spread suggests thin early liquidity rather than a clear signal.</div>
       </div>
 
       <!-- SPCX -->
@@ -454,21 +448,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">SPCX</div>
           <div class="ticker-name">SpaceX &mdash; IPO'd Jun 12, 2026</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $147.95 (-$1.79 / -1.20%)</div>
+          <div class="ticker-price">$148.90 premarket (+0.64%) vs. Fri close $147.95, as of 07:37 ET</div>
           <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Trades ~34% below its post-IPO high; September 24 share-lockup expiration flagged as a near-term volatility risk (Finbold/Motley Fool, 9/7)</li>
-            <li>CEO Elon Musk targeting a late-2027 launch for orbital AI data centers, though CNBC reports major unresolved hurdles (cooling, radiation, GPU obsolescence, data transmission) &mdash; OpenAI's Sam Altman has publicly called the concept "ridiculous" (CNBC, 9/7)</li>
-            <li>Cathie Wood's ARK funds count SPCX among their two largest (Musk-linked) positions, which drove more than half of one fund's Friday decline (Motley Fool, 9/6)</li>
+            <li>GuruFocus: SPCX is 34% below its post-IPO high, and "319 million more shares are coming" ahead of the Sept 24 unlock (GuruFocus, 9/7)</li>
+            <li>CNBC: Musk targets a late-2027 orbital-data-center launch, but experts cite unresolved cooling/radiation/GPU/data-transmission hurdles and see real scale more likely in the 2030s (CNBC, 9/6&ndash;9/7)</li>
+            <li>Cathie Wood's ARK funds count SPCX among their two largest positions; it drove &gt;half of one fund's Friday decline (Motley Fool, 9/6)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
           <div class="bull-case"><div class="case-label">Bull</div>Dominant launch-services position; long-dated optionality on orbital AI data centers and Starlink monetization.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>September 24 unlock is a concrete near-term supply overhang; orbital-data-center timeline faces real technical skepticism.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Sept 24 unlock now quantified at 319M additional shares; orbital-data-center timeline faces real technical skepticism.</div>
         </div>
-        <div class="impact-note">Watch item &mdash; unlock date now 2.5 weeks out; no new information changes the base case today.</div>
+        <div class="impact-note">Modestly negative &mdash; the specific 319M-share figure sharpens a previously vaguer supply-overhang risk.</div>
       </div>
 
       <!-- TSLA -->
@@ -476,21 +470,21 @@
         <div class="ticker-header">
           <div class="ticker-sym">TSLA</div>
           <div class="ticker-name">Tesla</div>
-          <div class="ticker-price">No pre-market data (markets closed, FMP plan-gated). Fri close: $354.08 (-$22.285 / -5.92%)</div>
-          <div class="ticker-stance bear">&#9679; Bearish</div>
+          <div class="ticker-price">$355.13 premarket (+0.30%) vs. Fri close $354.08, as of 07:38 ET</div>
+          <div class="ticker-stance bull">&#9679; Bullish</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Cybercab robotaxi launched September 3 but "failed to impress investors," per post-launch coverage (Motley Fool, 9/7)</li>
-            <li>24/7 Wall Street argues Tesla is pitching itself as an AI company while the income statement "tells a very different story" (24/7 Wall Street, 9/7)</li>
-            <li>Accessibility-focused human-interest piece on a blind rider's first Cybercab experience generated positive press but no financial signal (Business Insider, 9/6)</li>
+            <li>Seeking Alpha reiterates "strong buy" on FSD/Robotaxi/Optimus upside (Seeking Alpha, 9/8)</li>
+            <li>Reuters: Slovenia approved Tesla's FSD system, the sixth European country to do so ahead of a possible EU-wide vote (Reuters, 9/8)</li>
+            <li>Goldman Sachs says software (not hardware cost) will be the real robotaxi differentiator; Ross Gerber warns owners against taking on Robotaxi-program risk (Benzinga, 9/7&ndash;9/8)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Optionality on robotaxi/Cybercab rollout and broader AI ambitions (FSD, Optimus).</div>
-          <div class="bear-case"><div class="case-label">Bear</div>Cybercab's muted investor reception and a widening gap between AI narrative and reported financials.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Regulatory tailwind building for FSD in Europe; optionality on Robotaxi/Cybercab and Optimus remains a live bull thesis.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Goldman flags software as the real differentiator, not hardware; stock fell ~5% Monday on AI-narrative-vs-fundamentals concerns.</div>
         </div>
-        <div class="impact-note">Modestly negative &mdash; post-launch commentary is more skeptical than bullish, and TSLA was the watchlist's worst Friday performer.</div>
+        <div class="impact-note">Modestly positive &mdash; Slovenia's FSD approval and a reiterated strong-buy call follow Monday's post-Cybercab skepticism.</div>
       </div>
 
       <!-- BTCUSD -->
@@ -498,20 +492,20 @@
         <div class="ticker-header">
           <div class="ticker-sym">BTCUSD</div>
           <div class="ticker-name">Bitcoin</div>
-          <div class="ticker-price">$79,430.55, -1.15% as of 07:38 ET (FMP cryptocurrency-quote)</div>
+          <div class="ticker-price">$78,441.91, -0.82% as of 07:36 ET (FMP cryptocurrency-quote)</div>
           <div class="ticker-stance neut">&#9679; Neutral</div>
         </div>
         <div class="ticker-news">
           <ul>
-            <li>Bitcoin ETF inflows hit $3.8B over the trailing three weeks &mdash; the strongest stretch of 2026 &mdash; even as long-term holders realized ~110,000 BTC in profit-taking, stoking correction chatter (Yahoo Finance/BeInCrypto, 9/7)</li>
-            <li>Standard Chartered extended institutional spot BTC/ETH trading services to the UAE, a continued signal of institutional expansion (BeInCrypto, 9/7)</li>
+            <li>Coindesk: spot bitcoin ETFs remain ~$1B shy of breaking even for 2026 even after a recent rebound in demand (Coindesk, 9/8)</li>
+            <li>CryptoSlate: hacker returned 3,400 BTC to Liquid after a $47M theft, asking "is that ok?" &mdash; a public bridge outage persisted the next morning (CryptoSlate, 9/8)</li>
           </ul>
         </div>
         <div class="ticker-thesis">
-          <div class="bull-case"><div class="case-label">Bull</div>Record-pace ETF inflows show continued institutional adoption; Standard Chartered's UAE expansion adds another access point.</div>
-          <div class="bear-case"><div class="case-label">Bear</div>~110,000 BTC in recent long-term-holder profit-taking is a classic precursor to deeper pullbacks.</div>
+          <div class="bull-case"><div class="case-label">Bull</div>Institutional access continues to expand; ETF demand has been rebounding in recent weeks off 2026 lows.</div>
+          <div class="bear-case"><div class="case-label">Bear</div>Spot BTC ETFs remain ~$1B shy of breakeven for 2026 &mdash; a reminder the year's flows are still net negative.</div>
         </div>
-        <div class="impact-note">No material change today &mdash; modest pullback consistent with profit-taking, not a thesis-altering event.</div>
+        <div class="impact-note">No material change today &mdash; modest pullback consistent with the "still underwater for the year" backdrop.</div>
       </div>
 
     </div>
@@ -524,25 +518,25 @@
     <div class="voice-item">
       <div class="voice-name">Jensen Huang (Nvidia CEO)</div>
       <div class="voice-quote">"From ChatGPT to o1 to Astra in 4 years. AGI has arrived. Congratulations @OpenAI team. 400K GPUs coming online next." &mdash; Jensen Huang, X, Sept 6, 2026</div>
-      <div class="voice-relevance">Doubles down on the AI-compute demand thesis underpinning NVDA and, by extension, memory suppliers like SNDK; critics (e.g. Gary Marcus) dispute the "AGI" framing as unsubstantiated.</div>
+      <div class="voice-relevance">Reinforces the AI-compute demand thesis underpinning NVDA and, by extension, memory suppliers like SNDK; more assertive than his measured Aug 26 earnings-call language, and remains contested by critics who dispute the "AGI" framing.</div>
     </div>
 
     <div class="voice-item">
       <div class="voice-name">Elon Musk (SpaceX / xAI CEO)</div>
       <div class="voice-quote">No new public statements this week meeting the sourcing bar (a dated, directly-attributed, market-relevant quote within 7 days).</div>
-      <div class="voice-relevance">SpaceX's late-2027 orbital-data-center timeline was reported by CNBC (9/7) but without a direct, in-window quotable statement; Musk's most recent verifiable direct quote on the topic dates to February 2026.</div>
+      <div class="voice-relevance">SpaceX's late-2027 orbital-data-center timeline was reported by CNBC (9/6&ndash;9/7) citing Musk's ambitions, but without a fresh, directly-quotable statement from Musk himself this week.</div>
     </div>
 
     <div class="voice-item">
       <div class="voice-name">Donald Trump (U.S. President)</div>
-      <div class="voice-quote">"I've made Hundreds of Billions of Dollars on Stocks, and many other type Holdings, for the U.S.A., not myself, and all I do is get criticized by the Radical Left Dumocrats." &mdash; Donald Trump, Truth Social, Sept 6, 2026</div>
-      <div class="voice-relevance">Part of a broader posting spree defending market performance; separately, Trump has called Friday's selloff "crazy" and directed frustration at the Fed and trade partners over inflation/rates &mdash; political pressure on the Fed is an active undercurrent into the Sept 16 FOMC meeting.</div>
+      <div class="voice-quote">"Success does not cause inflation. Stupidity causes inflation." &mdash; Donald Trump, remarks from the Oval Office, Sept 5, 2026</div>
+      <div class="voice-relevance">Made while rejecting the idea that a strong August jobs report could be inflationary, and while venting at the Fed, financial markets, and trade partners over interest rates; underscores active political pressure on the Fed heading into the Sept 16 FOMC decision.</div>
     </div>
 
     <div class="voice-item">
       <div class="voice-name">Kevin Warsh (Federal Reserve Chair)</div>
       <div class="voice-quote">No new public statements this week. Most recent: "While this summer's [inflation] readings were better than expected, they do not tell me that underlying trends have meaningfully improved." &mdash; Kevin Warsh, Jackson Hole Economic Policy Symposium, Aug 28, 2026</div>
-      <div class="voice-relevance">Reaffirmed the Fed's 2% PCE target and opened the door to a rate hike. Next scheduled Fed event: FOMC meeting Sept 15&ndash;16, rate decision Sept 16 at 2:00pm ET.</div>
+      <div class="voice-relevance">Reaffirmed the Fed's 2% PCE target; market-implied odds of a September hike rose to ~55.7% following the speech. Next scheduled Fed event: FOMC meeting Sept 15&ndash;16, rate decision Sept 16 at 2:00pm ET.</div>
     </div>
 
   </div>
@@ -552,26 +546,26 @@
     <div class="section-header">Key Risks &mdash; This Week</div>
     <div class="risk-box">
       <div class="risk-label">&#9888; Known Unknowns &amp; Tail Risks</div>
-      <strong>1. US&ndash;Iran Strait of Hormuz Conflict &mdash; Oil/Inflation Tail Risk</strong><br/>
-      US Central Command disabled/destroyed Iranian oil tankers Sept 5 in retaliation for missile strikes on a US carrier group; Brent near $97/bbl. Further escalation is a direct upside risk to energy-driven inflation.
+      <strong>1. Dual Middle East Oil-Chokepoint Conflict &mdash; Oil/Inflation Tail Risk</strong><br/>
+      Houthi strikes on Saudi energy facilities (Sept 8, 70+ wounded) plus the ongoing Iran&ndash;US Strait of Hormuz tanker conflict together threaten both Bab al-Mandeb and Hormuz simultaneously; WTI at a six-week high (~$94.36). Further escalation is a direct upside risk to energy-driven inflation.
       <br/><br/>
-      <strong>2. FOMC Rate Decision &mdash; Sept 16, Now Skewing Toward a Hike</strong><br/>
-      Friday's blowout August payrolls (+162K vs. +53K expected) plus Warsh's hawkish Jackson Hole framing have shifted market odds toward a rate hike rather than a cut &mdash; a reversal of the usual "Fed pivot" narrative.
+      <strong>2. FOMC Rate Decision &mdash; Sept 16, Still Skewing Toward a Hike</strong><br/>
+      Last week's blowout August payrolls (+162K vs. +53K expected) plus Warsh's hawkish Jackson Hole framing have market odds around 55.7% for a hike rather than a cut &mdash; a reversal of the usual "Fed pivot" narrative.
       <br/><br/>
-      <strong>3. SPCX Share-Lockup Expiration &mdash; Sept 24</strong><br/>
-      A concrete near-term supply overhang for the newly-listed, still-volatile stock.
+      <strong>3. SPCX Share-Lockup Expiration &mdash; Sept 24 (319M shares)</strong><br/>
+      A concrete, now-quantified near-term supply overhang for the newly-listed, still-volatile stock.
       <br/><br/>
-      <strong>4. Tesla AI-Narrative-vs-Fundamentals Gap</strong><br/>
-      Cybercab's muted reception is sharpening scrutiny of the disconnect between Tesla's AI positioning and its reported financials.
+      <strong>4. AMD Valuation Re-Rating Risk</strong><br/>
+      AMD now trades at a richer forward P/E than both Nvidia and Broadcom, with margins still lagging &mdash; a new relative-valuation risk on top of execution risk.
       <br/><br/>
       <strong>5. Data-Source Gap (Operational)</strong><br/>
-      MT Newswires and Tavily are unauthorized this session, and FMP's stock-quote, index, and WTI-commodity endpoints returned ACCESS DENIED (Starter plan) &mdash; index levels and WTI are WebSearch-sourced and not independently verified against a primary feed.
+      MT Newswires and Tavily are unauthorized this session, and FMP's batch stock-quote, index, and commodity endpoints returned ACCESS DENIED (Starter plan) &mdash; index futures, WTI, and gold levels are WebSearch-sourced and not independently verified against a primary feed.
     </div>
   </div>
 
 </div>
 
-<footer>SideStreet Briefs &middot; Auto-generated 2026-09-07 07:38 ET &middot; Sources: FMP (news/last-trade prices/crypto/treasury rates/earnings calendar) &middot; WebSearch (index closes, WTI, Voices) &middot; MT Newswires, Tavily, and several FMP quote/indexes/commodities endpoints unavailable this run &middot; Not financial advice</footer>
+<footer>SideStreet Briefs &middot; Auto-generated 2026-09-08 07:40 ET &middot; Sources: FMP (per-symbol premarket quotes/news/crypto/treasury rates/earnings calendar) &middot; WebSearch (index futures, WTI, gold, Voices) &middot; MT Newswires, Tavily, and several FMP batch quote/indexes/commodities endpoints unavailable this run &middot; Not financial advice</footer>
 
 </body>
 </html>
